@@ -8,40 +8,53 @@
     "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
     "source_section": "Q7",
     "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "status": "unchanged recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "75cb9de7b6cad47312038bc66f39d98247e2aaadde2b6964ea08f9079bb6bc9f"
   },
   {
     "query": "Q7",
     "case": "tpcc",
     "file": "Q7.js",
-    "sha256": "ee4ce318f16575c932ff1724c62a1c4f6c200a65b5b1371e042b807860c567e6",
+    "sha256": "fe95efa85e5b8d1c96cd3dc9a203f0c5143fe497ab650258aea1cee949092afc",
     "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
     "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
     "source_section": "Q7",
-    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "extraction": "Initial OOXML paragraph extraction joined by LF; original extraction hash retained separately. Current file includes subsequent repository revisions.",
+    "status": "revised recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "ee4ce318f16575c932ff1724c62a1c4f6c200a65b5b1371e042b807860c567e6",
+    "revision_commits": [
+      "24bf3bef44ee7be01ffcb5bf943640c837c5e2a9"
+    ]
   },
   {
     "query": "Q8",
     "case": "tpcc",
     "file": "Q8.sql",
-    "sha256": "e44d6770e7e4326d7b57e7c04310b19664800ba99e064fc24569e665f2a5c086",
+    "sha256": "1523f5484e780cf9dfef434fb53adecc43951abc0b366d92039686edd99bfddf",
     "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
     "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
     "source_section": "Q8",
-    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "extraction": "Initial OOXML paragraph extraction joined by LF; original extraction hash retained separately. Current file includes subsequent repository revisions.",
+    "status": "revised recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "e44d6770e7e4326d7b57e7c04310b19664800ba99e064fc24569e665f2a5c086",
+    "revision_commits": [
+      "c3535e5cbfe88d774fce8111dd8a11fadfcae545"
+    ]
   },
   {
     "query": "Q8",
     "case": "tpcc",
     "file": "Q8.js",
-    "sha256": "f182ca2186c3dd143f0da6b3c8196e9c4a122b074331355fb45cb515665452cf",
+    "sha256": "d75452f76e4998cd4c1b29c54cb4d5bd23c50cf26e46a4a00ac55cb02b6316df",
     "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
     "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
     "source_section": "Q8",
-    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "extraction": "Initial OOXML paragraph extraction joined by LF; original extraction hash retained separately. Current file includes subsequent repository revisions.",
+    "status": "revised recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "f182ca2186c3dd143f0da6b3c8196e9c4a122b074331355fb45cb515665452cf",
+    "revision_commits": [
+      "797fd583dc562bb5139367bd2d2ca8dc768b43db"
+    ]
   },
   {
     "query": "Q9",
@@ -52,17 +65,22 @@
     "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
     "source_section": "Q9",
     "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "status": "unchanged recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "2301fcefd720215d2c24958395fd39a60a399dd45ce9626689059f28d233919e"
   },
   {
     "query": "Q9",
     "case": "tpcc",
     "file": "Q9.js",
-    "sha256": "3197e6f8bf7c53f9ac92ade1982299b24920766395cb08640ce41dda00c8ad56",
+    "sha256": "cf67c1a4f1c8a0bf8656172201dfc94096c35a42280b4061ecc83b607f1438f7",
     "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
     "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
     "source_section": "Q9",
-    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "extraction": "Initial OOXML paragraph extraction joined by LF; original extraction hash retained separately. Current file includes subsequent repository revisions.",
+    "status": "revised recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "3197e6f8bf7c53f9ac92ade1982299b24920766395cb08640ce41dda00c8ad56",
+    "revision_commits": [
+      "94ac9b3d3311db64f84c671808dd5dfc8d665ccd"
+    ]
   }
 ]

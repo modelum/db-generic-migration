@@ -8,18 +8,23 @@
     "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
     "source_section": "Q4",
     "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "status": "unchanged recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "2ec92acd0990f7b6103bcbf401200792b6fbb104cc2f62127f7a5ee09b507382"
   },
   {
     "query": "Q4",
     "case": "northwind",
     "file": "Q4.js",
-    "sha256": "ce64e1abf28b5147d12eb809da723c95467fd90188379b33af7b8435f72821a2",
+    "sha256": "13e5dd92bd2447eedd98cefe0578b553313124c77eea3a35dbacdab64e5df974",
     "source_document": "data-migration-query-comparison-mjose.docx",
     "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
     "source_section": "Q4",
-    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "extraction": "Initial OOXML paragraph extraction joined by LF; original extraction hash retained separately. Current file includes subsequent repository revisions.",
+    "status": "revised recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "ce64e1abf28b5147d12eb809da723c95467fd90188379b33af7b8435f72821a2",
+    "revision_commits": [
+      "fc0809b59bc8163d7ff43515755bdc198b830307"
+    ]
   },
   {
     "query": "Q5",
@@ -30,18 +35,23 @@
     "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
     "source_section": "Q5",
     "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "status": "unchanged recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "f2b5ad3caee66021a747f7967e284be765e0ce4f05c9e9a4a3a912954019d3d1"
   },
   {
     "query": "Q5",
     "case": "northwind",
     "file": "Q5.js",
-    "sha256": "c9c2580cc66ef98771be90ff803e9fef5c9061454103b47cb3a61382d52c5e60",
+    "sha256": "b4f2a4f52b29f24a6dbfd78d6e2c67c28616119fc2b1436d26c702dd5aa8215a",
     "source_document": "data-migration-query-comparison-mjose.docx",
     "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
     "source_section": "Q5",
-    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "extraction": "Initial OOXML paragraph extraction joined by LF; original extraction hash retained separately. Current file includes subsequent repository revisions.",
+    "status": "revised recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "c9c2580cc66ef98771be90ff803e9fef5c9061454103b47cb3a61382d52c5e60",
+    "revision_commits": [
+      "a4e06a312e8c06e0f13117b827d936866a7332c4"
+    ]
   },
   {
     "query": "Q6",
@@ -52,17 +62,22 @@
     "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
     "source_section": "Q6",
     "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "status": "unchanged recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "029a9a7eaf239e26fa9789369c1df06dad935adb7b83119b2a566e641fee18f9"
   },
   {
     "query": "Q6",
     "case": "northwind",
     "file": "Q6.js",
-    "sha256": "f0a40de25d942e34486bee22b72a6d419484c79ffb0065e45fa7013ab8acd560",
+    "sha256": "094010a1bb710fdbf10b4ee8139021494b2a7c2f31fad7635c94cf612984d852",
     "source_document": "data-migration-query-comparison-mjose.docx",
     "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
     "source_section": "Q6",
-    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
-    "status": "recovered candidate; not executed or validated"
+    "extraction": "Initial OOXML paragraph extraction joined by LF; original extraction hash retained separately. Current file includes subsequent repository revisions.",
+    "status": "revised recovered candidate; not executed or validated during packaging",
+    "original_extracted_sha256": "f0a40de25d942e34486bee22b72a6d419484c79ffb0065e45fa7013ab8acd560",
+    "revision_commits": [
+      "5f4b1f413b85ea9aad0c6b103184aef36eb9686f"
+    ]
   }
 ]
