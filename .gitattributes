@@ -20,6 +20,6 @@ cases/music-streaming/data/*.py -text -whitespace
 # Preserve hashes of numeric result tables across checkouts.
 results/**/*.csv -text -whitespace
 
-experiments/trace-adaptation/recovered-music-sequence/** -text -whitespace
+experiments/trace-adaptation/music-service-sequence/** -text -whitespace
 
 software/data-migrator/configurable-2026-10-30/*.jar binary
