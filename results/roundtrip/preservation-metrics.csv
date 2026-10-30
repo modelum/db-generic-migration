@@ -1,0 +1,19 @@
+case,element_category,precision_reported,recall_reported,f1_reported,applicability,evidence_type,paper_locator
+Music Streaming,Tables,1.00,1.00,1.00,reported,paper_transcription,Table 8
+Music Streaming,Columns,0.93,1.00,0.97,reported,paper_transcription,Table 8
+Music Streaming,Primary keys,1.00,1.00,1.00,reported,paper_transcription,Table 8
+Music Streaming,Foreign keys,1.00,1.00,1.00,reported,paper_transcription,Table 8
+Music Streaming,Constraints,0.00,0.00,0.00,reported,paper_transcription,Table 8
+Music Streaming,Data types,1.00,0.67,0.80,reported,paper_transcription,Table 8
+TPC-C,Tables,1.00,1.00,1.00,reported,paper_transcription,Table 8
+TPC-C,Columns,0.89,0.85,0.87,reported,paper_transcription,Table 8
+TPC-C,Primary keys,1.00,1.00,1.00,reported,paper_transcription,Table 8
+TPC-C,Foreign keys,1.00,1.00,1.00,reported,paper_transcription,Table 8
+TPC-C,Constraints,NA,NA,NA,not_applicable,paper_transcription,Table 8
+TPC-C,Data types,1.00,0.83,0.91,reported,paper_transcription,Table 8
+Northwind,Tables,1.00,1.00,1.00,reported,paper_transcription,Table 8
+Northwind,Columns,0.97,1.00,0.98,reported,paper_transcription,Table 8
+Northwind,Primary keys,1.00,1.00,1.00,reported,paper_transcription,Table 8
+Northwind,Foreign keys,1.00,1.00,1.00,reported,paper_transcription,Table 8
+Northwind,Constraints,NA,NA,NA,not_applicable,paper_transcription,Table 8
+Northwind,Data types,1.00,0.86,0.92,reported,paper_transcription,Table 8

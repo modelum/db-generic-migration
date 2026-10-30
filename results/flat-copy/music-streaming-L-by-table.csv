@@ -1,0 +1,9 @@
+table,source_rows,elapsed_seconds_displayed,evidence_type
+app_user,100000,2,recovered_output_extraction
+song,500000,11,recovered_output_extraction
+musical_style,25,0,recovered_output_extraction
+song_style,999945,14,recovered_output_extraction
+playlist,1000000,19,recovered_output_extraction
+playlist_song,20000000,263,recovered_output_extraction
+listening,5000000,51,recovered_output_extraction
+most_recent_song,1000000,10,recovered_output_extraction

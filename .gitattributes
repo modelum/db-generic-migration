@@ -16,3 +16,6 @@ cases/**/queries/*.js -text -whitespace
 
 # Preserve generator source and prepared-copy provenance hashes.
 cases/music-streaming/data/*.py -text -whitespace
+
+# Preserve hashes of numeric result tables across checkouts.
+results/**/*.csv -text -whitespace

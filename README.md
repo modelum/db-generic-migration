@@ -21,7 +21,7 @@ This repository is under preparation and is not yet a validated runnable release
 - [software](software/): metamodels, implementation source snapshots and dependency documentation.
 - [environment](environment/): execution environment documentation.
 - [experiments](experiments/): schema validation, round-trip reconstruction, trace-aware adaptation, scaling, flat-copy baseline and query equivalence.
-- [results](results/): folder reserved for verified reference results.
+- [results](results/): published results transcribed as CSV, plus a recovered baseline timing breakdown with provenance.
 - [REPRODUCING.md](REPRODUCING.md): reproduction scope and current availability.
 
 Artifact notes distinguish recovered candidates from validated references and original files from derived loading aids. Expected models are kept separate from generated outputs; new execution outputs should remain separate from published reference results.

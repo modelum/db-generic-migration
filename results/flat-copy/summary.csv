@@ -1,0 +1,3 @@
+case,instance,source_rows,batch_documents_reported,flat_copy_seconds,complete_migration_seconds,slowdown_factor_reported,evidence_type,paper_locator
+Music Streaming,L,28599970,1000,370,5814,15.7,paper_transcription,Section 6.4 flat-copy baseline
+TPC-C,L,49997496,1000,774,4047,5.2,paper_transcription,Section 6.4 flat-copy baseline
