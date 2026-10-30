@@ -41,8 +41,21 @@ public class Principal {
 			//new File(jarDir, "miModelo.xmi");
 		} catch (URISyntaxException e) {e.printStackTrace();}
 		System.out.println("El nombre del archivo es:"+jarFile.getName());
-		if (args.length!=3) {
-			System.out.println("Usage: java -jar "+jarFile.getName()+" relational(xmi without extension) BDrelational BDMongo");
+		if (args.length!=9) {
+			//System.out.println("Usage: java -jar "+jarFile.getName()+" relational(xmi without extension) BDrelational BDMongo");
+			//System.out.println("Usage: java -jar "+jarFile.getName()+" relationalModel(xmi without extension) IP_postgreSQL Port_postgreSQL postgreSQL_user postgreSQL_password postgresSQL_database IP_mongoDB Port_mongoDB mongoDB_database");
+			System.out.println("Usage: java -jar "+jarFile.getName()+" a1 a2 a3 a4 a5 a6 a7 a8 a9");
+			System.out.println("   a1 = relationalModel(xmi without extension)"); 
+			System.out.println("   a2 = PostgreSQL_IP_address");
+			System.out.println("   a3 = PostgreSQL_Port");
+			System.out.println("   a4 = PostgreSQL_user");
+			System.out.println("   a5 = PostgreSQL_user_password");
+			System.out.println("   a6 = PostgreSQL_database_name");
+			System.out.println("   a7 = MongoDB_IP_address");
+			System.out.println("   a8 = MongoDB_Port");
+			System.out.println("   a9 = MongoDB_database_name");
+			System.out.println("e.g:");
+			System.out.println("java -jar migrator.jar MusicService-relational localhost 5432 user user_pwd sourceDatabase localhost 27017 targetDatabase");
 			System.exit(0);
 		}
 		//obtener la carpeta donde está contenido el jar ejecutable
@@ -57,7 +70,8 @@ public class Principal {
 		String DOCUMENT_MODEL_JSON_PATH = new File(jarFolder, args[0]+"-mongoose.js").getAbsolutePath();
 
 		Trace trace1, trace2;
-		final String SERVER_MONGODB =  "mongodb://localhost:27017";
+		final String SERVER_MONGODB =  "mongodb://"+args[6]+":"+args[7];
+		//final String SERVER_MONGODB =  "mongodb://localhost:27017";
 		//final String SERVER_MONGODB =  "mongodb://51.49.50.59:27017";
 
 		// Relational to USchema
@@ -152,12 +166,12 @@ if (args[0].equals("MusicService-relational")) {
 		
 		// ec2 instance
 		//System.out.println(	uadapter.openConnectionService("51.49.50.59", 5432, "musicdb", "music", "music"));
-		System.out.println(	uadapter.openConnectionService("localhost", 5432, args[1], "music", "music"));
-		//System.out.println(	uadapter.openConnectionService("51.49.50.59", 5432, args[1], "music", "music"));
+		//System.out.println(	uadapter.openConnectionService("localhost", 5432, args[1], "music", "music"));
+		System.out.println(	uadapter.openConnectionService(args[1], Integer.parseInt(args[2]), args[5], args[3], args[4]));
 		
 		// connection mongoDB
 		MongoClient mongoClient = MongoClients.create(SERVER_MONGODB);
-		MongoDatabase database = mongoClient.getDatabase(args[2]);
+		MongoDatabase database = mongoClient.getDatabase(args[8]);
 		MongoCollection<Document> collection = null;
 		
 		
@@ -170,7 +184,7 @@ if (args[0].equals("MusicService-relational")) {
 		BufferedWriter writer = null;
 		try {
 
-            writer = new BufferedWriter(new FileWriter("Tiempos migración.txt"));
+            writer = new BufferedWriter(new FileWriter("Migration_times.txt"));
 		  } catch (Exception e) {
 	            e.printStackTrace();
 	        }

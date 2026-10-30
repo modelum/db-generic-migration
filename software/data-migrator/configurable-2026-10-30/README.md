@@ -1,6 +1,6 @@
 # Configurable data migrator
 
-This newly supplied executable accepts connection parameters. It is distinct from the recovered AWS executables used in earlier artifact collection; it is not identified as the binary used for the paper's historical timing measurements. The associated updated source commit has not yet been supplied. [provenance.json](provenance.json) identifies the unchanged binary by SHA-256.
+This newly supplied executable accepts connection parameters. It is distinct from the recovered AWS executables used in earlier artifact collection; it is not identified as the binary used for the paper's historical timing measurements. The associated DataMigration source update is available at development commit `81179f6325dbdaea6c31205405939366b71bb824` and preserved under [source-projects/DataMigration](../../source-projects/DataMigration/). Source-to-binary identity has not been verified through a rebuild. [provenance.json](provenance.json) identifies the unchanged binary by SHA-256.
 
 ## Prerequisites and invocation
 
@@ -36,7 +36,7 @@ Replace example connection values with the intended configuration. Use a dedicat
 
 **The example above activates schema adaptation.** When argument 1 is exactly `MusicService-relational`, the entry point applies the Music adaptation sequence: disaggregate playlist, rename app_user to user_data and remove is_premium. It saves/reloads `MusicService.trace` and continues migration from the adapted model. It therefore does not represent the canonical embedded-playlist Q1 scenario. No separate adaptation-enable/disable argument is present in this interface; a supported canonical Music invocation must be confirmed before treating this binary as its reproduction command.
 
-The program writes intermediate U-Schema, Document and Mongoose artifacts using the model basename next to the JAR. Keep copies of the original input and any traces; adaptation saves over its intermediate model/trace paths. See [adaptation](../../../experiments/trace-adaptation/) for recovered outputs and experiment scope.
+The updated source names its timing report `Migration_times.txt`. The program writes intermediate U-Schema, Document and Mongoose artifacts using the model basename next to the JAR. Keep copies of the original input and any traces; adaptation saves over its intermediate model/trace paths. See [adaptation](../../../experiments/trace-adaptation/) for recovered outputs and experiment scope.
 
 ## Verification boundary
 

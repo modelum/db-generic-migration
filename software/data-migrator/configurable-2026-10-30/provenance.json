@@ -15,5 +15,7 @@
     "entry-point bytecode inspection of nine-argument usage and PostgreSQL parameter forwarding",
     "MusicService-relational automatic adaptation branch inspected"
   ],
-  "execution_performed": false
+  "execution_performed": false,
+  "associated_source_commit": "81179f6325dbdaea6c31205405939366b71bb824",
+  "source_commit_note": "Supplied DataMigration update has the nine-argument interface; no reproducible build or full binary-source identity check performed."
 }

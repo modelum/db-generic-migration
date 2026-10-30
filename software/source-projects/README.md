@@ -1,6 +1,6 @@
 # Migration source projects
 
-These are unchanged source snapshots of the eight active projects identified by the maintainers, from development commit 3d422b9df84dd66332d7bb855c717b5c3ace279b. Original Eclipse project names and tracked text files, generated Java sources and supporting models are preserved. The source checkout was not modified.
+These are unchanged source snapshots of the eight active projects identified by the maintainers, from the development repository. DataMigration is updated to commit 81179f6325dbdaea6c31205405939366b71bb824; the other seven projects retain commit 3d422b9df84dd66332d7bb855c717b5c3ace279b. Original Eclipse project names and tracked text files, generated Java sources and supporting models are preserved. The source checkout was not modified.
 
 This is not a validated build or executable distribution. See [DEPENDENCIES.md](DEPENDENCIES.md) before importing or running a project. Original launchers contain local database configuration and experimental code; inspect their behavior before execution.
 

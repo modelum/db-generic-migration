@@ -4,246 +4,6 @@
   "selection": "Eight active projects; original tracked non-binary files preserved. JAR/ZIP dependencies and BAK excluded.",
   "included": [
     {
-      "path": "DataMigration/.classpath",
-      "sha256": "e3abf244c47239702eb123afbaf0ae5e5a4fc8a19ab2fc1aa5038e8d0c50038f",
-      "bytes": 1928
-    },
-    {
-      "path": "DataMigration/.project",
-      "sha256": "3934a8099d1172ab18f9f889b645671b452a52ace4c56df8498b28b34bfd86c4",
-      "bytes": 1169
-    },
-    {
-      "path": "DataMigration/.settings/org.eclipse.core.resources.prefs",
-      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
-      "bytes": 57
-    },
-    {
-      "path": "DataMigration/.settings/org.eclipse.jdt.core.prefs",
-      "sha256": "aa0704451cf1a87828361dbe94ed1cd70bd0b2d49b8abe15fa98a5d25b41b0de",
-      "bytes": 853
-    },
-    {
-      "path": "DataMigration/META-INF/MANIFEST.MF",
-      "sha256": "cdd097dc9aa61927983730d5a6b23c664b11ac91c37bb1f4e4bcde912a9ddba8",
-      "bytes": 699
-    },
-    {
-      "path": "DataMigration/build.properties",
-      "sha256": "0e11c3e088d5fc491ecfb391a9398cf80c99a11b213f96256da6252a72a95712",
-      "bytes": 199
-    },
-    {
-      "path": "DataMigration/metamodels/document.ecore",
-      "sha256": "646a3f9cc7eab04372236d5d5eff5755db4b7dd361ac14d1889796aa0f634b2a",
-      "bytes": 3298
-    },
-    {
-      "path": "DataMigration/metamodels/relational.ecore",
-      "sha256": "115cb6521d8af7db2a1038b76610c22ec7769a8a130dda121bd0bdf63ad70213",
-      "bytes": 4720
-    },
-    {
-      "path": "DataMigration/metamodels/uschema.ecore",
-      "sha256": "ae69272bf4e3e199e24bbd1434eae8d9355143eeb4229916e0381b8990c4a156",
-      "bytes": 6821
-    },
-    {
-      "path": "DataMigration/models/MusicArtRModel.xmi",
-      "sha256": "ba8c049f8a68e6949dffd6bb08afb680ec36b9bb012ce056f018d4aac0ab720f",
-      "bytes": 3450
-    },
-    {
-      "path": "DataMigration/models/MusicService-document.xmi",
-      "sha256": "ffd74795d84fd0b05a5bc2ff88d8b28ffaf3ab952fbd4c721e1017030f337174",
-      "bytes": 3947
-    },
-    {
-      "path": "DataMigration/models/MusicService-relational-mongoose.js",
-      "sha256": "2151d5bcb485fb1028b0ef6d16062dc2476f72bfccdd866969fa6f80cc8ffc0c",
-      "bytes": 2444
-    },
-    {
-      "path": "DataMigration/models/MusicService-relational.xmi",
-      "sha256": "0f67b55d946e4f75c17bef8d41b74d0f7bde163adcb2c91310e16c504d6bcb3a",
-      "bytes": 5345
-    },
-    {
-      "path": "DataMigration/models/MusicService-uschema.xmi",
-      "sha256": "e0f66f229c9721de5069d23ca7c525d7630822e6a09ada5b02dcb3e659291143",
-      "bytes": 5820
-    },
-    {
-      "path": "DataMigration/models/createMusicArt.sql",
-      "sha256": "ac6a26bf694af4104055717e085a85746f599c9740e1ac66eebdb73df518d74b",
-      "bytes": 3305
-    },
-    {
-      "path": "DataMigration/models/deleteMusicArt.sql",
-      "sha256": "9f7f438adbc23bf46d14c4e45e709c05e3e0b8e66f2350ce63490eeb9272f62e",
-      "bytes": 1386
-    },
-    {
-      "path": "DataMigration/models/document2.xmi",
-      "sha256": "bade06627939df1e0e68833722f23419382529c7dcecd5ac8365283e226fe0cb",
-      "bytes": 5488
-    },
-    {
-      "path": "DataMigration/models/mongoose.js",
-      "sha256": "629cdb226d3fb4cb43925d5a11e4cb11fe1bfe473f449883957a7f7a5ab01def",
-      "bytes": 3664
-    },
-    {
-      "path": "DataMigration/models/relational2.xmi",
-      "sha256": "ab4d7ce60dbcfdb80ce8e383b1a1fc9efa937fa7eb46f34c09365dd6ff2f3923",
-      "bytes": 5925
-    },
-    {
-      "path": "DataMigration/models/uschema2.xmi",
-      "sha256": "d4f1371ee7a8a39c74012d0a1c65a6be5f65ebe3bc5a57296d4271b0752a84f8",
-      "bytes": 9191
-    },
-    {
-      "path": "DataMigration/plugin.properties",
-      "sha256": "9f924da39d789e935ca53e45c1d74cf3b5817c7bccee20476c63fdca066bd791",
-      "bytes": 70
-    },
-    {
-      "path": "DataMigration/plugin.xml",
-      "sha256": "6a4ed4e309066a18b680f506b4d121a69ab6309f4be6e020088bf2d128a9565e",
-      "bytes": 1018
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/Document2Text.xtend",
-      "sha256": "1a4cd97336bd77a9f0ef557fd8e5bd08b61b0de0ba57d983a80322ef394559bb",
-      "bytes": 3623
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/Principal.java",
-      "sha256": "51ca21bc06d940f9d5dd6fc9fab12798a509a636e361d03775c615e1d4d2d631",
-      "bytes": 12641
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/Relational2USchema.xtend",
-      "sha256": "807a5ba2535761686bb30354a80d6159fff68e3b044a5c4b625a374ae7e2eb70",
-      "bytes": 16017
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/RelationalAPI.xtend",
-      "sha256": "d9d92b73420bb35316f77cc298880ceb65a08a886a5eed5055a5ee0a66207ddf",
-      "bytes": 9049
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/USchemaAPI.xtend",
-      "sha256": "dad381381503b8e7934940edaf01009cbc9966f21e9331eeb174a334a16a9519",
-      "bytes": 2632
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/Uschema2Document.xtend",
-      "sha256": "b31b1cc9e1629e03128d81d6a22bb2b9589b76a8ec4589e75d2455cf81fac857",
-      "bytes": 18011
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaAdapter.java",
-      "sha256": "462c07702f80b381b93e4b56a04bf5246365a70b2cdbec9f6fe7fd513dab39f1",
-      "bytes": 822
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaBrowser.java",
-      "sha256": "bf9e1042f01327fe15c9401c276137793b57d513f78f06ec05411d8a6df11fe0",
-      "bytes": 2516
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaCursor.java",
-      "sha256": "52561eb0fa97607b5d1d3cf0e4365e6bfdd67c8dd8deb6ed3a2c4abc83df6063",
-      "bytes": 631
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaID.java",
-      "sha256": "531119469cd8977c14804861585be28933d343d7441724a92347fa361d73fc64",
-      "bytes": 1402
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaRelAdapter.java",
-      "sha256": "c64e60e19db804d783578ff9fedc4fd09a3f96abb808d62c6bde8d17f65fadf0",
-      "bytes": 4997
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaRelCursor.java",
-      "sha256": "ea4156e9e01f46a9e471aad10cfbb8f17f555dc7c0f1022799ae1444b2c87122",
-      "bytes": 22817
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/data/ComparatorKeys.xtend",
-      "sha256": "662225b350e02d3669473dd712cab6b6aa3f3b8274f6b25917f905ad8fd932e0",
-      "bytes": 1111
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/data/DocumentAPI.java",
-      "sha256": "3f748e858b244ad504325880e25cd43882e628857a6d1f7fd13351d7ac1d4f14",
-      "bytes": 9442
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/data/DocumentBrowser.java",
-      "sha256": "03d96427c7ec50894b542dc9b420a7430975ee6753f867a0b6250225cf5c1d0c",
-      "bytes": 2368
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/data/DocumentData2text.xtend",
-      "sha256": "b37fd97cfa1d8733a93616add379d25186d86fe7b267a357f352049d67ac725a",
-      "bytes": 12579
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/data/DocumentValidator.xtend",
-      "sha256": "d6fcf2d35144efc071a543952efd3e3868edcd86a840f2e77036ea4790b35cda",
-      "bytes": 4131
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/data/RelationalData2text.xtend",
-      "sha256": "e7f8e6e88d8f2ab56c9768a08e58fb452ebb12897450d07e1f12031d8ee7679b",
-      "bytes": 5289
-    },
-    {
-      "path": "DataMigration/src/um/modelum/migration/data/Test.java",
-      "sha256": "6d344886d577069744fa23dcd4b5e7b173e87232519bb19786af7b3e1d08ba39",
-      "bytes": 2455
-    },
-    {
-      "path": "DataMigration/validation/mongoData_MetaShop.txt",
-      "sha256": "c12c227e5a8e05f1a831b97ced3ac7e1e904ba60baef50faeb0e3e81e30edb03",
-      "bytes": 6674
-    },
-    {
-      "path": "DataMigration/validation/sqlData_MetaShop.txt",
-      "sha256": "c83cb07e3df1f9eb52cc5fb46326443e22b03c7614ca22a0693496b00e807b12",
-      "bytes": 6586
-    },
-    {
-      "path": "DataMigration/xtend-gen/Revised_Code_MJ/.gitignore",
-      "sha256": "ae6cae984805bdd4d98d1da9a73e2bbc16512d62ed3f7bce2b4f0b1f2231d381",
-      "bytes": 39
-    },
-    {
-      "path": "DataMigration/xtend-gen/um/modelum/migration/.gitignore",
-      "sha256": "b8fc73411179fc454efa826dda41da26ef34d7de72ce89b1ee35596636e3ec00",
-      "bytes": 317
-    },
-    {
-      "path": "DataMigration/xtend-gen/um/modelum/migration/api/.gitignore",
-      "sha256": "1a90c6a80cf6208050a5964e14871cec77d3f9337a0a6e407b451e0defe64716",
-      "bytes": 55
-    },
-    {
-      "path": "DataMigration/xtend-gen/um/modelum/migration/data/.gitignore",
-      "sha256": "b2e566f7101c04b8d3565214872a2d50d5c1ead7df2f89081acd09f23f08a097",
-      "bytes": 230
-    },
-    {
-      "path": "DataMigration/xtend-gen/um/modelum/migration/mapping/.gitignore",
-      "sha256": "4a3e38f882e81a7a7ad3f6d789b7f09f18ec913156febf36b945f0eca4c4e159",
-      "bytes": 66
-    },
-    {
       "path": "OrionTraceChanger/.classpath",
       "sha256": "925380295ba663bcca90d20a6fe558edb11ea4ea99816e1fddc825d9cafcc798",
       "bytes": 998
@@ -1127,141 +887,249 @@
       "path": "um.modelum.uschemaMM/src/uschema/util/UschemaSwitch.java",
       "sha256": "30541a89b3a7981abd213cf76da7ccc116e36d47b28ba3f802aca53b48282afa",
       "bytes": 17228
+    },
+    {
+      "path": "DataMigration/.classpath",
+      "sha256": "f9ddbc0b10788322455a764e7616911af3e9766515374e11570cc360253211b1",
+      "bytes": 1934
+    },
+    {
+      "path": "DataMigration/.project",
+      "sha256": "a2dfcfede81f65b81ac2f595e8e93fddfaa031e84ff90d180008d16f854bd08e",
+      "bytes": 1124
+    },
+    {
+      "path": "DataMigration/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "4238e4eafab8309d5f1ee3c167db1e6bf254d5587daa652f1495da7c3942b4c4",
+      "bytes": 55
+    },
+    {
+      "path": "DataMigration/.settings/org.eclipse.jdt.core.prefs",
+      "sha256": "22d9f76bb4f8b24cd00bd0ba30b4ebac23b76d726a218f39c0c7eea5f30798dd",
+      "bytes": 838
+    },
+    {
+      "path": "DataMigration/META-INF/MANIFEST.MF",
+      "sha256": "cdd097dc9aa61927983730d5a6b23c664b11ac91c37bb1f4e4bcde912a9ddba8",
+      "bytes": 699
+    },
+    {
+      "path": "DataMigration/build.properties",
+      "sha256": "25332fb8e36d6d8eeb3a773318a22944b93b2e6325d737a5024ab8c5e7d69db1",
+      "bytes": 189
+    },
+    {
+      "path": "DataMigration/metamodels/document.ecore",
+      "sha256": "d5a9ad9b412e7df38bbe412d2329385d7ffc70cefaf4f29a359adc2659de818d",
+      "bytes": 3251
+    },
+    {
+      "path": "DataMigration/metamodels/relational.ecore",
+      "sha256": "45f4446fb8cf24b8468a6388e82ad99ba008aafab7143f1288029c77cab7b657",
+      "bytes": 4656
+    },
+    {
+      "path": "DataMigration/metamodels/uschema.ecore",
+      "sha256": "ae69272bf4e3e199e24bbd1434eae8d9355143eeb4229916e0381b8990c4a156",
+      "bytes": 6821
+    },
+    {
+      "path": "DataMigration/models/MusicArtRModel.xmi",
+      "sha256": "9caf6b88b9cb4b7864fe417ef950f407e8a1b3151e047eeab3edd784daf31b6a",
+      "bytes": 3326
+    },
+    {
+      "path": "DataMigration/models/MusicService-document.xmi",
+      "sha256": "ffd74795d84fd0b05a5bc2ff88d8b28ffaf3ab952fbd4c721e1017030f337174",
+      "bytes": 3947
+    },
+    {
+      "path": "DataMigration/models/MusicService-relational-mongoose.js",
+      "sha256": "2151d5bcb485fb1028b0ef6d16062dc2476f72bfccdd866969fa6f80cc8ffc0c",
+      "bytes": 2444
+    },
+    {
+      "path": "DataMigration/models/MusicService-relational.xmi",
+      "sha256": "279b343524b7dcd7b0c549f4afec2ce14c3f08e6f6b03f45b8f500a95f5d520c",
+      "bytes": 5157
+    },
+    {
+      "path": "DataMigration/models/MusicService-uschema.xmi",
+      "sha256": "e0f66f229c9721de5069d23ca7c525d7630822e6a09ada5b02dcb3e659291143",
+      "bytes": 5820
+    },
+    {
+      "path": "DataMigration/models/createMusicArt.sql",
+      "sha256": "c2b5bc5894e3e71380edc104c5b252cd9840dd267ea085df55f3a8c2b7173bc3",
+      "bytes": 3190
+    },
+    {
+      "path": "DataMigration/models/deleteMusicArt.sql",
+      "sha256": "c8e3faa216bb983ba15f151b5919a80462db11d3b259129e29f8181784293e4d",
+      "bytes": 1321
+    },
+    {
+      "path": "DataMigration/models/document2.xmi",
+      "sha256": "97dea958b22cfc01055eea05fc277d7f2e6dbdbd35309cd4a9912dc48d69cb94",
+      "bytes": 5417
+    },
+    {
+      "path": "DataMigration/models/mongoose.js",
+      "sha256": "8a4339f41c14206ea971697742871f14edf203ca376d68824c2628df6c396d6b",
+      "bytes": 3425
+    },
+    {
+      "path": "DataMigration/models/relational2.xmi",
+      "sha256": "d5252945152d8d3ed16d51b691c927566bec9873fd9b2453682cff8738a0c3a5",
+      "bytes": 5706
+    },
+    {
+      "path": "DataMigration/models/uschema2.xmi",
+      "sha256": "b00628a6bd2b4ee911c3ef5f501afbaf85793059dc6401f1cacbaa952cbfa1c0",
+      "bytes": 9032
+    },
+    {
+      "path": "DataMigration/plugin.properties",
+      "sha256": "d03da62ae2f5d40a3082489aae2e305e0071bf1bcaca613334e42df23c9cfa1e",
+      "bytes": 66
+    },
+    {
+      "path": "DataMigration/plugin.xml",
+      "sha256": "2ebb1e6d46427258f24265f18662a3f9803bccc57274fbd9c25ebf40bec10844",
+      "bytes": 985
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/Document2Text.xtend",
+      "sha256": "da4a20e4f658982f6d7131e8482b8243d13286b4c7adbe83482734bba814fd46",
+      "bytes": 3487
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/Principal.java",
+      "sha256": "60b422b432e000f3473667121bfd92984197074cfda9a124f112b71b23b9bcd0",
+      "bytes": 13747
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/Relational2USchema.xtend",
+      "sha256": "807a5ba2535761686bb30354a80d6159fff68e3b044a5c4b625a374ae7e2eb70",
+      "bytes": 16017
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/RelationalAPI.xtend",
+      "sha256": "d9d92b73420bb35316f77cc298880ceb65a08a886a5eed5055a5ee0a66207ddf",
+      "bytes": 9049
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/USchemaAPI.xtend",
+      "sha256": "3bfdc9255abe8af88921f1a9e466bcf1ac9b40dd03451a2edf94b5c001304a9c",
+      "bytes": 2555
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/Uschema2Document.xtend",
+      "sha256": "b31b1cc9e1629e03128d81d6a22bb2b9589b76a8ec4589e75d2455cf81fac857",
+      "bytes": 18011
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaAdapter.java",
+      "sha256": "9947967764b005bab87fbd74c44bb8b3a5a58714a1dc59beb9a369fa66a3b11d",
+      "bytes": 805
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaBrowser.java",
+      "sha256": "8ee707adcc751b06cc4a3209de47c245e74d0fff44b7c2ead8831563c733de18",
+      "bytes": 2451
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaCursor.java",
+      "sha256": "89d80297c37677b432cba531186f370c3630ffd438e292f7cdd9f8783eaf0528",
+      "bytes": 606
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaID.java",
+      "sha256": "fbb52a10bd5229fef38b960dfe5fc732a27c7c15f8953fcc12d70124b0cc023c",
+      "bytes": 1367
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaRelAdapter.java",
+      "sha256": "ef4e60753daa360e267f921a113f3dc023962cc15d97a7a8673da6fae1e3b4ac",
+      "bytes": 4860
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaRelCursor.java",
+      "sha256": "ea4156e9e01f46a9e471aad10cfbb8f17f555dc7c0f1022799ae1444b2c87122",
+      "bytes": 22817
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/ComparatorKeys.xtend",
+      "sha256": "6bf6b84f066f21628f44acebbe91ef5e7048d9f7bcf81fdb56184d1bc3d04611",
+      "bytes": 1066
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/DocumentAPI.java",
+      "sha256": "3f748e858b244ad504325880e25cd43882e628857a6d1f7fd13351d7ac1d4f14",
+      "bytes": 9442
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/DocumentBrowser.java",
+      "sha256": "4067c0cc72f8f8ac19b99b68d8537e0a629c5aca1875268e8c8a03642c97afaf",
+      "bytes": 2295
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/DocumentData2text.xtend",
+      "sha256": "98c4178bc0cf0f63c691dd905b0c40fbcfdbddfd26d81b871454cd74b155a0a9",
+      "bytes": 12176
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/DocumentValidator.xtend",
+      "sha256": "997b988e95333555a58172a9fe8a166e863dbfa8db5507df91f6f602c347f76b",
+      "bytes": 4004
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/RelationalData2text.xtend",
+      "sha256": "4718bc72622e59f2dfc2d84d7a79cf28a9a68d2d80270c76323ee3343c9ea876",
+      "bytes": 5116
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/Test.java",
+      "sha256": "eb830b1a5d3c802312a5ba356f476a56b50ab936f3cc9969fb3a951bcca03b56",
+      "bytes": 2393
+    },
+    {
+      "path": "DataMigration/validation/mongoData_MetaShop.txt",
+      "sha256": "7e95f9fe499e0d6c8a69d21737fe3caa1a4e8d2b0b61c724d62854eb288bab30",
+      "bytes": 6291
+    },
+    {
+      "path": "DataMigration/validation/sqlData_MetaShop.txt",
+      "sha256": "c035dd3134a23b1a11281978660088502a08f7f721e1261c9761f54026897b2e",
+      "bytes": 6203
+    },
+    {
+      "path": "DataMigration/xtend-gen/Revised_Code_MJ/.gitignore",
+      "sha256": "a0682903f317e5f2e3ac9eea5fa7200f594e7d401369c8e400adffe1e0b29779",
+      "bytes": 38
+    },
+    {
+      "path": "DataMigration/xtend-gen/um/modelum/migration/.gitignore",
+      "sha256": "de144d06fc8841bcddb421efbe0784fabc5d4af8cc89a79b36ef01b595e6446d",
+      "bytes": 305
+    },
+    {
+      "path": "DataMigration/xtend-gen/um/modelum/migration/api/.gitignore",
+      "sha256": "a46d6c25e6e5289daf9c58200ee47a6eb7a1150bfc45a56c764eeadcf92c4d21",
+      "bytes": 53
+    },
+    {
+      "path": "DataMigration/xtend-gen/um/modelum/migration/data/.gitignore",
+      "sha256": "fd1612595adf883fccd71baf3569b818c562537f4ee1e28fb2f6cda3e08bbb9f",
+      "bytes": 222
+    },
+    {
+      "path": "DataMigration/xtend-gen/um/modelum/migration/mapping/.gitignore",
+      "sha256": "7ab37df55a49298d8e8836d97139e19ee1f11a9aa5943a3981ba75789f18a1f5",
+      "bytes": 64
     }
   ],
   "excluded": [
-    {
-      "path": "DataMigration/BAK/DocumentAPI.java",
-      "sha256": "af377a915022cea8366ea9aee4b131e4558f55eecb8f468a94d5d1785c32e2e3",
-      "bytes": 8078,
-      "reason": "backup directory excluded from active source selection"
-    },
-    {
-      "path": "DataMigration/BAK/Principal.java",
-      "sha256": "9abc54e1ba1e31708381b5a246db2c315a5b200621f224748d24b09b6e71d9ed",
-      "bytes": 5831,
-      "reason": "backup directory excluded from active source selection"
-    },
-    {
-      "path": "DataMigration/BAK/PrincipalLocal.java",
-      "sha256": "ff4af397411d63056a1b0e66700d32d32aac5aa67a2bc6a10d04dcf1b4dc4a2d",
-      "bytes": 10541,
-      "reason": "backup directory excluded from active source selection"
-    },
-    {
-      "path": "DataMigration/BAK/USchemaRelCursor.java",
-      "sha256": "37cdba662072fdc7a73dbbe5e07e075766c4ad9c1f76f10b61574831b262cf53",
-      "bytes": 22378,
-      "reason": "backup directory excluded from active source selection"
-    },
-    {
-      "path": "DataMigration/MongoDBdependencies/bson-5.1.2.jar",
-      "sha256": "c1c127a4f004a524de1b3d8179bb7a7036d980159fa56569be9067de958bc527",
-      "bytes": 508114,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/MongoDBdependencies/mongodb-driver-core-5.1.2.jar",
-      "sha256": "fc3bf956a92fd6915901205327179549d27c62601378bd01dd414bb817f59e24",
-      "bytes": 1704223,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/MongoDBdependencies/mongodb-driver-sync-5.1.2.jar",
-      "sha256": "cd839de669a68ca2379260fec4406597f12d0fd44e7cc00111eb68f3389d65ad",
-      "bytes": 153554,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/MongoDBdependencies/netty-buffer-4.1.87.Final.jar",
-      "sha256": "4e3abdf4ddb8810f5fb4a2b57c9144407873b359faa1894007673ed1465dd3e8",
-      "bytes": 305018,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/MongoDBdependencies/netty-handler-4.1.87.Final.jar",
-      "sha256": "31a20e1de13b06a677a4719fd5aa95635982114a32c1d034739a48cceada2383",
-      "bytes": 542535,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/MongoDBdependencies/netty-transport-4.1.87.Final.jar",
-      "sha256": "17ed465cf5b1579b72379e47be3ba7fccb09dda8d95d47c8d668118483b08f43",
-      "bytes": 488388,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/MongoDBdependencies/slf4j-api-1.7.6.jar",
-      "sha256": "059a84383fad78d85d9c3951bebafab7200c704c411a9d25c913340c3877604a",
-      "bytes": 28688,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/Trace.jar",
-      "sha256": "74e065e3e6c210feb49d79cf52573d5d2a2ef39d1dc177eaf44adc38a5a3c1fe",
-      "bytes": 5408076,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/TraceCanger.jar",
-      "sha256": "9e55bf6fe2df38ae7f0e1b255b381825ed42d30757b45ae04f16b5e0e7115eb6",
-      "bytes": 5544791,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/documentMM.jar",
-      "sha256": "3498777cda51b4830649e27167de26c84f5de3f1b451b0878f45693ce4dedc74",
-      "bytes": 34995,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/ojdbc8.jar",
-      "sha256": "7c3acc5cb693034dff0b18028c2e9189e89cad9a01d1872e7968bec36d2e84b1",
-      "bytes": 4397918,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/org.eclipse.emf.common_2.44.0.v20251025-0946.jar",
-      "sha256": "a35436f2811295603bbc56f752e967339f7ca842b45df910a79700453277b97a",
-      "bytes": 403741,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/org.eclipse.emf.ecore.xmi_2.39.0.v20250910-1205.jar",
-      "sha256": "c3d1e847f168e5a2602449b8afd67527a45959a94e259a1b1cbc705ad290e245",
-      "bytes": 255116,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar",
-      "sha256": "c2473ebf30c2e8daf446638913257b8c3f5219a35318f3679c234482dd23228b",
-      "bytes": 1402973,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/postgresql-42.7.10.jar",
-      "sha256": "cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387",
-      "bytes": 1137016,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/relationalMM.jar",
-      "sha256": "7f43ffcaf4125e1064c43ddab514568ad205ac5db6e68f6d488b5fa9aecc7dd0",
-      "bytes": 37297,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/lib/uschemaMM.jar",
-      "sha256": "d689469c19a218661da1565a214ece702cfc3c4099e22ad4e87dd45da8bd5216",
-      "bytes": 58431,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
-    {
-      "path": "DataMigration/src/oracleDriver/ojdbc11.jar",
-      "sha256": "2cc69b821da842c5f5be8877444631cf9fa89561f1f6f5ad7bf1293eb669fc27",
-      "bytes": 7199197,
-      "reason": "binary or archive inventoried for later dependency selection"
-    },
     {
       "path": "OrionTraceChanger/BAK/Prueba.java",
       "sha256": "646864ca34af091e0762dce2e4c2f1604317bb8e3eca31153a489e253f01049e",
@@ -1399,6 +1267,149 @@
       "sha256": "5b77f1caef14059d74c9a60bac8da7b77421ea1d6aa1bcb0e50d5a76907b2cfc",
       "bytes": 91,
       "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/BAK/DocumentAPI.java",
+      "sha256": "af377a915022cea8366ea9aee4b131e4558f55eecb8f468a94d5d1785c32e2e3",
+      "bytes": 8078,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "DataMigration/BAK/Principal.java",
+      "sha256": "9abc54e1ba1e31708381b5a246db2c315a5b200621f224748d24b09b6e71d9ed",
+      "bytes": 5831,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "DataMigration/BAK/PrincipalLocal.java",
+      "sha256": "ff4af397411d63056a1b0e66700d32d32aac5aa67a2bc6a10d04dcf1b4dc4a2d",
+      "bytes": 10541,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "DataMigration/BAK/USchemaRelCursor.java",
+      "sha256": "37cdba662072fdc7a73dbbe5e07e075766c4ad9c1f76f10b61574831b262cf53",
+      "bytes": 22378,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/bson-5.1.2.jar",
+      "sha256": "c1c127a4f004a524de1b3d8179bb7a7036d980159fa56569be9067de958bc527",
+      "bytes": 508114,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/mongodb-driver-core-5.1.2.jar",
+      "sha256": "fc3bf956a92fd6915901205327179549d27c62601378bd01dd414bb817f59e24",
+      "bytes": 1704223,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/mongodb-driver-sync-5.1.2.jar",
+      "sha256": "cd839de669a68ca2379260fec4406597f12d0fd44e7cc00111eb68f3389d65ad",
+      "bytes": 153554,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/netty-buffer-4.1.87.Final.jar",
+      "sha256": "4e3abdf4ddb8810f5fb4a2b57c9144407873b359faa1894007673ed1465dd3e8",
+      "bytes": 305018,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/netty-handler-4.1.87.Final.jar",
+      "sha256": "31a20e1de13b06a677a4719fd5aa95635982114a32c1d034739a48cceada2383",
+      "bytes": 542535,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/netty-transport-4.1.87.Final.jar",
+      "sha256": "17ed465cf5b1579b72379e47be3ba7fccb09dda8d95d47c8d668118483b08f43",
+      "bytes": 488388,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/slf4j-api-1.7.6.jar",
+      "sha256": "059a84383fad78d85d9c3951bebafab7200c704c411a9d25c913340c3877604a",
+      "bytes": 28688,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/OrionTraceChanger.jar",
+      "sha256": "9e55bf6fe2df38ae7f0e1b255b381825ed42d30757b45ae04f16b5e0e7115eb6",
+      "bytes": 5544791,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/Trace.jar",
+      "sha256": "74e065e3e6c210feb49d79cf52573d5d2a2ef39d1dc177eaf44adc38a5a3c1fe",
+      "bytes": 5408076,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/documentMM.jar",
+      "sha256": "3498777cda51b4830649e27167de26c84f5de3f1b451b0878f45693ce4dedc74",
+      "bytes": 34995,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/ojdbc8.jar",
+      "sha256": "7c3acc5cb693034dff0b18028c2e9189e89cad9a01d1872e7968bec36d2e84b1",
+      "bytes": 4397918,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/org.eclipse.emf.common_2.44.0.v20251025-0946.jar",
+      "sha256": "a35436f2811295603bbc56f752e967339f7ca842b45df910a79700453277b97a",
+      "bytes": 403741,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/org.eclipse.emf.ecore.xmi_2.39.0.v20250910-1205.jar",
+      "sha256": "c3d1e847f168e5a2602449b8afd67527a45959a94e259a1b1cbc705ad290e245",
+      "bytes": 255116,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar",
+      "sha256": "c2473ebf30c2e8daf446638913257b8c3f5219a35318f3679c234482dd23228b",
+      "bytes": 1402973,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/postgresql-42.7.10.jar",
+      "sha256": "cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387",
+      "bytes": 1137016,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/relationalMM.jar",
+      "sha256": "7f43ffcaf4125e1064c43ddab514568ad205ac5db6e68f6d488b5fa9aecc7dd0",
+      "bytes": 37297,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/lib/uschemaMM.jar",
+      "sha256": "d689469c19a218661da1565a214ece702cfc3c4099e22ad4e87dd45da8bd5216",
+      "bytes": 58431,
+      "reason": "binary dependency/archive excluded; inventoried only"
+    },
+    {
+      "path": "DataMigration/src/oracleDriver/ojdbc11.jar",
+      "sha256": "2cc69b821da842c5f5be8877444631cf9fa89561f1f6f5ad7bf1293eb669fc27",
+      "bytes": 7199197,
+      "reason": "binary dependency/archive excluded; inventoried only"
     }
-  ]
+  ],
+  "project_commits": {
+    "DataMigration": "81179f6325dbdaea6c31205405939366b71bb824",
+    "RoundTripV2": "3d422b9df84dd66332d7bb855c717b5c3ace279b",
+    "Trace": "3d422b9df84dd66332d7bb855c717b5c3ace279b",
+    "OrionTraceChanger": "3d422b9df84dd66332d7bb855c717b5c3ace279b",
+    "TestSpeed": "3d422b9df84dd66332d7bb855c717b5c3ace279b",
+    "um.modelum.documentMM": "3d422b9df84dd66332d7bb855c717b5c3ace279b",
+    "um.modelum.relationalMM": "3d422b9df84dd66332d7bb855c717b5c3ace279b",
+    "um.modelum.uschemaMM": "3d422b9df84dd66332d7bb855c717b5c3ace279b"
+  },
+  "commit_note": "commit identifies the original common snapshot; project_commits identifies the current per-project revisions."
 }
