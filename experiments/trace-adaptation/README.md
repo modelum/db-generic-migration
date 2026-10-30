@@ -18,6 +18,8 @@ The recovered models and trace reflect the combined outcome: `user_data`, no `is
 
 ## Implementation and executable identification
 
+The current prototype integrates a predefined Music Service adaptation directly into the migrator. It activates when the model basename is exactly `MusicService-relational` (case-sensitive, without `.xmi`). This is a preliminary demonstration of trace-aware adaptation, not a general user-facing interface for selecting arbitrary adaptations. Connection parameterization is independent of this model-name trigger. The recovered sequential outputs document this predefined scenario.
+
 - [DataMigration Principal.java](../../software/source-projects/DataMigration/src/um/modelum/migration/Principal.java) generates U-Schema/T1. For first argument `MusicService-relational`, it saves/reloads `MusicService.trace`, applies the sequence, saves/reloads the changed artifacts, and continues to Document generation and data migration.
 - [TraceChanger.java](../../software/source-projects/OrionTraceChanger/src/um/modelum/migration/TraceChanger.java) implements the operations and persistence; [Trace](../../software/source-projects/Trace/) supplies trace support.
 - [Prueba.java](../../software/source-projects/OrionTraceChanger/src/um/modelum/migration/Prueba.java) is a standalone Music sequence example with developer-specific paths. [Originales](../../software/source-projects/OrionTraceChanger/Originales/) and [Pruebas](../../software/source-projects/OrionTraceChanger/Pruebas/) preserve additional Music models/traces; directory names alone do not establish before/after status.
