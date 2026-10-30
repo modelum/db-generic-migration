@@ -2,7 +2,7 @@
 
 ## Manuscript clarification
 
-**The adaptation evaluation was performed on Music Service (Music Streaming), not TPC-C S.** Entity/feature renaming, attribute deletion and Aggregate-to-Reference conversion were tested individually and in sequence. References to TPC-C in Section 6.3.4 and the adaptation-related external-validity discussion of the author-supplied manuscript are a case-study attribution error. This clarification applies to the manuscript snapshot identified in [results provenance](../../results/provenance.json); it does not assert the same wording in every public preprint revision.
+**The adaptation evaluation was performed on Music Service (Music Streaming), not TPC-C S.** Entity/feature renaming, attribute deletion and Aggregate-to-Reference conversion were tested individually and in sequence. References to TPC-C in the adaptation-configuration paragraph of Section 6.1, Section 6.3.4 and the adaptation-related external-validity discussion of the author-supplied manuscript are a case-study attribution error. This clarification applies to the manuscript snapshot identified in [results provenance](../../results/provenance.json); it does not assert the same wording in every public preprint revision.
 
 ## Recovered sequential execution artifacts
 
