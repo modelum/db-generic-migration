@@ -7,7 +7,7 @@
 - `generate-data-music-paper.py`: a prepared copy changing only DATASET_CONFIG to those reconstructed parameters. The generation logic, connection settings, random seed and insertion batch size remain unchanged.
 - `paper-row-counts.json`: the source table counts reported in Table 6, including the observed song_style counts.
 
-The author confirmed that this generator was used after editing DATASET_CONFIG on AWS. The exact AWS script was not recovered; the supplied paper configuration is an explicit reconstruction, not a claim of byte-identical recovery. Source commit, original path and file hashes are recorded in provenance.json and checksums.sha256.
+The author confirmed that this generator was used after editing DATASET_CONFIG on AWS. The exact AWS script was not recovered; the supplied paper configuration is an explicit reconstruction, not a claim of byte-identical recovery. Source commit, original path and file hashes are recorded in provenance.json.
 
 ## Reconstructed parameters
 

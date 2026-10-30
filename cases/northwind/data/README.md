@@ -2,7 +2,7 @@
 
 ## Contents and provenance
 
-`northwind_data.sql` is an unchanged copy of the recovered group OneDrive file from the AWS evaluation material. It matches the development repository data after normalizing line endings. `checksums.sha256` records its integrity. Upstream attribution remains pending as explained in [source notes](../source/README.md).
+`northwind_data.sql` is an unchanged copy of the recovered group OneDrive file from the AWS evaluation material. It matches the development repository data after normalizing line endings. Upstream attribution remains pending as explained in [source notes](../source/README.md).
 
 `expected-counts.json` records row counts derived by statically inspecting the INSERT statements: 3,362 rows in total across 14 schema tables, including two empty tables. These match the recovered Northwind migration count report. Counts alone do not establish value-level migration equivalence.
 

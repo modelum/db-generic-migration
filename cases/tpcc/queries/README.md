@@ -10,7 +10,7 @@ These are candidate SQL/MongoDB query pairs recovered from evaluation documents 
 
 ## Provenance and use
 
-Original evaluation documents and alternate drafts are preserved outside this public repository. `provenance.json` identifies the source document, its hash and section, the original extracted-file hash, and the current file hash. Initial extraction joined Word paragraph text with LF line endings. For subsequently revised files, revision commit IDs distinguish the current query from that initial extraction; `checksums.sha256` describes the current files.
+Original evaluation documents and alternate drafts are preserved outside this public repository. `provenance.json` identifies the source document, its hash and section, the original extracted-file hash, and the current file hash. Initial extraction joined Word paragraph text with LF line endings. For subsequently revised files, revision commit IDs distinguish the current query from that initial extraction.
 
 The JavaScript retains the original database-client notation db(...).collection(...); it is not presented as a tested mongosh command. Database names, example identifiers, formatting and query expressions may have been revised; consult the recorded commits. Check the intended database, generated field names, parameters and client dialect before execution.
 

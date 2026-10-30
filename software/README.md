@@ -1,6 +1,6 @@
 # Software
 
-[Source projects](source-projects/) contains unchanged snapshots of the eight active development projects. [DEPENDENCIES.md](source-projects/DEPENDENCIES.md) documents project roles, dependency order and recovered build configuration. Source provenance and checksums are included.
+[Source projects](source-projects/) contains unchanged snapshots of the eight active development projects. [DEPENDENCIES.md](source-projects/DEPENDENCIES.md) documents project roles, dependency order and recovered build configuration. Source provenance is included.
 
 [metamodels/](metamodels/) contains the selected OneDrive Ecore candidates. The original Ecore/runtime sources within source-projects are retained unchanged, and their alignment with the selected definitions remains pending. See [COMPATIBILITY.txt](metamodels/COMPATIBILITY.txt).
 

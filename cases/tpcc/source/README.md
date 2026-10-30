@@ -6,4 +6,4 @@ The PostgreSQL schema-only dump has nine tables and eight primary keys, with no 
 
 ## Provenance
 
-Files were copied byte-for-byte from recovered group OneDrive AWS material. See checksums.sha256 for integrity. Selection is based on the inspected repository and the final paper; filenames and folder dates alone do not establish the exact experimental software version. No database or migration has been executed during packaging.
+Files were copied byte-for-byte from recovered group OneDrive AWS material. Selection is based on the inspected repository and the final paper; filenames and folder dates alone do not establish the exact experimental software version. No database or migration has been executed during packaging.

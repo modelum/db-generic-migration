@@ -4,7 +4,7 @@ These are unchanged source snapshots of the eight active projects identified by 
 
 This is not a validated build or executable distribution. See [DEPENDENCIES.md](DEPENDENCIES.md) before importing or running a project. Original launchers contain local database configuration and experimental code; inspect their behavior before execution.
 
-`provenance.json` records every included file and excluded JAR/ZIP/backup file. `checksums.sha256` records byte-level integrity. Binaries are inventoried rather than promoted as final dependencies. Binary archives and BAK directories were not copied.
+`provenance.json` records every included file and excluded JAR/ZIP/backup file. Binaries are inventoried rather than promoted as final dependencies. Binary archives and BAK directories were not copied.
 
 ## Project roles
 

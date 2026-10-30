@@ -1,6 +1,6 @@
 # tpcc
 
-[source/](source/) contains the recovered source schema files, selection notes and checksums. See its README before using the SQL.
+[source/](source/) contains the recovered source schema files, selection notes and provenance. See its README before using the SQL.
 
 Status: source files copied and integrity checked; database loading, schema correspondence and end-to-end reproduction remain unverified. Data generation and final query execution remain unverified during packaging; reported results are available under [results](../../results/). An expected-model candidate has been recovered; independent review and comparison remain pending. Generated model candidates are documented below.
 

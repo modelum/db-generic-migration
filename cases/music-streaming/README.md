@@ -1,6 +1,6 @@
 # music-streaming
 
-[source/](source/) contains the recovered source schema files, selection notes and checksums. See its README before using the SQL.
+[source/](source/) contains the recovered source schema files, selection notes and provenance. See its README before using the SQL.
 
 Status: source files copied and integrity checked; database loading, schema correspondence and end-to-end reproduction remain unverified. Data-generation execution, expected-model validation and final query execution remain unverified during packaging; reported results are available under [results](../../results/). Generated model candidates are documented below.
 

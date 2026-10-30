@@ -6,4 +6,4 @@ The expected source is TPC-C-relational-sinPK.xmi, whose recovered ZIP copy matc
 
 This candidate is not equal to the recovered generated Document models. Do not edit the expected file solely to remove differences. Neither a successful EMF Compare run nor agreement with the final published comparison has been established during packaging.
 
-File hashes and archive entries are recorded in provenance.json and checksums.sha256. Original bytes are preserved; no model transformation or validation engine has been run.
+File hashes and archive entries are recorded in provenance.json. Original bytes are preserved; no model transformation or validation engine has been run.

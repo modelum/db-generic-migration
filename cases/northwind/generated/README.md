@@ -10,7 +10,7 @@ These models match the recovered AWS Northwind U-Schema and Document models afte
 
 ## Provenance
 
-Copied from `db-generic-migration-dev/RoundTripV2/roundtrip/direct`. File hashes are recorded in `checksums.sha256`; the cross-case inventory is [generated-provenance.json](../../generated-provenance.json). The selected relational source is in the sibling `source/` directory. No transformation was executed during packaging.
+Copied from `db-generic-migration-dev/RoundTripV2/roundtrip/direct`. The cross-case inventory is [generated-provenance.json](../../generated-provenance.json). The selected relational source is in the sibling `source/` directory. No transformation was executed during packaging.
 
 ## Metamodel alignment pending
 

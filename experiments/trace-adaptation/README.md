@@ -22,7 +22,7 @@ The files in [music-service-sequence/](music-service-sequence/) document the seq
 | [MusicService-relational-document.xmi](music-service-sequence/MusicService-relational-document.xmi) | Document schema generated from the adapted U-Schema |
 | [MusicService-relational-mongoose.js](music-service-sequence/MusicService-relational-mongoose.js) | Generated Mongoose schema |
 
-File identities and provenance are recorded in [checksums.sha256](checksums.sha256) and [provenance.json](provenance.json). The included output set represents the sequence; it is not a separate output set for each individual operation.
+File identities and provenance are recorded in [provenance.json](provenance.json). The included output set represents the sequence; it is not a separate output set for each individual operation.
 
 ## Execution
 

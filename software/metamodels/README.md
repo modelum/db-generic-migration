@@ -1,6 +1,6 @@
 # Metamodel candidates recovered from OneDrive
 
-The three Ecore files in this directory were copied byte-for-byte from `metamodels/ecore/` in the group OneDrive `metamodels.zip` archive received on 2026-10-30. Their archive provenance and SHA-256 hashes are recorded in `provenance.json` and `checksums.sha256`. They are the current recovered candidates; date or folder location alone does not establish the exact version used in the published executions.
+The three Ecore files in this directory were copied byte-for-byte from `metamodels/ecore/` in the group OneDrive `metamodels.zip` archive received on 2026-10-30. Their archive provenance and SHA-256 hashes are recorded in `provenance.json`. They are the current recovered candidates; date or folder location alone does not establish the exact version used in the published executions.
 
 ## Changes relative to the development snapshot
 

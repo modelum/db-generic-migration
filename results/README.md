@@ -13,7 +13,7 @@ This directory makes the results reported in the paper available as CSV tables. 
 
 ## Sources and interpretation
 
-[provenance.json](provenance.json) identifies the author-supplied manuscript snapshot by SHA-256, its table/section locators, and the recovered baseline source. The public [arXiv preprint](https://arxiv.org/abs/2604.22415) may differ from that manuscript snapshot; do not assume that every arXiv version has the same table numbering or results. [checksums.sha256](checksums.sha256) records CSV integrity.
+[provenance.json](provenance.json) identifies the author-supplied manuscript snapshot by SHA-256, its table/section locators, and the recovered baseline source. The public [arXiv preprint](https://arxiv.org/abs/2604.22415) may differ from that manuscript snapshot; do not assume that every arXiv version has the same table numbering or results.
 
 `paper_transcription` means a value copied from the paper, with elapsed times expressed in seconds. `recovered_output_extraction` means a numeric value extracted from an existing output document. Neither label means a new run, an independently verified result, or a saved EMF Compare report. Internal working documents and earlier measurements are not published here.
 

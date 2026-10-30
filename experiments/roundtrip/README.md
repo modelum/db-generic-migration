@@ -6,7 +6,7 @@ The experiment transforms Relational -> U-Schema -> Document -> U-Schema -> Rela
 
 `recovered-models/<case>/forward/` contains the relational input and generated U-Schema/Document models for Music Streaming and Northwind. `reverse/` contains the generated U-Schema and reconstructed relational models for all three cases. The recovered TPC-C archive contains only reverse outputs; its forward inputs and outputs are not supplied by this archive. The TPC-C forward triplet is already available as [relational input](../../cases/tpcc/source/TPC-C-relational-sinPK.xmi), [U-Schema output](../../cases/tpcc/generated/TPC-C-uschema-sinPK-generated.xmi) and [Document output](../../cases/tpcc/generated/TPC-C-document-sinPK-generated.xmi). These match the files in `RoundTripV2/roundtrip/direct`; its `reverse` files match the recovered TPC-C reverse outputs after line-ending normalization. The subsequently downloaded OneDrive `schema-migration-modelos-usados/TPC-C-relational-sinPK.xmi` is byte-identical to the packaged input. These checks establish artifact correspondence, not a fresh transformation run.
 
-These are preserved outputs from the recovered archive, not new runs of the packaged software. Duplicate copies and the Northwind `_old` variant are omitted. Archive member paths and original-byte hashes are recorded in [provenance.json](provenance.json) and [checksums.sha256](checksums.sha256).
+These are preserved outputs from the recovered archive, not new runs of the packaged software. Duplicate copies and the Northwind `_old` variant are omitted. Archive member paths and original-byte hashes are recorded in [provenance.json](provenance.json).
 
 ## Comparisons used in the evaluation
 
