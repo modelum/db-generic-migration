@@ -1,4 +1,4 @@
-db('TPC-C-S-sinPK').collection('history').aggregate([
+db('TPC-C-S').collection('history').aggregate([
   {
     // Restrict the documents before splitting the composite identifier.
     $match: {
