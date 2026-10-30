@@ -1,4 +1,4 @@
-db('TPC-C-S-sinPK').collection('district').aggregate([
+db('TPC-C-S').collection('district').aggregate([
   {
     $lookup: {
       from: 'warehouse',
