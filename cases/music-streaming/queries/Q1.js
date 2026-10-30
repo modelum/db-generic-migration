@@ -1,4 +1,4 @@
-db('MusicService-S').collection('user_app').aggregate([
+db('MusicService-S').collection('app_user').aggregate([
   { 
     $match: {user_id_id: "a11eed24-f5cb-4714-a7a7-3a90cf4c2086"}
   },
