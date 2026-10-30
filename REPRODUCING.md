@@ -1,18 +1,22 @@
 # Reproducing the evaluation
 
-This document is a preparation checklist, not yet an executable reproduction guide. Follow the final paper when selecting artifacts and experimental configurations.
+This guide identifies available inputs, recovered outputs and remaining execution preparation. The package has not been validated by an end-to-end run. Preserved outputs and paper-transcribed results are distinct from new reproduction results.
 
-| Experiment | Scope | Status |
+| Experiment | Available material | Execution status |
 | --- | --- | --- |
-| Incremental mapping tests and schema validation | Four transformations; generated versus expected Document models for three cases | Expected Document artifacts recovered; validation and instructions pending |
-| Round-trip reconstruction | Music Streaming, TPC-C, Northwind; Table 8 | Artifacts and instructions pending |
-| Trace-aware adaptation | Separate supported operations on TPC-C S | Artifacts and instructions pending |
-| Data migration scaling | Music Streaming and TPC-C S/M/L; Tables 9 and 10 | Artifacts and instructions pending |
-| Flat-copy baseline | Music Streaming L and TPC-C L; batch 1,000 | Artifacts and instructions pending |
-| Query-result equivalence | Q1-Q9; S/M for scalable cases and fixed Northwind; Table 11 | Artifacts and instructions pending |
+| Schema validation | Source/generated models for three cases; expected Document models for all three and expected U-Schema for Music/Northwind; documented EMF Compare and visual inspection | Model/runtime compatibility and a reproducible comparison configuration remain to be checked |
+| [Round-trip](experiments/roundtrip/) | Three cases' relational references and forward/reverse artifacts; Table 8 CSV; comparison procedure | Recovered launcher exits during a trace-persistence test; full chain has not been rerun |
+| [Trace adaptation](experiments/trace-adaptation/) | Music Service implementation, sequential adapted models, generated schema and updated trace; manuscript case-study clarification | Operations were evaluated individually and sequentially; included artifacts document the sequence. No new run performed |
+| [Scaling](experiments/scaling/) | Music generator and paper configuration; TPC-C HammerDB preparation settings/counts; migration source; Tables 9/10 CSV | Matching executable/dependencies and full execution recipe are not validated |
+| [Flat-copy](experiments/flat-copy/) | TestSpeed source; both L baseline values; recovered Music L per-table counts/times | Complete baseline execution recipe and TPC-C original output remain to be established |
+| [Query equivalence](experiments/query-equivalence/) | Candidate SQL/MongoDB pairs Q1-Q9 and Table 11 summary | Final query variants, normalization/export steps and verified comparison outputs remain to be established |
 
-For each experiment, the completed guide must specify prerequisites, exact input versions, preparation commands, execution commands, expected outputs, validation, and the corresponding paper section or table. Report hardware-dependent timings as observations, not exact pass/fail targets.
+## Preparation order
 
-Large datasets may be supplied through documented generation or external downloads with provenance and checksums. Distinguish regeneration of comparable datasets from recovery of the exact original instances.
+1. Inspect each experiment README and its artifact provenance. Use the manuscript snapshot identified in [results provenance](results/provenance.json); see the Music Service adaptation clarification rather than repeating the manuscript's TPC-C attribution.
+2. Review [software dependencies](software/source-projects/DEPENDENCIES.md) and [metamodel compatibility](software/metamodels/COMPATIBILITY.txt). Source snapshots, selected Ecores and recovered JARs are not yet a validated consistent distribution. Do not infer that replacing Ecores alone makes the software runnable.
+3. Prepare datasets using each case's data README: [Music Streaming](cases/music-streaming/data/), [TPC-C](cases/tpcc/data/) and [Northwind](cases/northwind/data/). Regeneration produces comparable data, not necessarily identical original random instances.
+4. Use a separate working directory and retain original models/traces. Record toolchain, exact executable and input hashes, settings and commands for any new run. Existing launchers can overwrite outputs and Music adaptation is selected by the input basename.
+5. Store new outputs separately from recovered reference artifacts and [paper results](results/). Timing values are hardware-dependent observations, not exact pass/fail targets. Save comparison outputs and query exports for a new reproduction.
 
-Before publication, verify the software and executable versions, dataset preparation, independent expected models, query versions and normalization, reference results, license, and citation metadata.
+The round-trip README provides an artifact comparison procedure usable with the recovered models. A tested build/launch command, full runtime distribution, complete query comparison procedure, license and finalized software citation metadata remain pending. No code behavior changes or new experiments were undertaken during this packaging stage.
