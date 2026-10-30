@@ -1,4 +1,4 @@
-db('borrardb3').collection('customers').aggregate([
+db('Northwind').collection('customers').aggregate([
   // 1. Empezamos filtrando por el cliente 'ALFKI'
   { $match: { "customer_id_id": "ALFKI" } },
 
@@ -13,11 +13,11 @@ db('borrardb3').collection('customers').aggregate([
   },
   { $unwind: "$customer_orders" },
 
-  // 3. Filtramos por fecha (usando el formato string)
+  // 3. Filtramos por fecha (usando el formato string de tus documentos)
   { $match: { "customer_orders.order_date": { $gt: ISODate("1997-08-29T00:00:00Z") } } },
 
-  // 4. Buscamos al empleado que gestiona ese pedido
-  // Buscamos el 'employees' cuyo array 'orders' contenga el ID del pedido
+  // 4. Buscamos al EMPLEADO que gestiono ese pedido
+  // Buscamos en la coleccion 'employees' donde su array 'orders' contenga el ID del pedido
   {
     $lookup: {
       from: "employees",
