@@ -1,0 +1,24 @@
+{
+  "tool": "HammerDB",
+  "version": "5.0",
+  "workload": "TPROC-C",
+  "database": "PostgreSQL",
+  "instances": {
+    "S": {
+      "warehouses": 1,
+      "build_virtual_users": 1
+    },
+    "M": {
+      "warehouses": 10,
+      "build_virtual_users": 4
+    },
+    "L": {
+      "warehouses": 100,
+      "build_virtual_users": 6
+    }
+  },
+  "fixed_random_seed": false,
+  "transactional_workload_executed": false,
+  "source": "Final paper Section 6.1; recovered author clarification confirms generation parameters",
+  "status": "Documented configuration; generation not executed during packaging"
+}

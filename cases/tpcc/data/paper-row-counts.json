@@ -1,0 +1,35 @@
+{
+  "S": {
+    "customer": 30000,
+    "district": 10,
+    "history": 30000,
+    "item": 100000,
+    "new_order": 9000,
+    "order_line": 299939,
+    "orders": 30000,
+    "stock": 100000,
+    "warehouse": 1
+  },
+  "M": {
+    "customer": 300000,
+    "district": 100,
+    "history": 300000,
+    "item": 100000,
+    "new_order": 90000,
+    "order_line": 2997248,
+    "orders": 300000,
+    "stock": 1000000,
+    "warehouse": 10
+  },
+  "L": {
+    "customer": 3000000,
+    "district": 1000,
+    "history": 3000000,
+    "item": 100000,
+    "new_order": 900000,
+    "order_line": 29996396,
+    "orders": 3000000,
+    "stock": 10000000,
+    "warehouse": 100
+  }
+}
