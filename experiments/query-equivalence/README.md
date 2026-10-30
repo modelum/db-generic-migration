@@ -4,4 +4,4 @@ Recovered candidate pairs associated with Table 11 are available for [Music Stre
 
 The paper evaluates Music Streaming and TPC-C over S and M, and Northwind over its fixed instance. Reproduction requires the matching generated data representation, selected query parameters, scalar/date normalization, and comparison preserving duplicate tuples while disregarding physical order when not specified.
 
-Execution instructions, normalized exports and verified comparison results are not yet included. The presence of SQL and JavaScript files does not establish equivalence or exact correspondence with the final published execution.
+[COMPARISON.md](COMPARISON.md) proposes a new-run comparison procedure and documents corresponding output fields, duplicate handling, and numeric/date interpretation. Tested client/export commands, normalized exports and verified new comparison results are not yet included. The presence of SQL and JavaScript files does not establish equivalence or exact correspondence with the final published execution.

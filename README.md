@@ -1,10 +1,10 @@
 # db-generic-migration
 
-Replication package under preparation for *A Model-Driven Approach to Database Migration with a Unified Data Model*.
+Replication materials for *A Model-Driven Approach to Database Migration with a Unified Data Model*.
 
 ## Paper
 
-María J. Ortín, José R. Hoyos, and Jesus García-Molina. **A Model-Driven Approach to Database Migration with a Unified Data Model**. arXiv:2604.22415, 2026.
+MarÃ­a J. OrtÃ­n, JosÃ© R. Hoyos, and Jesus GarcÃ­a-Molina. **A Model-Driven Approach to Database Migration with a Unified Data Model**. arXiv:2604.22415, 2026.
 
 - [Read the preprint on arXiv](https://arxiv.org/abs/2604.22415)
 - [DOI: 10.48550/arXiv.2604.22415](https://doi.org/10.48550/arXiv.2604.22415)
@@ -13,7 +13,9 @@ The arXiv link provides the public preprint. The artifact collection is being or
 
 ## Package status
 
-This repository is under preparation and is not yet a validated runnable release. It currently includes source schemas for Music Streaming, TPC-C and Northwind, the fixed Northwind dataset and loading aids, recovered model candidates, metamodel definitions, and eight implementation source projects with provenance information. Recovered expected Document models for all three cases and expected U-Schema models for Music Streaming and Northwind are included separately from generated candidates. Recovered SQL/MongoDB candidate pairs associated with Q1-Q9 are also available in the case folders, with source hashes and extraction notes. End-to-end reproduction has not yet been verified.
+This repository provides the implementation sources, models, data preparation materials, queries, and reported results supporting the paper. Artifact availability and reproduction instructions are documented in the corresponding folders. End-to-end reproduction from a clean checkout has not yet been verified.
+
+The package includes the three case studies, recovered expected and generated models, round-trip artifacts, Music Service adaptation outputs, and Q1-Q9 query pairs. Original artifacts, repository revisions, derived preparation aids, and paper-transcribed results are identified through their accompanying provenance documentation.
 
 ## Contents
 
@@ -31,7 +33,7 @@ Artifact notes distinguish recovered candidates from validated references and or
 ```bibtex
 @misc{ortin2026migration,
   title         = {A Model-Driven Approach to Database Migration with a Unified Data Model},
-  author        = {Ortín, María J. and Hoyos, José R. and García-Molina, Jesus},
+  author        = {OrtÃ­n, MarÃ­a J. and Hoyos, JosÃ© R. and GarcÃ­a-Molina, Jesus},
   year          = {2026},
   eprint        = {2604.22415},
   archivePrefix = {arXiv},
