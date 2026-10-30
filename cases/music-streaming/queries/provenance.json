@@ -15,14 +15,15 @@
     "query": "Q1",
     "case": "music-streaming",
     "file": "Q1.js",
-    "sha256": "c346b67521e8a6690d694fcf7b4794ab6812d4347911fdd6234a008e322e793e",
+    "sha256": "aa855bf9cf7f4f223ffcb00561749c6c0e0ae50a4be748a6981c7cb2dd742fa1",
     "source_document": "data-migration-query-comparison-mjose.docx",
     "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
     "source_section": "Q1",
-    "extraction": "Initial OOXML paragraph extraction joined by LF; original extraction hash retained separately. Current file includes subsequent repository revisions.",
-    "status": "revised recovered candidate; not executed or validated during packaging",
+    "extraction": "Originally extracted from OOXML; the current file restores the original extracted query bytes. Subsequent revision history is retained separately.",
+    "status": "canonical embedded-playlist query restored after an adaptation-specific revision; not executed during packaging",
     "original_extracted_sha256": "aa855bf9cf7f4f223ffcb00561749c6c0e0ae50a4be748a6981c7cb2dd742fa1",
     "revision_commits": [
+      "d2d26b43f09aa0fd10d6f12cfbd56008ad67e878",
       "365a3dfbea0cf5983e302cd81ae49e38a35e4197",
       "873655884fd4db936926da25b7af91b7be069511"
     ]

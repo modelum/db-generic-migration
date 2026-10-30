@@ -18,4 +18,4 @@ SQL/MongoDB result normalization, comparison outputs and the final selection are
 
 ## Repository revisions
 
-Q1 JavaScript now resolves independent playlists through a lookup and uses a revised user identifier; its target representation must be selected consistently with the intended model. Q2 SQL includes the corrected `SS.style_id` join and formatting changes. These revisions do not by themselves establish correspondence with the published query outputs.
+Q1 JavaScript queries the canonical embedded `app_user.playlist.playlist_song` structure and looks up song details. The earlier independent-playlist lookup variant was used to check adaptation; it remains in Git history and is not the current canonical Q1. Q2 SQL includes the corrected `SS.style_id` join and formatting changes. These revisions do not by themselves establish correspondence with the published query outputs.
