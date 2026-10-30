@@ -15,6 +15,10 @@ The three Ecore files in this directory were copied byte-for-byte from `metamode
 
 These changes resolve the specific missing-feature and lower-bound discrepancies identified in the earlier Ecore files. They do not automatically validate the selected models or existing runtime libraries.
 
+## Implementation alignment
+
+The OneDrive Ecores are retained for the planned implementation update. See [COMPATIBILITY.txt](COMPATIBILITY.txt) for the three confirmed alignment areas and the distinction between deployment configuration and model independence.
+
 ## Compatibility checks still needed
 
 The Document datatype enumeration has changed its default literal: BOOLEAN was zero in the development file, whereas STRING is zero here. Old XMI files with an omitted datatype can consequently acquire a different meaning when loaded with the new Ecore. Existing Array instances may also lack the newly required name. Do not silently relabel or migrate those files; validate them against the final mappings and software first.

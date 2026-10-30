@@ -1,0 +1,29 @@
+Metamodel and implementation compatibility
+=========================================
+
+The Ecore files in this directory are preserved unchanged from the group
+OneDrive metamodels archive. They are the definitions selected for the
+implementation update; their provenance and hashes are recorded alongside them.
+
+The implementation and generated runtime libraries still need to be aligned
+with these definitions in three areas:
+
+1. Document: support Reference.targetShareability in the generated runtime
+   and in the forward and reverse mappings. Review datatype handling and
+   required features against this Ecore when regenerating the runtime.
+2. Relational: allow Table.keys to be empty, including tables without a
+   primary key such as TPC-C history.
+3. U-Schema: allow SchemaType.aggregate to be absent for root entities that
+   have no owning aggregate.
+
+After updating the implementation, regenerate the EMF code and matching JARs,
+rebuild the dependent projects, and validate the case models and tests before
+considering this a consistent runnable release. Replacing an Ecore file alone
+is not sufficient. No implementation update is included in this note.
+
+Deployment note
+---------------
+Localhost, default ports and fixed example credentials are deployment
+configuration restrictions of the prototype. They do not, by themselves,
+limit the model independence of the migration approach. Connection settings
+should be documented or parameterized separately from the mapping rules.
