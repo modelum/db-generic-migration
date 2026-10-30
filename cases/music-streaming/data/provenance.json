@@ -24,6 +24,11 @@
       "file": "paper-row-counts.json",
       "sha256": "94def0ee01f477db05fc35d6f362154b343074d85cbaf04e1e41e727cba71477",
       "status": "derived from Table 6; not a recovered AWS file"
+    },
+    {
+      "file": "count-source-rows.sql",
+      "sha256": "d6b0f5e991a4772251c8bc37c27bfaf6f8df9826fa0eacfe48d032e8a1267d98",
+      "status": "new read-only packaging aid; table names checked against selected relational XMI; not executed against a database"
     }
   ]
 }

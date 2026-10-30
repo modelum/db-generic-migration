@@ -48,3 +48,13 @@ The unchanged BATCH_SIZE=5,000 controls source-data population. It is separate f
 ## Verification status
 
 Both Python files were parsed statically; all statements outside DATASET_CONFIG have identical ASTs. Copy integrity and parameter-derived counts were checked. No generator, PostgreSQL load or migration was executed. Reproduction and dependency validation remain pending.
+
+## Recording a prepared instance
+
+After generation, record row counts without changing the data:
+
+```sh
+psql -X --dbname=YOUR_MUSIC_DATABASE --set=ON_ERROR_STOP=1 --file=cases/music-streaming/data/count-source-rows.sql
+```
+
+Run from the repository root and replace the database name with the dedicated source instance; configure host/user authentication separately. The query reads the eight tables in `public`. Compare its output with `paper-row-counts.json`, retaining the actual counts, selected size and generator-copy hash as a new run record. Random song_style counts can differ. This helper is a new packaging aid, not an original evaluation output, and has not been run against PostgreSQL.

@@ -33,3 +33,5 @@ The paper does not identify an exact AWS instance type, operating-system image, 
 The Music Service adaptation correction is documented in [trace adaptation](../experiments/trace-adaptation/). It also applies to the TPC-C attribution in Section 6.1's adaptation-configuration paragraph of the supplied manuscript.
 
 A complete runnable container environment and tested build/launch recipe are not supplied yet. The database versions reported above must not be confused with exact dependency compatibility verified for every recovered binary. No infrastructure or database execution was performed during packaging.
+
+[DATA-PREPARATION.md](DATA-PREPARATION.md) brings together preparation routes, source-count checks and per-instance records for the three cases.
