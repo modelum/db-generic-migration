@@ -1,11 +1,9 @@
 # Schema validation
 
-Recovered expected Document models are available for [Music Streaming](../../cases/music-streaming/expected/), [TPC-C](../../cases/tpcc/expected/) and [Northwind](../../cases/northwind/expected/). Music Streaming and Northwind also include expected U-Schema models. These are preserved source artifacts, not evidence of successful comparison runs.
+Compare generated target schemas with the expected models for [Music Streaming](../../cases/music-streaming/expected/), [TPC-C](../../cases/tpcc/expected/) and [Northwind](../../cases/northwind/expected/). Music Streaming and Northwind also include expected U-Schema models. Inputs and generated outputs are organized in the corresponding case folders.
 
-Generated candidates remain separate in each case's generated directory. The TPC-C recovered alternative is retained separately in [recovered-tpcc-variant/](recovered-tpcc-variant/).
+The evaluation used Eclipse EMF Compare and visual inspection of differences. No saved EMF Compare report is supplied. The separately developed EMFComparator tool was not used.
 
-The paper describes incremental mapping tests and comparison of generated target Document models with expected models, complemented by manual inspection (Sections 6.2 and 6.3.1). Reproduction requires matching source/runtime versions, a documented comparison configuration and the corresponding inputs.
+Load matching model/runtime versions in Eclipse, compare the intended generated/expected pair, and inspect structural differences using the mapping specifications. Record the compared filenames, metamodel versions and matching configuration for a new comparison. The [round-trip guide](../roundtrip/) covers the separate comparison of reconstructed relational schemas with their original inputs.
 
-The authors confirm that the evaluation used Eclipse EMF Compare and visual inspection of differences, without retaining a comparison report. The separate, internally developed EMFComparator tool was not used. For round-trip reference models and recovered outputs, see [roundtrip](../roundtrip/).
-
-Only XML parsing, artifact provenance and copy integrity have been checked during packaging. Comparison procedures, EMF validation and saved comparison outputs are not included as completed verification. No successful comparison result should be inferred from the filenames.
+The TPC-C [alternative model variant](recovered-tpcc-variant/) is kept separate from the case's selected generated models. Consult its notes before choosing a comparison pair. Later Ecore revisions are described in [metamodel version notes](../../software/metamodels/); they should not be imposed on the earlier experimental models without an explicit version change.

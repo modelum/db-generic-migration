@@ -1,5 +1,5 @@
-# flat-copy
+# Flat-copy implementation
 
-Source snapshot: [TestSpeed](../source-projects/TestSpeed/).
+[TestSpeed](../source-projects/TestSpeed/) copies one relational table into a MongoDB collection in batches of 1,000. It is independent of the model and trace transformation chain.
 
-See the [dependency map](../source-projects/DEPENDENCIES.md) and [source provenance](../source-projects/provenance.json). Source files are recovered unchanged; implementation alignment, compilation and execution validation have not yet been completed.
+See the [baseline experiment guide](../../experiments/flat-copy/) for arguments, connection settings, table lists and reported results. Build requirements are listed in [DEPENDENCIES.md](../source-projects/DEPENDENCIES.md).

@@ -27,7 +27,7 @@ The paper does not identify an exact AWS instance type, operating-system image, 
 - [Metamodel compatibility](../software/metamodels/COMPATIBILITY.txt): differences between selected Ecores and preserved runtime implementations.
 - [Music Streaming data](../cases/music-streaming/data/): recovered generator and paper dataset configuration. Generator population batch settings are distinct from the migration insert batch above.
 - [TPC-C data](../cases/tpcc/data/): HammerDB 5.0 TPROC-C, 1/10/100 warehouses and 1/4/6 build virtual users. Virtual users populate datasets, not concurrent migration workers; no transactional benchmark workload is run.
-- [Northwind data](../cases/northwind/data/): fixed recovered data and PostgreSQL 16 loading aids, inspected statically but not executed during packaging.
+- [Northwind data](../cases/northwind/data/): fixed supplied data and PostgreSQL 16 loading aids, inspected statically but not executed during packaging.
 - [Recovered executable inventory](../software/EXECUTABLES.md): binary identity and observed entry-point differences.
 
 The Music Service adaptation correction is documented in [trace adaptation](../experiments/trace-adaptation/). It also applies to the TPC-C attribution in Section 6.1's adaptation-configuration paragraph of the supplied manuscript.

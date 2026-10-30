@@ -1,9 +1,7 @@
-# TPC-C expected Document model candidate
+# TPC-C expected Document model
 
-The XMI and its derivation notes are unchanged files recovered from the group OneDrive schema comparison folder. The notes explicitly state that the expected model was derived from mapping specifications rather than copied from the generated model. This documents the claimed derivation; independent review and final paper correspondence remain pending.
+The XMI and accompanying notes describe a Document schema derived from the mapping specifications. Its relational input is [TPC-C-relational-sinPK.xmi](../source/TPC-C-relational-sinPK.xmi). The notes exclude the order_line-to-stock foreign key because the evaluated mapping does not support foreign keys targeting associative tables.
 
-The expected source is TPC-C-relational-sinPK.xmi, whose recovered ZIP copy matches the selected source after line-ending normalization. The notes explicitly omit order_line to stock because FKs targeting associative tables are not supported by the current mapping. The expected model contains seven document types, DECIMAL and temporal types, and false targetShareability on the reversed warehouse.districts, district.customers and customer.orders references.
+The expected model contains seven document types, DECIMAL/temporal types and explicit false targetShareability values on the reversed warehouse.districts, district.customers and customer.orders references. These details differ from the generated implementation artifacts and must be interpreted with the [metamodel version notes](../../../software/metamodels/) rather than hidden by editing the expected file.
 
-This candidate is not equal to the recovered generated Document models. Do not edit the expected file solely to remove differences. Neither a successful EMF Compare run nor agreement with the final published comparison has been established during packaging.
-
-File hashes and archive entries are recorded in provenance.json. Original bytes are preserved; no model transformation or validation engine has been run.
+Use [schema-validation instructions](../../../experiments/schema-validation/) to inspect differences. File and note origins are recorded in `provenance.json`. No new EMF comparison is supplied with this package.

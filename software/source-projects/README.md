@@ -1,10 +1,8 @@
-# Migration source projects
+# Implementation projects
 
-These are unchanged source snapshots of the eight active projects identified by the maintainers, from the development repository. DataMigration is updated to commit 81179f6325dbdaea6c31205405939366b71bb824; the other seven projects retain commit 3d422b9df84dd66332d7bb855c717b5c3ace279b. Original Eclipse project names and tracked text files, generated Java sources and supporting models are preserved. The source checkout was not modified.
+DataMigration uses development revision `81179f6325dbdaea6c31205405939366b71bb824`, with nine connection/model parameters. The other seven projects use revision `3d422b9df84dd66332d7bb855c717b5c3ace279b`. Per-project versions and file origins are listed in `provenance.json`.
 
-This is not a validated build or executable distribution. See [DEPENDENCIES.md](DEPENDENCIES.md) before importing or running a project. Original launchers contain local database configuration and experimental code; inspect their behavior before execution.
-
-`provenance.json` records every included file and excluded JAR/ZIP/backup file. Binaries are inventoried rather than promoted as final dependencies. Binary archives and BAK directories were not copied.
+See [DEPENDENCIES.md](DEPENDENCIES.md) for build requirements and [migration instructions](../data-migrator/configurable-2026-10-30/) for the supplied executable. Dependency JARs are inventoried in provenance; they are not all bundled with these source projects.
 
 ## Project roles
 
@@ -21,6 +19,7 @@ This is not a validated build or executable distribution. See [DEPENDENCIES.md](
 
 The active relational adapter is DataMigration/src/um/modelum/migration/adapter. Other adapter projects from the development repository are outside this active selection.
 
-## Metamodel distinction
 
-The Ecore and generated runtime code inside these snapshots remain exactly as committed upstream. They are not silently replaced by the selected OneDrive Ecores in [../metamodels/](../metamodels/). The implementation alignment described in [COMPATIBILITY.txt](../metamodels/COMPATIBILITY.txt) must be completed before the combined package is considered runnable and consistent with those definitions. Supporting model snapshots are not independently validated expected outputs.
+## Metamodel versions
+
+The Ecores and runtime sources within these projects are retained with their project versions. The definitions under [metamodels](../metamodels/) include changes identified after the TPC-C experiments; adopting them is a subsequent implementation task, not a prerequisite to interpreting or reproducing the reported executions. See [version notes](../metamodels/COMPATIBILITY.txt).

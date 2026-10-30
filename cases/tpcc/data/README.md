@@ -26,7 +26,7 @@ These virtual users were used for database preparation only, not for running a t
 6. Export the schema through PostgreSQL pg_dump. The recovered [source files](../source/) contain the schema-only SQL dump and selected relational XMI; the dump does not contain the source data.
 7. For the paper's schema-transformation input, the DDL was converted to relational XMI through a custom SQL parser and logical foreign keys were added to the model because the generated database lacked those constraints. Use and inspect the recovered XMI when reproducing that input; do not treat a fresh SQL parse without those additions as the same model.
 
-This is a documented reconstruction of the setup from the paper and recovered author information, not an archived original AWS automation script. No HammerDB generation or database connection has been executed during packaging. Connection-specific commands and an end-to-end tested setup script are not supplied here.
+This is a documented reconstruction of the setup from the paper and the experimental configuration, not an archived original AWS automation script. No HammerDB generation or database connection has been executed during packaging. Connection-specific commands and an end-to-end tested setup script are not supplied here.
 
 ## Source-model scope
 

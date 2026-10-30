@@ -7,13 +7,13 @@ This directory makes the results reported in the paper available as CSV tables. 
 | [scaling/music-streaming.csv](scaling/music-streaming.csv) | Music Streaming S/M/L sizes, elapsed times and throughput, Table 9 | Paper transcription |
 | [scaling/tpcc.csv](scaling/tpcc.csv) | TPC-C S/M/L sizes, elapsed times and throughput, Table 10 | Paper transcription |
 | [flat-copy/summary.csv](flat-copy/summary.csv) | Both L flat-copy baselines and complete-migration times, Section 6.4 | Paper transcription |
-| [flat-copy/music-streaming-L-by-table.csv](flat-copy/music-streaming-L-by-table.csv) | Eight per-table counts and times from recovered output | Recovered-output extraction |
+| [flat-copy/music-streaming-L-by-table.csv](flat-copy/music-streaming-L-by-table.csv) | Eight per-table counts and times from existing output | Recovered-output extraction |
 | [roundtrip/preservation-metrics.csv](roundtrip/preservation-metrics.csv) | Precision, recall and F1 for three cases, Table 8 | Paper transcription |
 | [query-equivalence/summary.csv](query-equivalence/summary.csv) | Q1-Q9 cardinalities and reported equivalence indicators, Table 11 | Paper transcription |
 
 ## Sources and interpretation
 
-[provenance.json](provenance.json) identifies the author-supplied manuscript snapshot by SHA-256, its table/section locators, and the recovered baseline source. The public [arXiv preprint](https://arxiv.org/abs/2604.22415) may differ from that manuscript snapshot; do not assume that every arXiv version has the same table numbering or results.
+[provenance.json](provenance.json) identifies the author-supplied manuscript snapshot by SHA-256, its table/section locators, and the baseline source. The public [arXiv preprint](https://arxiv.org/abs/2604.22415) may differ from that manuscript snapshot; do not assume that every arXiv version has the same table numbering or results.
 
 `paper_transcription` means a value copied from the paper, with elapsed times expressed in seconds. `recovered_output_extraction` means a numeric value extracted from an existing output document. Neither label means a new run, an independently verified result, or a saved EMF Compare report. Internal working documents and earlier measurements are not published here.
 

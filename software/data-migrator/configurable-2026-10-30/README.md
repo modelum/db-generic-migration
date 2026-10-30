@@ -4,7 +4,7 @@ This newly supplied executable accepts connection parameters. It is distinct fro
 
 ## Prerequisites and invocation
 
-Use Java 21 or later (entry-point class-file version 65), accessible PostgreSQL and MongoDB servers, a prepared relational source database and the matching relational XMI model. The executable distribution has not been run during packaging.
+Use Java 21 or later (entry-point class-file version 65), accessible PostgreSQL and MongoDB servers, a prepared relational source database and the matching relational XMI model. The executable has been tested by its developer. It has not been independently rerun during package preparation.
 
 Place a **copy** of the input XMI next to the JAR in a separate working directory. Run from that directory so the model outputs and relative trace location remain together. The first argument is the model filename without `.xmi`.
 
@@ -34,7 +34,7 @@ Replace example connection values with the intended configuration. Use a dedicat
 
 ## Music Service behavior
 
-**The example above activates schema adaptation.** When argument 1 is exactly `MusicService-relational`, the entry point applies the Music adaptation sequence: disaggregate playlist, rename app_user to user_data and remove is_premium. It saves/reloads `MusicService.trace` and continues migration from the adapted model. It therefore does not represent the canonical embedded-playlist Q1 scenario. The prototype intentionally integrates this predefined adaptation as a preliminary demonstration, selected by the exact, case-sensitive model basename rather than a general adaptation configuration interface. Connection parameters do not change that selection mechanism. There is no separate adaptation-enable/disable argument in this interface. This documented example reproduces the adapted scenario; it is not presented as a command for the canonical Music query scenario.
+**The example above activates schema adaptation.** When argument 1 is exactly `MusicService-relational`, the entry point applies the Music adaptation sequence: disaggregate playlist, rename app_user to user_data and remove is_premium. It saves/reloads `MusicService.trace` and continues migration from the adapted model. It therefore does not represent the canonical embedded-playlist Q1 scenario. The prototype intentionally integrates this predefined adaptation as a preliminary demonstration, selected by the exact, case-sensitive model basename rather than a general adaptation configuration interface. Connection parameters do not change that selection mechanism. There is no separate adaptation-enable/disable argument in this interface. This example selects the adapted scenario. For canonical Music, rename a working copy of the XMI to `MusicService-canonical.xmi` and use `MusicService-canonical` as argument 1, leaving the model contents unchanged. See the [migration guide](../../../experiments/scaling/RUNNING.md).
 
 The updated source names its timing report `Migration_times.txt`. The program writes intermediate U-Schema, Document and Mongoose artifacts using the model basename next to the JAR. Keep copies of the original input and any traces; adaptation saves over its intermediate model/trace paths. See [adaptation](../../../experiments/trace-adaptation/) for recovered outputs and experiment scope.
 

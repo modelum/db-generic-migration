@@ -1,6 +1,6 @@
-# music-streaming recovered queries
+# Music Streaming queries
 
-These are candidate SQL/MongoDB query pairs recovered from evaluation documents and associated with the query purposes in Table 11. Some queries have since been revised in the repository. The current suite has not been executed or validated during packaging as the final evaluation suite. IDs identify the intended paper correspondence, not proof that this exact text produced the published result.
+SQL/MongoDB query pairs corresponding to the access patterns in Table 11.
 
 | ID | Recovered purpose | Files |
 | --- | --- | --- |
@@ -8,14 +8,10 @@ These are candidate SQL/MongoDB query pairs recovered from evaluation documents 
 | Q2 | Styles associated with a selected song | [Q2.sql](Q2.sql), [Q2.js](Q2.js) |
 | Q3 | Count of users satisfying a listening-count condition | [Q3.sql](Q3.sql), [Q3.js](Q3.js) |
 
-## Provenance and use
+## Use
 
-Original evaluation documents and alternate drafts are preserved outside this public repository. `provenance.json` identifies the source document, its hash and section, the original extracted-file hash, and the current file hash. Initial extraction joined Word paragraph text with LF line endings. For subsequently revised files, revision commit IDs distinguish the current query from that initial extraction.
+Use the actual source database and its migrated counterpart, with matching filter parameters and schema representation. The JavaScript uses `db(...).collection(...)` client notation. [Comparison instructions](../../../experiments/query-equivalence/COMPARISON.md) describe field correspondence, duplicates, dates and numeric values for a new reproduction.
 
-The JavaScript retains the original database-client notation db(...).collection(...); it is not presented as a tested mongosh command. Database names, example identifiers, formatting and query expressions may have been revised; consult the recorded commits. Check the intended database, generated field names, parameters and client dialect before execution.
+Q1 uses canonical embedded playlists. The adaptation scenario instead uses independent playlists and is documented separately.
 
-SQL/MongoDB result normalization, comparison outputs and the final selection are not supplied by these files. Do not infer query equivalence from their presence in the package.
-
-## Repository revisions
-
-Q1 JavaScript queries the canonical embedded `app_user.playlist.playlist_song` structure and looks up song details. The earlier independent-playlist lookup variant was used to check adaptation; it remains in Git history and is not the current canonical Q1. Q2 SQL includes the corrected `SS.style_id` join and formatting changes. These revisions do not by themselves establish correspondence with the published query outputs.
+Query revisions and source-document references are recorded in `provenance.json` and Git history. The [reported results](../../../results/query-equivalence/) are distinct from any new-run query outputs. These scripts were not executed during package preparation.

@@ -1,7 +1,26 @@
 # Flat-copy baseline
 
-The manuscript reports L-instance flat-copy baselines of 370 seconds for Music Streaming and 774 seconds for TPC-C, using batches of 1,000. [TestSpeed](../../software/source-projects/TestSpeed/) contains the single-table baseline implementation, with the local connection assumptions described in [dependencies](../../software/source-projects/DEPENDENCIES.md).
+The baseline copies each relational table into its own MongoDB collection, without U-Schema mappings, embedding or reference reconstruction. The paper reports L-instance elapsed times of 370 seconds for Music Streaming and 774 seconds for TPC-C, using batches of 1,000.
 
-[results/flat-copy](../../results/flat-copy/) includes both reported baseline values and the recovered Music L per-table counts/times. The recovered Music displayed times sum to 370 seconds; these are rounded per-table measurements, not evidence of a single global timer. Provenance is recorded in [results](../../results/).
+## Implementation and invocation
 
-A complete tested sequence covering all tables, selection of the matching executable and the original TPC-C baseline output remain to be established. No new baseline was executed during packaging.
+[TestSpeed](../../software/source-projects/TestSpeed/) implements a single-table copy. Its entry point is `Speed`; the source uses localhost, standard database ports, PostgreSQL music/music credentials and unauthenticated MongoDB. It accepts source database, target database and table name. These original connection settings are separate from the new configurable DataMigration interface.
+
+After assembling the dependencies and exporting the TestSpeed project to a runnable `testSpeed.jar`, the source interface is:
+
+```sh
+java -jar testSpeed.jar SOURCE_DATABASE TARGET_DATABASE TABLE_NAME
+```
+
+A rebuilt baseline executable is not supplied in this folder; see [dependencies](../../software/source-projects/DEPENDENCIES.md). Use a dedicated target with none of the table-named collections already present, since the launcher creates each collection. Execute once per table against the L source, retaining each console output.
+
+| Case | Tables to copy |
+| --- | --- |
+| Music Streaming | app_user, song, musical_style, song_style, playlist, playlist_song, listening, most_recent_song |
+| TPC-C | warehouse, district, customer, history, item, stock, orders, new_order, order_line |
+
+Each invocation copies one complete table; no relationship-based ordering is required for this baseline. Record per-table rows and times and the method used to combine timings. The original Music displayed times are rounded per-table values summing to 370 seconds, not evidence of a single global timer. Keep that distinction when comparing a new aggregate measurement.
+
+## Results
+
+[results/flat-copy](../../results/flat-copy/) contains both reported baseline values and the Music L per-table count/timing breakdown, with source metadata. The original TPC-C console output is not included. This source-based procedure has not been newly executed during package preparation; it does not add timing observations to the paper's results.

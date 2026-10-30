@@ -1,9 +1,7 @@
-# data-migrator
+# Data migrator
 
-Source snapshot: [DataMigration](../source-projects/DataMigration/).
+The [configurable executable](configurable-2026-10-30/) accepts the relational model basename and PostgreSQL/MongoDB connection parameters. [RUNNING.md](../../experiments/scaling/RUNNING.md) provides case-specific input names, commands and outputs, including canonical versus adapted Music Service.
 
-See the [dependency map](../source-projects/DEPENDENCIES.md) and [source provenance](../source-projects/provenance.json). Source files are recovered unchanged; implementation alignment, compilation and execution validation have not yet been completed.
+[DataMigration](../source-projects/DataMigration/) contains the corresponding parameterized project update at revision `81179f6325dbdaea6c31205405939366b71bb824`. Dependencies are documented in [DEPENDENCIES.md](../source-projects/DEPENDENCIES.md). Source-to-binary identity has not been checked through an independent rebuild.
 
-## Configurable executable
-
-[configurable-2026-10-30](configurable-2026-10-30/) contains the newly supplied nine-argument migrator, usage and binary provenance. This executable has not been run during packaging. Its MusicService-relational input branch automatically applies adaptation; consult the usage note before selecting a canonical Music reproduction command. The DataMigration source snapshot has been updated to development commit `81179f6325dbdaea6c31205405939366b71bb824`, which introduces the nine-argument interface and `Migration_times.txt`. No rebuilt-binary equivalence check has been performed.
+The supplied executable has been tested by its developer. Later metamodel revisions are a separate development task; they are not prerequisites for reproducing the evaluation implementation.

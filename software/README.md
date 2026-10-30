@@ -1,9 +1,14 @@
 # Software
 
-[Source projects](source-projects/) contains unchanged snapshots of the eight active development projects. [DEPENDENCIES.md](source-projects/DEPENDENCIES.md) documents project roles, dependency order and recovered build configuration. Source provenance is included.
+| Component | Location |
+| --- | --- |
+| Configurable migration executable and instructions | [data-migrator](data-migrator/) |
+| Schema transformations and round-trip | [schema-transformations](schema-transformations/) |
+| Trace updater | [trace-updater](trace-updater/) |
+| Flat-copy baseline | [flat-copy](flat-copy/) |
+| Implementation projects | [source-projects](source-projects/) |
+| Metamodel definitions and version notes | [metamodels](metamodels/) |
 
-[metamodels/](metamodels/) contains the selected OneDrive Ecore candidates. The original Ecore/runtime sources within source-projects are retained unchanged, and their alignment with the selected definitions remains pending. See [COMPATIBILITY.txt](metamodels/COMPATIBILITY.txt).
+[DEPENDENCIES.md](source-projects/DEPENDENCIES.md) records project dependencies. [EXECUTABLES.md](EXECUTABLES.md) distinguishes executable versions. The configurable migrator has been tested by its developer; a clean-checkout build and execution of the complete public package have not been independently verified during preparation.
 
-The folders data-migrator, schema-transformations, trace-updater and flat-copy provide entry points to the corresponding sources. This is not yet a compiled or validated executable distribution.
-
-[EXECUTABLES.md](EXECUTABLES.md) inventories recovered AWS JAR variants and distinguishes their observed entry-point behavior without treating them as a validated distribution.
+The later Ecore revisions are separate from the implementation used for the evaluation. Reproducing those experiments does not require adopting the later revisions or regenerating their models.

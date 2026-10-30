@@ -30,6 +30,6 @@ DataMigration accepts nine arguments: relational model basename, PostgreSQL host
 
 DataMigration writes intermediate/target models and `Migration_times.txt`. Its MusicService entry path intentionally contains a preliminary, predefined intermediate adaptation example, selected by the exact model basename `MusicService-relational`; this is not a general adaptation-selection interface. RoundTripV2 contains a trace-persistence test that terminates the program early; the complete round-trip launcher must be reviewed before use. Outputs must be directed to a separate working location rather than overwriting preserved reference artifacts.
 
-## Next build preparation
+## Build preparation
 
-Confirm the selected Ecores and implement the documented alignment; regenerate matching EMF classes and JARs; make dependency paths portable; build Trace and the updater; build the migrator and schema chain; then run mapping/model checks and a small migration. Any resulting code changes and new outputs must be identifiable separately from these unchanged upstream snapshots.
+Assemble the dependencies for the selected project/runtime versions and check the launchers before a new build. Later Ecore changes listed in COMPATIBILITY.txt belong to subsequent development and are not required to reproduce the earlier experiments. A build incorporating those changes must be identified separately from the evaluation implementation.

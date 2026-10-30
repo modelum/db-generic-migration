@@ -1,5 +1,5 @@
-# Historical metamodels
+# Earlier metamodel definitions
 
-`development-snapshot/` preserves the three Ecore candidates initially recovered from the development repository. Its provenance file identifies their source paths. `uschema-without-aggregate-backlink.ecore` is an additional earlier U-Schema variant from the development repository top-level metamodels directory.
+`development-snapshot/` contains earlier definitions from the development repository, with source paths recorded in its provenance metadata. `uschema-without-aggregate-backlink.ecore` is an additional earlier U-Schema variant.
 
-The current candidates are the OneDrive files in the parent directory. Historical files are retained for comparison, not as additional runtime packages to register.
+The definitions in the parent directory include later revisions. Select the definitions matching the implementation/model version, rather than assuming the newest Ecore was used in the experiments. Do not register variants of the same namespace URI together. See the [version notes](../README.md).

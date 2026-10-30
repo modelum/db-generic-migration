@@ -1,3 +1,3 @@
-# Recovered TPC-C generated variant
+# TPC-C alternative schema variant
 
-Unchanged U-Schema and Document models from TPC-C.zip, retained for comparison with the recovered expected model. These are not a final validated output pair. Relative to the selected cases/tpcc/generated candidates, textual differences after line-ending normalization concern order-line/new-order versus order_line/new_order names, including U-Schema entities and aggregates. Do not overwrite either variant merely to harmonize spelling.
+This U-Schema/Document pair uses `order-line` and `new-order` names where the selected [case models](../../../cases/tpcc/generated/) use `order_line` and `new_order`. It is supplied separately for comparison with the expected model and its notes. Keep each pair's names consistent when interpreting entity and aggregate references; do not overwrite one variant solely to align spelling.

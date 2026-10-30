@@ -4,4 +4,4 @@ Music Streaming and TPC-C are evaluated at S, M and L under the manuscript's Sec
 
 Reported sizes, elapsed times and throughputs are available in [results/scaling](../../results/scaling/) with manuscript provenance. These CSVs are paper transcriptions, not results of a new run of the packaged sources. Northwind has a fixed small instance, not this S/M/L scaling series.
 
-A tested executable/dependency combination and complete launch/measurement instructions remain to be established. Consult [dependencies](../../software/source-projects/DEPENDENCIES.md), including the Music basename-triggered adaptation path, before selecting a migration executable. No scaling experiment was executed during packaging.
+See [RUNNING.md](RUNNING.md) for the configurable executable, canonical/adapted Music input selection, connection arguments and outputs. The supplied executable has been tested by its developer; no new performance measurement is claimed by this guide.
