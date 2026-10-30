@@ -5,31 +5,31 @@
   "evidence_scope": "The included recovered outputs document the sequential Music Service execution. No new experimental runs are included.",
   "files": [
     {
-      "path": "recovered-music-sequence/MusicService-relational.xmi",
+      "path": "music-service-sequence/MusicService-relational.xmi",
       "archive_member": "MusicService-relational.xmi",
       "sha256": "279b343524b7dcd7b0c549f4afec2ce14c3f08e6f6b03f45b8f500a95f5d520c",
       "role": "relational input"
     },
     {
-      "path": "recovered-music-sequence/MusicService-relational-uschema.xmi",
+      "path": "music-service-sequence/MusicService-relational-uschema.xmi",
       "archive_member": "MusicService-relational-uschema.xmi",
       "sha256": "007ef748cb378fae6d053db995b800f4d2d84a9a9bbc722f7e4773abd2c5728e",
       "role": "recovered adapted output"
     },
     {
-      "path": "recovered-music-sequence/MusicService-relational-document.xmi",
+      "path": "music-service-sequence/MusicService-relational-document.xmi",
       "archive_member": "MusicService-relational-document.xmi",
       "sha256": "c21b238dfb3fc9211c8c5b2ff22d3c1b51bbd545277a7e20ea39a7679b0a0c55",
       "role": "recovered adapted output"
     },
     {
-      "path": "recovered-music-sequence/MusicService-relational-mongoose.js",
+      "path": "music-service-sequence/MusicService-relational-mongoose.js",
       "archive_member": "MusicService-relational-mongoose.js",
       "sha256": "067ce14f40396d889f43d583a53b273eebd2330d8f42c4e3d4b5d876494912a5",
       "role": "recovered adapted output"
     },
     {
-      "path": "recovered-music-sequence/MusicService.trace",
+      "path": "music-service-sequence/MusicService.trace",
       "archive_member": "MusicService.trace",
       "sha256": "1d30b5da70462fa9a5ee21cafad62d8fe7bc578bd3e27fd575f961e8747c1485",
       "role": "recovered adapted output"
