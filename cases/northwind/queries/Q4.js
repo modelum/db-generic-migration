@@ -1,10 +1,15 @@
-db('borrardb3').collection('shippers').aggregate([
+db('Northwind').collection('shippers').aggregate([
+  // 1. Filtramos por el transportista "Speedy Express"
   { 
     $match: { "company_name": "Speedy Express" } 
   },
+
+  // 2. Descomponemos su array de orders para procesar cada ID individualmente
   { 
     $unwind: "$orders" 
   },
+
+  // 3. JOIN con la colección "orders" para traer la fecha y los detalles
   {
     $lookup: {
       from: "orders",
@@ -14,6 +19,8 @@ db('borrardb3').collection('shippers').aggregate([
     }
   },
   { $unwind: "$detalles_orden" },
+
+  // 4. JOIN con "customers" buscando qué cliente tiene este ID de orden en SU array
   {
     $lookup: {
       from: "customers",
@@ -23,12 +30,16 @@ db('borrardb3').collection('shippers').aggregate([
     }
   },
   { $unwind: "$cliente" },
+
+  // 5. Ordenamos por nombre de empresa y fecha de pedido
   {
     $sort: {
       "cliente.company_name": 1,
       "detalles_orden.order_date": 1
     }
   },
+
+  // 6. Formateamos la salida final
   {
     $project: {
       _id: 0,
