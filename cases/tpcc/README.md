@@ -10,4 +10,4 @@ Status: source files copied and integrity checked; database loading, schema corr
 
 ## Expected model recovered
 
-[expected/](expected/) contains a specification-derived expected-model candidate and its original notes. Its differences from the recovered generated models are recorded in the schema-validation comparison inventory. This reference has not yet been validated against a final generated output.
+[expected/](expected/) contains a specification-derived expected-model candidate and its original notes. It remains distinct from the recovered generated models. This reference has not yet been validated against a final generated output.

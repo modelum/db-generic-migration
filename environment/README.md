@@ -1,5 +1,5 @@
 # Execution environment
 
-[compatibility/](compatibility/) records a static audit of the recovered metamodels, generated case models and runtime artifacts. The recovered set is not yet a verified runnable release.
+This folder is reserved for dependency versions, database setup, software build instructions and the selected executable configuration. The package remains under preparation; a complete runnable environment is not yet provided.
 
-Dependency versions, database setup, software build instructions and the final executable configuration remain pending. Northwind has separate [data loading instructions](../cases/northwind/data/README.md), not yet executed against PostgreSQL.
+Northwind has separate [data loading instructions](../cases/northwind/data/README.md). Those instructions have been inspected statically but have not yet been executed against PostgreSQL.

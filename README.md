@@ -2,35 +2,43 @@
 
 Replication package under preparation for *A Model-Driven Approach to Database Migration with a Unified Data Model*.
 
-The package is organized around the final empirical evaluation in the paper: Music Streaming, TPC-C, Northwind, schema validation, round-trip reconstruction, trace-aware adaptation, data migration scaling, a flat-copy baseline, and query-result equivalence.
+## Paper
 
-## Start here
+María J. Ortín, José R. Hoyos, and Jesus García-Molina. **A Model-Driven Approach to Database Migration with a Unified Data Model**. arXiv:2604.22415, 2026.
 
-This is an initial artifact recovery snapshot, not a validated runnable release.
+- [Read the preprint on arXiv](https://arxiv.org/abs/2604.22415)
+- [DOI: 10.48550/arXiv.2604.22415](https://doi.org/10.48550/arXiv.2604.22415)
 
-- [Pending questions and completion criteria](docs/PENDIENTES.md) (Spanish).
-- [Word report](docs/Estado_y_pendientes_replication_package.docx) (Spanish).
-- [Reproduction scope](REPRODUCING.md).
+The arXiv link provides the public preprint. The artifact collection is being organized around the evaluation cases and experiments, with the status of individual artifacts documented in their folders.
 
-## Current status
+## Package status
 
-The folder structure and introductory documentation are prepared. Recovered source schema files for the three cases have been copied with provenance notes and checksums. Their database loading and end-to-end reproducibility have not been verified. The Northwind fixed dataset and statically checked loading aids are also included; database execution remains pending. Recovered generated model candidates for the three cases are included with explicit selection limitations; independent expected-model validation and regeneration remain pending. A specification-derived TPC-C expected-model candidate and comparison inventory are included; discrepancies remain unresolved. Other experimental artifacts are pending. The development repository remains separate.
+This repository is under preparation and is not yet a validated runnable release. It currently includes source schemas for Music Streaming, TPC-C and Northwind, the fixed Northwind dataset and loading aids, recovered model candidates, and metamodel definitions with provenance information. End-to-end reproduction has not yet been verified.
 
 ## Contents
 
-- [software](software/): metamodels, schema transformations, data migrator, trace updater, and flat-copy implementation.
-- [environment](environment/): dependencies and execution environment.
-- [cases](cases/): source schemas, data preparation, expected models, generated reference models, and queries for the three cases.
-- [experiments](experiments/): procedures corresponding to the experiments in the paper.
-- [results](results/): verified reference evidence for the published evaluation.
-- [REPRODUCING.md](REPRODUCING.md): reproduction scope and preparation status.
+- [cases](cases/): source schemas, data preparation and model artifacts for the three cases.
+- [software](software/): metamodels and folders for migration components.
+- [environment](environment/): execution environment documentation.
+- [experiments](experiments/): schema validation, round-trip reconstruction, trace-aware adaptation, scaling, flat-copy baseline and query equivalence.
+- [results](results/): folder reserved for verified reference results.
+- [REPRODUCING.md](REPRODUCING.md): reproduction scope and current availability.
 
-## Artifact conventions
+Artifact notes distinguish recovered candidates from validated references and original files from derived loading aids. Expected models are kept separate from generated outputs; new execution outputs should remain separate from published reference results.
 
-Independently specified expected models must remain separate from generated models. Canonical and adapted schemas must be clearly identified. Original reference results must remain separate from new execution outputs. Historical plans and preliminary experiments do not define the scope of this package.
+## Citation
 
-License, citation metadata, exact software versions, and runnable instructions will be added after verification. No license is granted by this placeholder documentation.
+```bibtex
+@misc{ortin2026migration,
+  title         = {A Model-Driven Approach to Database Migration with a Unified Data Model},
+  author        = {Ortín, María J. and Hoyos, José R. and García-Molina, Jesus},
+  year          = {2026},
+  eprint        = {2604.22415},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.DB},
+  doi           = {10.48550/arXiv.2604.22415},
+  url           = {https://arxiv.org/abs/2604.22415}
+}
+```
 
-## Open metamodel checks
-
-The current [metamodel candidates](software/metamodels/) come from the recovered OneDrive archive. They include targetShareability and allow optional ownership and key references as described in their README. Compatibility with the already recovered model candidates and executable libraries is still pending, especially datatype defaults and required Array names. Earlier development metamodels are retained as historical snapshots.
+License and complete software citation metadata will be supplied with the finalized package. No license is granted by this placeholder documentation.
