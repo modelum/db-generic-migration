@@ -16,7 +16,7 @@ For Music, the reconstructed paper generator changes only DATASET_CONFIG; its so
 
 For TPC-C, data generation and schema-model preparation are separate: the recovered relational XMI includes logical foreign keys added after SQL parsing. Its selected scope excludes the order_line-to-stock relationship. Loading new data does not regenerate or validate that XMI automatically.
 
-Keep prepared data and new outputs separate from recovered reference artifacts. Selected UUID/date/customer parameters in queries must be reviewed against the actual populated source and target pair; recorded cardinalities are not universal oracles for every regenerated dataset. This checklist does not change the query suite or resolve the pending playlist representation selection.
+Keep prepared data and new outputs separate from recovered reference artifacts. Selected UUID/date/customer parameters in queries must be reviewed against the actual populated source and target pair; recorded cardinalities are not universal oracles for every regenerated dataset. Current Q1 targets the canonical embedded-playlist structure; independent playlists belong to the separate adaptation scenario.
 
 ## Current execution boundary
 
