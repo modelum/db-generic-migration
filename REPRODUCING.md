@@ -4,7 +4,7 @@ This document is a preparation checklist, not yet an executable reproduction gui
 
 | Experiment | Scope | Status |
 | --- | --- | --- |
-| Incremental mapping tests and schema validation | Four transformations; generated versus expected Document models for three cases | Artifacts and instructions pending |
+| Incremental mapping tests and schema validation | Four transformations; generated versus expected Document models for three cases | Expected Document artifacts recovered; validation and instructions pending |
 | Round-trip reconstruction | Music Streaming, TPC-C, Northwind; Table 8 | Artifacts and instructions pending |
 | Trace-aware adaptation | Separate supported operations on TPC-C S | Artifacts and instructions pending |
 | Data migration scaling | Music Streaming and TPC-C S/M/L; Tables 9 and 10 | Artifacts and instructions pending |

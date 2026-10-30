@@ -2,7 +2,7 @@
 
 [source/](source/) contains the recovered source schema files, selection notes and checksums. See its README before using the SQL.
 
-Status: source files copied and integrity checked; database loading, schema correspondence and end-to-end reproduction remain unverified. Data preparation, independently specified expected models, final query validation and results are pending. Generated model candidates are documented below.
+Status: source files copied and integrity checked; database loading, schema correspondence and end-to-end reproduction remain unverified. Data preparation, expected-model validation, final query validation and results are pending. Generated model candidates are documented below.
 
 ## Generated model candidates
 
@@ -11,3 +11,7 @@ Status: source files copied and integrity checked; database loading, schema corr
 ## Recovered query candidates
 
 [queries/](queries/) contains SQL/MongoDB candidate pairs associated with Table 11, extracted without semantic changes. This updates the earlier query availability note: final selection and execution validation remain pending.
+
+## Recovered expected models
+
+[expected/](expected/) contains recovered Document and U-Schema expected models, preserved unchanged with provenance and hashes. This updates earlier availability notes: model conformance, independent review and comparison remain unverified.

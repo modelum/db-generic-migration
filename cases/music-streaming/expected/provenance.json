@@ -1,0 +1,22 @@
+[
+  {
+    "file": "MusicService-document-expected.xmi",
+    "origin": "Group OneDrive roundtrip/Roundtrip-expected-models",
+    "archive": "OneDrive_2_30-10-2026.zip",
+    "archive_sha256": "7240d864d936548df13b15e70d7b8a4b15d575de46f280d0f2d88a7e2d2f0baa",
+    "archive_entry": "MusicService-document-expected.xmi",
+    "sha256": "92067f5e3a204a1e5ab6e08e2571823aeb6ad9a1bb275766739079920dd0e615",
+    "model_namespace": "http://www.example.org/documentschema",
+    "status": "recovered expected model; independent review, conformance and comparison not executed during packaging"
+  },
+  {
+    "file": "MusicService-uschema-expected.xmi",
+    "origin": "Group OneDrive roundtrip/Roundtrip-expected-models",
+    "archive": "OneDrive_2_30-10-2026.zip",
+    "archive_sha256": "7240d864d936548df13b15e70d7b8a4b15d575de46f280d0f2d88a7e2d2f0baa",
+    "archive_entry": "MusicService-uschema-expected.xmi",
+    "sha256": "26918a8670ba580c1286d11d5fb76b39426b158266eac404abc127f09e8680b4",
+    "model_namespace": "http://www.modelum.es/uschema",
+    "status": "recovered expected model; independent review, conformance and comparison not executed during packaging"
+  }
+]
