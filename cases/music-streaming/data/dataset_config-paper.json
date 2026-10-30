@@ -1,0 +1,29 @@
+{
+  "S": {
+    "users": 1000,
+    "songs": 5000,
+    "styles": 25,
+    "playlists_per_user": 10,
+    "songs_per_playlist": 20,
+    "listens_per_user": 50,
+    "recent_songs": 10
+  },
+  "M": {
+    "users": 10000,
+    "songs": 50000,
+    "styles": 25,
+    "playlists_per_user": 10,
+    "songs_per_playlist": 20,
+    "listens_per_user": 50,
+    "recent_songs": 10
+  },
+  "L": {
+    "users": 100000,
+    "songs": 500000,
+    "styles": 25,
+    "playlists_per_user": 10,
+    "songs_per_playlist": 20,
+    "listens_per_user": 50,
+    "recent_songs": 10
+  }
+}

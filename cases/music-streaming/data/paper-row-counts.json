@@ -1,0 +1,32 @@
+{
+  "S": {
+    "app_user": 1000,
+    "listening": 50000,
+    "most_recent_song": 10000,
+    "playlist": 10000,
+    "playlist_song": 200000,
+    "song": 5000,
+    "song_style": 10046,
+    "musical_style": 25
+  },
+  "M": {
+    "app_user": 10000,
+    "listening": 500000,
+    "most_recent_song": 100000,
+    "playlist": 100000,
+    "playlist_song": 2000000,
+    "song": 50000,
+    "song_style": 100021,
+    "musical_style": 25
+  },
+  "L": {
+    "app_user": 100000,
+    "listening": 5000000,
+    "most_recent_song": 1000000,
+    "playlist": 1000000,
+    "playlist_song": 20000000,
+    "song": 500000,
+    "song_style": 999945,
+    "musical_style": 25
+  }
+}

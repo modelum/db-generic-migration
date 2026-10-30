@@ -13,3 +13,6 @@ software/source-projects/** -text -whitespace
 
 # Preserve hashes of extracted query candidates across checkouts.
 cases/**/queries/*.js -text -whitespace
+
+# Preserve generator source and prepared-copy provenance hashes.
+cases/music-streaming/data/*.py -text -whitespace
