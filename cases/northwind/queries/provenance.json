@@ -1,0 +1,68 @@
+[
+  {
+    "query": "Q4",
+    "case": "northwind",
+    "file": "Q4.sql",
+    "sha256": "2ec92acd0990f7b6103bcbf401200792b6fbb104cc2f62127f7a5ee09b507382",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q4",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q4",
+    "case": "northwind",
+    "file": "Q4.js",
+    "sha256": "ce64e1abf28b5147d12eb809da723c95467fd90188379b33af7b8435f72821a2",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q4",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q5",
+    "case": "northwind",
+    "file": "Q5.sql",
+    "sha256": "f2b5ad3caee66021a747f7967e284be765e0ce4f05c9e9a4a3a912954019d3d1",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q5",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q5",
+    "case": "northwind",
+    "file": "Q5.js",
+    "sha256": "c9c2580cc66ef98771be90ff803e9fef5c9061454103b47cb3a61382d52c5e60",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q5",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q6",
+    "case": "northwind",
+    "file": "Q6.sql",
+    "sha256": "029a9a7eaf239e26fa9789369c1df06dad935adb7b83119b2a566e641fee18f9",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q6",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q6",
+    "case": "northwind",
+    "file": "Q6.js",
+    "sha256": "f0a40de25d942e34486bee22b72a6d419484c79ffb0065e45fa7013ab8acd560",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q6",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  }
+]

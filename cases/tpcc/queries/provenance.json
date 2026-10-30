@@ -1,0 +1,68 @@
+[
+  {
+    "query": "Q7",
+    "case": "tpcc",
+    "file": "Q7.sql",
+    "sha256": "75cb9de7b6cad47312038bc66f39d98247e2aaadde2b6964ea08f9079bb6bc9f",
+    "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
+    "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
+    "source_section": "Q7",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q7",
+    "case": "tpcc",
+    "file": "Q7.js",
+    "sha256": "ee4ce318f16575c932ff1724c62a1c4f6c200a65b5b1371e042b807860c567e6",
+    "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
+    "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
+    "source_section": "Q7",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q8",
+    "case": "tpcc",
+    "file": "Q8.sql",
+    "sha256": "e44d6770e7e4326d7b57e7c04310b19664800ba99e064fc24569e665f2a5c086",
+    "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
+    "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
+    "source_section": "Q8",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q8",
+    "case": "tpcc",
+    "file": "Q8.js",
+    "sha256": "f182ca2186c3dd143f0da6b3c8196e9c4a122b074331355fb45cb515665452cf",
+    "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
+    "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
+    "source_section": "Q8",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q9",
+    "case": "tpcc",
+    "file": "Q9.sql",
+    "sha256": "2301fcefd720215d2c24958395fd39a60a399dd45ce9626689059f28d233919e",
+    "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
+    "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
+    "source_section": "Q9",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q9",
+    "case": "tpcc",
+    "file": "Q9.js",
+    "sha256": "3197e6f8bf7c53f9ac92ade1982299b24920766395cb08640ce41dda00c8ad56",
+    "source_document": "data-migration-query-comparison-TPCC-mjose.docx",
+    "source_document_sha256": "182cbd19ad38b22c6deea8b807452e89a32af8603572615c82fb935ff768be27",
+    "source_section": "Q9",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  }
+]

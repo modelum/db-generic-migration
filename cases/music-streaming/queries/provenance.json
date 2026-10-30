@@ -1,0 +1,68 @@
+[
+  {
+    "query": "Q1",
+    "case": "music-streaming",
+    "file": "Q1.sql",
+    "sha256": "5f917a2c91559a82d418e865256114f3e4744479d27506751732e345171052a1",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q1",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q1",
+    "case": "music-streaming",
+    "file": "Q1.js",
+    "sha256": "aa855bf9cf7f4f223ffcb00561749c6c0e0ae50a4be748a6981c7cb2dd742fa1",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q1",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q2",
+    "case": "music-streaming",
+    "file": "Q2.sql",
+    "sha256": "92a960c3fb5295aa65f71fe7b42d00664a2e46d1bb02eecd235f9e322669731e",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q2",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q2",
+    "case": "music-streaming",
+    "file": "Q2.js",
+    "sha256": "30c15ab085d6f552f921cf450e1694e613e6b5e8c32865a77be3d45b5a5de0a7",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q2",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q3",
+    "case": "music-streaming",
+    "file": "Q3.sql",
+    "sha256": "1fc00bab4a72ced56851fa1f5473ff64a064c895cd73749ee92022f677a9040a",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q3 (first occurrence)",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  },
+  {
+    "query": "Q3",
+    "case": "music-streaming",
+    "file": "Q3.js",
+    "sha256": "c5825fe1f451cfe536fcd4e9bfd1f75375a67dc8b88ced5f03de90c95294d6d7",
+    "source_document": "data-migration-query-comparison-mjose.docx",
+    "source_document_sha256": "044be95d9daa8efef90fee12ae48caaeea66b940d0cb8f2fdc7999fd9d076081",
+    "source_section": "Q3 (first occurrence)",
+    "extraction": "OOXML paragraph text joined by LF; code expressions copied without semantic edits",
+    "status": "recovered candidate; not executed or validated"
+  }
+]

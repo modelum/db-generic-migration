@@ -1,5 +1,7 @@
-# query-equivalence
+# Query-result equivalence
 
-SQL/MongoDB result comparison for Q1-Q9 in Table 11. Music Streaming and TPC-C use S and M; Northwind uses its fixed instance. Document scalar normalization, ordering, and duplicate preservation.
+Recovered candidate pairs associated with Table 11 are available for [Music Streaming Q1-Q3](../../cases/music-streaming/queries/), [Northwind Q4-Q6](../../cases/northwind/queries/) and [TPC-C Q7-Q9](../../cases/tpcc/queries/). These are unmodified code extractions from evaluation documents, not an executed or validated final suite.
 
-Status: structure prepared; artifacts have not yet been copied or validated.
+The paper evaluates Music Streaming and TPC-C over S and M, and Northwind over its fixed instance. Reproduction requires the matching generated data representation, selected query parameters, scalar/date normalization, and comparison preserving duplicate tuples while disregarding physical order when not specified.
+
+Execution instructions, normalized exports and verified comparison results are not yet included. The presence of SQL and JavaScript files does not establish equivalence or exact correspondence with the final published execution.

@@ -10,3 +10,6 @@
 
 # Preserve unchanged upstream project snapshots, including original line endings.
 software/source-projects/** -text -whitespace
+
+# Preserve hashes of extracted query candidates across checkouts.
+cases/**/queries/*.js -text -whitespace
