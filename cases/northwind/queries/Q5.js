@@ -1,4 +1,4 @@
-db('borrardb3').collection('order_details').aggregate([
+db('Northwind').collection('order_details').aggregate([
   // 1. Filtramos por el ID de la orden en order_details
   { 
     $match: { "order_details_fk_orders": 10248 } 
