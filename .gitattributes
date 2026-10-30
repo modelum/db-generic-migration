@@ -1,0 +1,9 @@
+# Preserve recovered artifact bytes so provenance hashes survive Git checkouts.
+*.xmi -text -whitespace
+*.ecore -text -whitespace
+*.sql -text -whitespace
+*.txt -text -whitespace
+*.docx binary
+*.md text eol=lf
+*.json text eol=lf
+*.sha256 text eol=lf

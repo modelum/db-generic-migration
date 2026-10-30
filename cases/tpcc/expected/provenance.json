@@ -1,0 +1,20 @@
+[
+  {
+    "file": "TPC-C-document-expected.xmi",
+    "archive": "TPC-C.zip",
+    "archive_entry": "TPC-C/TPC-C-document-expected.xmi",
+    "archive_sha256": "6392e5849ac9b2b6339c1accc03aa961aa9cff5d6a799514e2c497409db6a927",
+    "sha256": "21c50dc3f5ce8e00d7ab5e831cb572207fece6b03cccec637e2ec1e9c59be07f",
+    "origin": "Group OneDrive schema-migration comparison folder / TPC-C",
+    "status": "recovered expected-model candidate; final validation pending"
+  },
+  {
+    "file": "TPC-C-document-expected-notes.txt",
+    "archive": "TPC-C.zip",
+    "archive_entry": "TPC-C/TPC-C-document-expected-notes.txt",
+    "archive_sha256": "6392e5849ac9b2b6339c1accc03aa961aa9cff5d6a799514e2c497409db6a927",
+    "sha256": "aa96891fa1ed23e0e8bbc7083c57391f64f625865b3472fef2a93a5b6d6c8b38",
+    "origin": "Group OneDrive schema-migration comparison folder / TPC-C",
+    "status": "recovered expected-model candidate; final validation pending"
+  }
+]

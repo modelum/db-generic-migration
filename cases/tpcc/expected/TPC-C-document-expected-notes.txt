@@ -1,0 +1,39 @@
+TPC-C expected Document model — derivation notes
+================================================
+
+Source oracle
+-------------
+- Relational source model: TPC-C-relational-sinPK.xmi.
+- The FK order_line -> stock is intentionally absent because the current mapping does not support FKs targeting associative tables / RelationshipType instances.
+
+Mapping decisions reflected in the expected model
+--------------------------------------------------
+1. warehouse, district, customer, history, item, and orders are independent DocumentTypes.
+2. district and customer are non-aggregable weak tables. Their identifying FKs are handled by RU7.3, yielding reverse multi-valued references:
+   warehouse.districts -> district
+   district.customers -> customer
+   Both have targetShareability=false.
+3. orders is represented independently. Its FK to customer is reversed by RU7.3, yielding customer.orders -> orders with targetShareability=false.
+   The expected model retains the components of the composite orders PK according to the composite-key convention and uses the derived identifier field _id.
+4. history has no PK. The additional RU7 variant agreed for this case preserves the direction of its FKs, yielding:
+   history.h_fk_c -> customer
+   history.h_fk_d -> district
+5. order_line and new_order are aggregable weak tables owned by orders:
+   - order_line -> Embedded order_lines, isMany=true; ol_number is its local identifier.
+   - new_order -> Embedded new_orders, isMany=false; it has no local properties after its identifying FK is absorbed by the aggregation.
+6. stock is an associative table and is mapped by RU6+UD7 to an independent DocumentType with relationship attributes, a generated stock_id, and references s_fk_w and s_fk_i.
+7. Composite identifiers for ordinary EntityTypes use the field name _id, following UD4 as currently written in the paper.
+8. Aggregate names use plural(...) as currently specified by RU5: order_lines and new_orders.
+
+Datatype assumptions
+--------------------
+The expected model follows the datatypes in the relational XMI, not the original SQL DDL:
+- CHAR/VARCHAR -> STRING
+- INTEGER -> INTEGER
+- NUMERIC/DECIMAL -> DECIMAL
+- DATE -> DATE
+The current Document metamodel type registry is represented in enum order (STRING, INTEGER, DOUBLE, DECIMAL, BOOLEAN, DATE, TIME, DATETIME), followed by the corresponding Array types.
+
+Important comparison note
+-------------------------
+This expected model is intentionally derived from the mapping specification rather than from the generated Document model. Differences reported by EMF Compare should therefore be inspected before changing the expected model: they may reveal mismatches between the current implementation and the paper rules.

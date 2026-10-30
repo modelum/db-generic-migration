@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-30",
+  "scope": "Recovered candidates only; not full EMF conformance or an execution result",
+  "models": [
+    {
+      "file": "cases/music-streaming/generated/MusicService-document-generated.xmi",
+      "sha256": "d0f168aaa4275c058ad144e16abdbe3e471d386fdad127c26786731cda45485c",
+      "arrays": 4,
+      "arrays_without_name": 4,
+      "primitive_types_without_explicit_datatype": 1,
+      "references": 6,
+      "references_with_explicit_targetShareability": 0
+    },
+    {
+      "file": "cases/northwind/generated/Northwind-document-generated.xmi",
+      "sha256": "fe31c7595bdb8f39a6828807965bd0d5767be486c92befbfe09fdd7c6a9ad1ff",
+      "arrays": 4,
+      "arrays_without_name": 4,
+      "primitive_types_without_explicit_datatype": 1,
+      "references": 13,
+      "references_with_explicit_targetShareability": 0
+    },
+    {
+      "file": "cases/tpcc/generated/TPC-C-document-sinPK-generated.xmi",
+      "sha256": "5987dc9b068d965e5375219ad03c6158347434d93bfd7fc9bf18ad174ed75974",
+      "arrays": 4,
+      "arrays_without_name": 4,
+      "primitive_types_without_explicit_datatype": 1,
+      "references": 7,
+      "references_with_explicit_targetShareability": 0
+    }
+  ],
+  "runtime_artifacts": [
+    {
+      "origin": "development:RoundTripV2/lib/documentMM.jar",
+      "sha256": "3498777cda51b4830649e27167de26c84f5de3f1b451b0878f45693ce4dedc74",
+      "method": "static inspection of generated class constant-pool strings; no Java execution",
+      "Reference_has_TargetShareability_symbol": false,
+      "Array_has_getName_symbol": false,
+      "DataType_has_DECIMAL_symbol": false,
+      "DataType_has_DATETIME_symbol": false
+    },
+    {
+      "origin": "development:DataMigration/lib/documentMM.jar",
+      "sha256": "3498777cda51b4830649e27167de26c84f5de3f1b451b0878f45693ce4dedc74",
+      "method": "static inspection of generated class constant-pool strings; no Java execution",
+      "Reference_has_TargetShareability_symbol": false,
+      "Array_has_getName_symbol": false,
+      "DataType_has_DECIMAL_symbol": false,
+      "DataType_has_DATETIME_symbol": false
+    },
+    {
+      "origin": "OneDrive:InstanciaAWS/datos-40g/migrator.jar",
+      "sha256": "e874b3f5cb95ddade601ac6279fa00daed551f78a467acad370a116a8f090f2f",
+      "method": "static inspection of generated class constant-pool strings; no Java execution",
+      "Reference_has_TargetShareability_symbol": false,
+      "Array_has_getName_symbol": false,
+      "DataType_has_DECIMAL_symbol": false,
+      "DataType_has_DATETIME_symbol": false
+    }
+  ]
+}

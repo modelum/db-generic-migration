@@ -1,0 +1,5 @@
+# Local outputs and temporary files
+outputs/
+tmp/
+~$*
+__pycache__/

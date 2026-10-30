@@ -1,0 +1,32 @@
+[
+  {
+    "file": "relational.ecore",
+    "origin": "Group OneDrive metamodels folder",
+    "archive": "metamodels.zip",
+    "archive_sha256": "33b2d22b212bea7905fc53dc978e4090bcbd4dffbd08dc03e8e6dd78e0d31fab",
+    "archive_entry": "metamodels/ecore/relational.ecore",
+    "sha256": "1de4206ad104a7a48080fd59be948b021bc00d3c3e77a11aa13f2c5cdb5aedf0",
+    "nsURI": "http://www.example.org/relationalschema",
+    "status": "current recovered candidate; runtime and model compatibility pending"
+  },
+  {
+    "file": "uschema.ecore",
+    "origin": "Group OneDrive metamodels folder",
+    "archive": "metamodels.zip",
+    "archive_sha256": "33b2d22b212bea7905fc53dc978e4090bcbd4dffbd08dc03e8e6dd78e0d31fab",
+    "archive_entry": "metamodels/ecore/uschema.ecore",
+    "sha256": "aadcb14540fb865805ba3b2a8d67bd6a414538e891d7d07854bd4f70877c0e31",
+    "nsURI": "http://www.modelum.es/uschema",
+    "status": "current recovered candidate; runtime and model compatibility pending"
+  },
+  {
+    "file": "document.ecore",
+    "origin": "Group OneDrive metamodels folder",
+    "archive": "metamodels.zip",
+    "archive_sha256": "33b2d22b212bea7905fc53dc978e4090bcbd4dffbd08dc03e8e6dd78e0d31fab",
+    "archive_entry": "metamodels/ecore/document.ecore",
+    "sha256": "6304a7f35482d3b967fcb132ec03b3c275abf3fce866c56403213380fec9a0d2",
+    "nsURI": "http://www.example.org/documentschema",
+    "status": "current recovered candidate; runtime and model compatibility pending"
+  }
+]
