@@ -2,7 +2,7 @@
 
 ## Manuscript clarification
 
-**The adaptation evaluation was performed on Music Service (Music Streaming), not TPC-C S.** The experimenter confirmed that entity/feature renaming, attribute deletion and Aggregate-to-Reference conversion were tested individually and in sequence. References to TPC-C in Section 6.3.4 and the adaptation-related external-validity discussion of the author-supplied manuscript are a case-study attribution error. This clarification applies to the manuscript snapshot identified in [results provenance](../../results/provenance.json); it does not assert the same wording in every public preprint revision.
+**The adaptation evaluation was performed on Music Service (Music Streaming), not TPC-C S.** Entity/feature renaming, attribute deletion and Aggregate-to-Reference conversion were tested individually and in sequence. References to TPC-C in Section 6.3.4 and the adaptation-related external-validity discussion of the author-supplied manuscript are a case-study attribution error. This clarification applies to the manuscript snapshot identified in [results provenance](../../results/provenance.json); it does not assert the same wording in every public preprint revision.
 
 ## Recovered sequential execution artifacts
 
@@ -14,7 +14,7 @@ The implementation applies these operations in sequence:
 2. `rename("app_user", "user_data")`.
 3. `removeAttribute("user_data.is_premium")`.
 
-The recovered models and trace reflect the combined outcome: `user_data`, no `is_premium` feature on that entity, and an independent `playlist` Document collection. These are recovered artifacts, not newly generated results. Separate saved output sets for the individual-operation tests have not been identified; their execution is supported by the experimenter's confirmation.
+The recovered models and trace reflect the combined outcome: `user_data`, no `is_premium` feature on that entity, and an independent `playlist` Document collection. These are recovered artifacts, not newly generated results. The files included here document the sequential execution.
 
 ## Implementation and executable identification
 
