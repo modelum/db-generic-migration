@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: RelationalToDocument;singleton:=true
+Automatic-Module-Name: relationalToUSchema
+Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.39.0",
+ org.eclipse.xtext.ecore;bundle-version="2.41.0",
+ org.eclipse.core.runtime;bundle-version="3.34.100"
+Bundle-ActivationPolicy: lazy

@@ -13,12 +13,12 @@ The arXiv link provides the public preprint. The artifact collection is being or
 
 ## Package status
 
-This repository is under preparation and is not yet a validated runnable release. It currently includes source schemas for Music Streaming, TPC-C and Northwind, the fixed Northwind dataset and loading aids, recovered model candidates, and metamodel definitions with provenance information. End-to-end reproduction has not yet been verified.
+This repository is under preparation and is not yet a validated runnable release. It currently includes source schemas for Music Streaming, TPC-C and Northwind, the fixed Northwind dataset and loading aids, recovered model candidates, metamodel definitions, and eight implementation source projects with provenance information. End-to-end reproduction has not yet been verified.
 
 ## Contents
 
 - [cases](cases/): source schemas, data preparation and model artifacts for the three cases.
-- [software](software/): metamodels and folders for migration components.
+- [software](software/): metamodels, implementation source snapshots and dependency documentation.
 - [environment](environment/): execution environment documentation.
 - [experiments](experiments/): schema validation, round-trip reconstruction, trace-aware adaptation, scaling, flat-copy baseline and query equivalence.
 - [results](results/): folder reserved for verified reference results.

@@ -1,5 +1,5 @@
 # trace-updater
 
-Implementation of the trace-aware schema adaptation operations evaluated in the paper.
+Source snapshot: [OrionTraceChanger](../source-projects/OrionTraceChanger/).
 
-Status: structure prepared; artifacts have not yet been copied or validated.
+See the [dependency map](../source-projects/DEPENDENCIES.md) and [source provenance](../source-projects/provenance.json). Source files are recovered unchanged; implementation alignment, compilation and execution validation have not yet been completed.

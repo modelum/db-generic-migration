@@ -1,5 +1,5 @@
 # flat-copy
 
-Flat-copy baseline implementation, including datatype conversion and batches of 1,000 documents.
+Source snapshot: [TestSpeed](../source-projects/TestSpeed/).
 
-Status: structure prepared; artifacts have not yet been copied or validated.
+See the [dependency map](../source-projects/DEPENDENCIES.md) and [source provenance](../source-projects/provenance.json). Source files are recovered unchanged; implementation alignment, compilation and execution validation have not yet been completed.

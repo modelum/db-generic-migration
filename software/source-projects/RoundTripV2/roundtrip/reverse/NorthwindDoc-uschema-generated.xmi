@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uschema:USchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uschema="http://www.modelum.es/uschema" name="Northwind">
+  <entities name="categories" root="true">
+    <features xsi:type="uschema:Key" name="category_id" attributes="//@entities.0/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="category_id" key="//@entities.0/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="category_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="description">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="picture">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="products" refsTo="//@entities.5" attributes="//@entities.0/@features.6" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="products" references="//@entities.0/@features.5">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+  </entities>
+  <entities name="customer_demographics" root="true">
+    <features xsi:type="uschema:Key" name="customer_type_id" attributes="//@entities.1/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="customer_type_id" key="//@entities.1/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="customer_desc">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="customers" root="true">
+    <features xsi:type="uschema:Key" name="customer_id" attributes="//@entities.2/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="customer_id" key="//@entities.2/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="company_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="contact_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="contact_title">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="address">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="city">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="region">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="postal_code">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="country">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="phone">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="fax">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="orders" refsTo="//@entities.8" attributes="//@entities.2/@features.13" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="orders" references="//@entities.2/@features.12">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+  </entities>
+  <entities name="employees" root="true">
+    <features xsi:type="uschema:Key" name="employee_id" attributes="//@entities.3/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="employee_id" key="//@entities.3/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="last_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="first_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="title">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="title_of_courtesy">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="birth_date">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="hire_date">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="address">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="city">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="region">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="postal_code">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="country">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="home_phone">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="extension">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="photo">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="notes">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="photo_path">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="employees" refsTo="//@entities.3" attributes="//@entities.3/@features.19" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="employees" references="//@entities.3/@features.18">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="orders" refsTo="//@entities.8" attributes="//@entities.3/@features.21" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="orders" references="//@entities.3/@features.20">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+  </entities>
+  <entities name="suppliers" root="true">
+    <features xsi:type="uschema:Key" name="supplier_id" attributes="//@entities.4/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="supplier_id" key="//@entities.4/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="company_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="contact_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="contact_title">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="address">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="city">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="region">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="postal_code">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="country">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="phone">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="fax">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="homepage">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="products" refsTo="//@entities.5" attributes="//@entities.4/@features.14" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="products" references="//@entities.4/@features.13">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+  </entities>
+  <entities name="products" root="true">
+    <features xsi:type="uschema:Key" name="product_id" attributes="//@entities.5/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="product_id" key="//@entities.5/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="product_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="quantity_per_unit">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="unit_price">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="units_in_stock">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="units_on_order">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="reorder_level">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="discontinued">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+  </entities>
+  <entities name="region" root="true">
+    <features xsi:type="uschema:Key" name="region_id" attributes="//@entities.6/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="region_id" key="//@entities.6/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="region_description">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="territories" refsTo="//@entities.9" attributes="//@entities.6/@features.4" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="territories" references="//@entities.6/@features.3">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="shippers" root="true">
+    <features xsi:type="uschema:Key" name="shipper_id" attributes="//@entities.7/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="shipper_id" key="//@entities.7/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="company_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="phone">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="orders" refsTo="//@entities.8" attributes="//@entities.7/@features.5" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="orders" references="//@entities.7/@features.4">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+  </entities>
+  <entities name="orders" root="true">
+    <features xsi:type="uschema:Key" name="order_id" attributes="//@entities.8/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="order_id" key="//@entities.8/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="order_date">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="required_date">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="shipped_date">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="freight">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ship_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ship_address">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ship_city">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ship_region">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ship_postal_code">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ship_country">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="territories" root="true">
+    <features xsi:type="uschema:Key" name="territory_id" attributes="//@entities.9/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="territory_id" key="//@entities.9/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="territory_description">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="us_states" root="true">
+    <features xsi:type="uschema:Key" name="state_id" attributes="//@entities.10/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="state_id" key="//@entities.10/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="state_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="state_abbr">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="state_region">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="customer_customer_demo" root="true">
+    <features xsi:type="uschema:Key" name="customer_customer_demo" attributes="//@entities.11/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="customer_customer_demo" key="//@entities.11/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="customer_customer_demo_fk_customer" refsTo="//@entities.2" attributes="//@entities.11/@features.3" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="customer_customer_demo_fk_customer" references="//@entities.11/@features.2">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="customer_customer_demo_fk_customer_demographics" refsTo="//@entities.1" attributes="//@entities.11/@features.5" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="customer_customer_demo_fk_customer_demographics" references="//@entities.11/@features.4">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="employee_territories" root="true">
+    <features xsi:type="uschema:Key" name="employee_territories" attributes="//@entities.12/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="employee_territories" key="//@entities.12/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="employee_territories_fk_employees" refsTo="//@entities.3" attributes="//@entities.12/@features.3" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="employee_territories_fk_employees" references="//@entities.12/@features.2">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="employee_territories_fk_territories" refsTo="//@entities.9" attributes="//@entities.12/@features.5" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="employee_territories_fk_territories" references="//@entities.12/@features.4">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="order_details" root="true">
+    <features xsi:type="uschema:Attribute" name="unit_price">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="quantity">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="discount">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Key" name="order_details" attributes="//@entities.13/@features.4"/>
+    <features xsi:type="uschema:Attribute" name="order_details" key="//@entities.13/@features.3">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="order_details_fk_orders" refsTo="//@entities.8" attributes="//@entities.13/@features.6" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="order_details_fk_orders" references="//@entities.13/@features.5">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="order_details_fk_products" refsTo="//@entities.5" attributes="//@entities.13/@features.8" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="order_details_fk_products" references="//@entities.13/@features.7">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+</uschema:USchema>

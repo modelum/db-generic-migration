@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uschema:USchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uschema="http://www.modelum.es/uschema" name="MetaShop">
+  <entities name="AppUser" root="true">
+    <features xsi:type="uschema:Attribute" name="id" key="//@entities.0/@features.12" references="//@entities.0/@features.14">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="card_number" key="//@entities.0/@features.13">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="name">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="email">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="password">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="address">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="country">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="registrationDate">
+      <type xsi:type="uschema:PrimitiveType" name="date"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="storeValuation">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="premium">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="date_premium">
+      <type xsi:type="uschema:PrimitiveType" name="date"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="premium_fee">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Key" name="user_key" attributes="//@entities.0/@features.0"/>
+    <features xsi:type="uschema:Key" name="card_number_key" attributes="//@entities.0/@features.1" isID="false"/>
+    <features xsi:type="uschema:Reference" name="appUsers" refsTo="//@entities.0" attributes="//@entities.0/@features.0" upperBound="-1"/>
+    <features xsi:type="uschema:Aggregate" name="PaymentMethods" specifiedBy="//@entities.1" upperBound="-1"/>
+    <features xsi:type="uschema:Aggregate" name="UserOrders" specifiedBy="//@entities.4" upperBound="-1"/>
+  </entities>
+  <entities name="PaymentMethod">
+    <features xsi:type="uschema:Attribute" name="id" key="//@entities.1/@features.3">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="methodName">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="methodInfo">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Key" name="paymentMethod_key" attributes="//@entities.1/@features.0"/>
+  </entities>
+  <entities name="Product" root="true">
+    <features xsi:type="uschema:Attribute" name="id" key="//@entities.2/@features.7">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="name">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="price">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="description">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="imageURL">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="manufacturer">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="stock">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Key" name="product_key" attributes="//@entities.2/@features.0"/>
+    <features xsi:type="uschema:Reference" name="product_id_fk" refsTo="//@entities.2" upperBound="-1" isFeaturedBy="//@relationships.0"/>
+    <features xsi:type="uschema:Reference" name="product_related_id_fk" refsTo="//@entities.2" upperBound="-1" isFeaturedBy="//@relationships.0"/>
+    <features xsi:type="uschema:Reference" name="items" refsTo="//@entities.5" attributes="//@entities.2/@features.11 //@entities.2/@features.12 //@entities.2/@features.13" upperBound="-1"/>
+    <features xsi:type="uschema:Attribute" name="user_id_Items" references="//@entities.2/@features.10">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="order_id_Items" references="//@entities.2/@features.10">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="id_Items" references="//@entities.2/@features.10">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+  </entities>
+  <entities name="Category" root="true">
+    <features xsi:type="uschema:Attribute" name="id" key="//@entities.3/@features.4">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="description">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="products" refsTo="//@entities.2" attributes="//@entities.3/@features.3" upperBound="-1"/>
+    <features xsi:type="uschema:Attribute" name="id_Products" references="//@entities.3/@features.2">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Key" name="category_key" attributes="//@entities.3/@features.0"/>
+  </entities>
+  <entities name="UserOrder">
+    <features xsi:type="uschema:Attribute" name="id" key="//@entities.4/@features.3">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="orderDate">
+      <type xsi:type="uschema:PrimitiveType" name="date"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="totalPrice">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Key" name="order_key" attributes="//@entities.4/@features.0"/>
+    <features xsi:type="uschema:Reference" name="discounts" refsTo="//@entities.6" attributes="//@entities.4/@features.5" upperBound="-1"/>
+    <features xsi:type="uschema:Attribute" name="id_Discounts" references="//@entities.4/@features.4">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+  </entities>
+  <entities name="Item" root="true">
+    <features xsi:type="uschema:Attribute" name="id" key="//@entities.5/@features.5">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="amount">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="subtotal">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="user_id" key="//@entities.5/@features.5" references="//@entities.5/@features.6">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="order_id" key="//@entities.5/@features.5" references="//@entities.5/@features.6">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Key" name="item_key" attributes="//@entities.5/@features.3 //@entities.5/@features.4 //@entities.5/@features.0"/>
+    <features xsi:type="uschema:Reference" name="order_fk" refsTo="//@entities.4" attributes="//@entities.5/@features.3 //@entities.5/@features.4" upperBound="1"/>
+  </entities>
+  <entities name="Discount" root="true">
+    <features xsi:type="uschema:Attribute" name="id" key="//@entities.6/@features.3">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="description">
+      <type xsi:type="uschema:PrimitiveType" name="string"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="discountRatio">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+    <features xsi:type="uschema:Key" name="discount_key" attributes="//@entities.6/@features.0"/>
+  </entities>
+  <relationships name="RelatedProducts" references="//@entities.2/@features.8 //@entities.2/@features.9">
+    <features xsi:type="uschema:Attribute" name="affinity">
+      <type xsi:type="uschema:PrimitiveType" name="int"/>
+    </features>
+  </relationships>
+</uschema:USchema>

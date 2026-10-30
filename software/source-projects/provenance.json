@@ -1,0 +1,1404 @@
+{
+  "repository": "https://github.com/modelum/db-generic-migration-dev",
+  "commit": "3d422b9df84dd66332d7bb855c717b5c3ace279b",
+  "selection": "Eight active projects; original tracked non-binary files preserved. JAR/ZIP dependencies and BAK excluded.",
+  "included": [
+    {
+      "path": "DataMigration/.classpath",
+      "sha256": "e3abf244c47239702eb123afbaf0ae5e5a4fc8a19ab2fc1aa5038e8d0c50038f",
+      "bytes": 1928
+    },
+    {
+      "path": "DataMigration/.project",
+      "sha256": "3934a8099d1172ab18f9f889b645671b452a52ace4c56df8498b28b34bfd86c4",
+      "bytes": 1169
+    },
+    {
+      "path": "DataMigration/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
+      "bytes": 57
+    },
+    {
+      "path": "DataMigration/.settings/org.eclipse.jdt.core.prefs",
+      "sha256": "aa0704451cf1a87828361dbe94ed1cd70bd0b2d49b8abe15fa98a5d25b41b0de",
+      "bytes": 853
+    },
+    {
+      "path": "DataMigration/META-INF/MANIFEST.MF",
+      "sha256": "cdd097dc9aa61927983730d5a6b23c664b11ac91c37bb1f4e4bcde912a9ddba8",
+      "bytes": 699
+    },
+    {
+      "path": "DataMigration/build.properties",
+      "sha256": "0e11c3e088d5fc491ecfb391a9398cf80c99a11b213f96256da6252a72a95712",
+      "bytes": 199
+    },
+    {
+      "path": "DataMigration/metamodels/document.ecore",
+      "sha256": "646a3f9cc7eab04372236d5d5eff5755db4b7dd361ac14d1889796aa0f634b2a",
+      "bytes": 3298
+    },
+    {
+      "path": "DataMigration/metamodels/relational.ecore",
+      "sha256": "115cb6521d8af7db2a1038b76610c22ec7769a8a130dda121bd0bdf63ad70213",
+      "bytes": 4720
+    },
+    {
+      "path": "DataMigration/metamodels/uschema.ecore",
+      "sha256": "ae69272bf4e3e199e24bbd1434eae8d9355143eeb4229916e0381b8990c4a156",
+      "bytes": 6821
+    },
+    {
+      "path": "DataMigration/models/MusicArtRModel.xmi",
+      "sha256": "ba8c049f8a68e6949dffd6bb08afb680ec36b9bb012ce056f018d4aac0ab720f",
+      "bytes": 3450
+    },
+    {
+      "path": "DataMigration/models/MusicService-document.xmi",
+      "sha256": "ffd74795d84fd0b05a5bc2ff88d8b28ffaf3ab952fbd4c721e1017030f337174",
+      "bytes": 3947
+    },
+    {
+      "path": "DataMigration/models/MusicService-relational-mongoose.js",
+      "sha256": "2151d5bcb485fb1028b0ef6d16062dc2476f72bfccdd866969fa6f80cc8ffc0c",
+      "bytes": 2444
+    },
+    {
+      "path": "DataMigration/models/MusicService-relational.xmi",
+      "sha256": "0f67b55d946e4f75c17bef8d41b74d0f7bde163adcb2c91310e16c504d6bcb3a",
+      "bytes": 5345
+    },
+    {
+      "path": "DataMigration/models/MusicService-uschema.xmi",
+      "sha256": "e0f66f229c9721de5069d23ca7c525d7630822e6a09ada5b02dcb3e659291143",
+      "bytes": 5820
+    },
+    {
+      "path": "DataMigration/models/createMusicArt.sql",
+      "sha256": "ac6a26bf694af4104055717e085a85746f599c9740e1ac66eebdb73df518d74b",
+      "bytes": 3305
+    },
+    {
+      "path": "DataMigration/models/deleteMusicArt.sql",
+      "sha256": "9f7f438adbc23bf46d14c4e45e709c05e3e0b8e66f2350ce63490eeb9272f62e",
+      "bytes": 1386
+    },
+    {
+      "path": "DataMigration/models/document2.xmi",
+      "sha256": "bade06627939df1e0e68833722f23419382529c7dcecd5ac8365283e226fe0cb",
+      "bytes": 5488
+    },
+    {
+      "path": "DataMigration/models/mongoose.js",
+      "sha256": "629cdb226d3fb4cb43925d5a11e4cb11fe1bfe473f449883957a7f7a5ab01def",
+      "bytes": 3664
+    },
+    {
+      "path": "DataMigration/models/relational2.xmi",
+      "sha256": "ab4d7ce60dbcfdb80ce8e383b1a1fc9efa937fa7eb46f34c09365dd6ff2f3923",
+      "bytes": 5925
+    },
+    {
+      "path": "DataMigration/models/uschema2.xmi",
+      "sha256": "d4f1371ee7a8a39c74012d0a1c65a6be5f65ebe3bc5a57296d4271b0752a84f8",
+      "bytes": 9191
+    },
+    {
+      "path": "DataMigration/plugin.properties",
+      "sha256": "9f924da39d789e935ca53e45c1d74cf3b5817c7bccee20476c63fdca066bd791",
+      "bytes": 70
+    },
+    {
+      "path": "DataMigration/plugin.xml",
+      "sha256": "6a4ed4e309066a18b680f506b4d121a69ab6309f4be6e020088bf2d128a9565e",
+      "bytes": 1018
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/Document2Text.xtend",
+      "sha256": "1a4cd97336bd77a9f0ef557fd8e5bd08b61b0de0ba57d983a80322ef394559bb",
+      "bytes": 3623
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/Principal.java",
+      "sha256": "51ca21bc06d940f9d5dd6fc9fab12798a509a636e361d03775c615e1d4d2d631",
+      "bytes": 12641
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/Relational2USchema.xtend",
+      "sha256": "807a5ba2535761686bb30354a80d6159fff68e3b044a5c4b625a374ae7e2eb70",
+      "bytes": 16017
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/RelationalAPI.xtend",
+      "sha256": "d9d92b73420bb35316f77cc298880ceb65a08a886a5eed5055a5ee0a66207ddf",
+      "bytes": 9049
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/USchemaAPI.xtend",
+      "sha256": "dad381381503b8e7934940edaf01009cbc9966f21e9331eeb174a334a16a9519",
+      "bytes": 2632
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/Uschema2Document.xtend",
+      "sha256": "b31b1cc9e1629e03128d81d6a22bb2b9589b76a8ec4589e75d2455cf81fac857",
+      "bytes": 18011
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaAdapter.java",
+      "sha256": "462c07702f80b381b93e4b56a04bf5246365a70b2cdbec9f6fe7fd513dab39f1",
+      "bytes": 822
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaBrowser.java",
+      "sha256": "bf9e1042f01327fe15c9401c276137793b57d513f78f06ec05411d8a6df11fe0",
+      "bytes": 2516
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaCursor.java",
+      "sha256": "52561eb0fa97607b5d1d3cf0e4365e6bfdd67c8dd8deb6ed3a2c4abc83df6063",
+      "bytes": 631
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaID.java",
+      "sha256": "531119469cd8977c14804861585be28933d343d7441724a92347fa361d73fc64",
+      "bytes": 1402
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaRelAdapter.java",
+      "sha256": "c64e60e19db804d783578ff9fedc4fd09a3f96abb808d62c6bde8d17f65fadf0",
+      "bytes": 4997
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/adapter/USchemaRelCursor.java",
+      "sha256": "ea4156e9e01f46a9e471aad10cfbb8f17f555dc7c0f1022799ae1444b2c87122",
+      "bytes": 22817
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/ComparatorKeys.xtend",
+      "sha256": "662225b350e02d3669473dd712cab6b6aa3f3b8274f6b25917f905ad8fd932e0",
+      "bytes": 1111
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/DocumentAPI.java",
+      "sha256": "3f748e858b244ad504325880e25cd43882e628857a6d1f7fd13351d7ac1d4f14",
+      "bytes": 9442
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/DocumentBrowser.java",
+      "sha256": "03d96427c7ec50894b542dc9b420a7430975ee6753f867a0b6250225cf5c1d0c",
+      "bytes": 2368
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/DocumentData2text.xtend",
+      "sha256": "b37fd97cfa1d8733a93616add379d25186d86fe7b267a357f352049d67ac725a",
+      "bytes": 12579
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/DocumentValidator.xtend",
+      "sha256": "d6fcf2d35144efc071a543952efd3e3868edcd86a840f2e77036ea4790b35cda",
+      "bytes": 4131
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/RelationalData2text.xtend",
+      "sha256": "e7f8e6e88d8f2ab56c9768a08e58fb452ebb12897450d07e1f12031d8ee7679b",
+      "bytes": 5289
+    },
+    {
+      "path": "DataMigration/src/um/modelum/migration/data/Test.java",
+      "sha256": "6d344886d577069744fa23dcd4b5e7b173e87232519bb19786af7b3e1d08ba39",
+      "bytes": 2455
+    },
+    {
+      "path": "DataMigration/validation/mongoData_MetaShop.txt",
+      "sha256": "c12c227e5a8e05f1a831b97ced3ac7e1e904ba60baef50faeb0e3e81e30edb03",
+      "bytes": 6674
+    },
+    {
+      "path": "DataMigration/validation/sqlData_MetaShop.txt",
+      "sha256": "c83cb07e3df1f9eb52cc5fb46326443e22b03c7614ca22a0693496b00e807b12",
+      "bytes": 6586
+    },
+    {
+      "path": "DataMigration/xtend-gen/Revised_Code_MJ/.gitignore",
+      "sha256": "ae6cae984805bdd4d98d1da9a73e2bbc16512d62ed3f7bce2b4f0b1f2231d381",
+      "bytes": 39
+    },
+    {
+      "path": "DataMigration/xtend-gen/um/modelum/migration/.gitignore",
+      "sha256": "b8fc73411179fc454efa826dda41da26ef34d7de72ce89b1ee35596636e3ec00",
+      "bytes": 317
+    },
+    {
+      "path": "DataMigration/xtend-gen/um/modelum/migration/api/.gitignore",
+      "sha256": "1a90c6a80cf6208050a5964e14871cec77d3f9337a0a6e407b451e0defe64716",
+      "bytes": 55
+    },
+    {
+      "path": "DataMigration/xtend-gen/um/modelum/migration/data/.gitignore",
+      "sha256": "b2e566f7101c04b8d3565214872a2d50d5c1ead7df2f89081acd09f23f08a097",
+      "bytes": 230
+    },
+    {
+      "path": "DataMigration/xtend-gen/um/modelum/migration/mapping/.gitignore",
+      "sha256": "4a3e38f882e81a7a7ad3f6d789b7f09f18ec913156febf36b945f0eca4c4e159",
+      "bytes": 66
+    },
+    {
+      "path": "OrionTraceChanger/.classpath",
+      "sha256": "925380295ba663bcca90d20a6fe558edb11ea4ea99816e1fddc825d9cafcc798",
+      "bytes": 998
+    },
+    {
+      "path": "OrionTraceChanger/.project",
+      "sha256": "99927f9ab7a8b09ee36b35966c726bd23c91a21265f7d29a44ca3a7c489a703c",
+      "bytes": 393
+    },
+    {
+      "path": "OrionTraceChanger/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
+      "bytes": 57
+    },
+    {
+      "path": "OrionTraceChanger/.settings/org.eclipse.jdt.core.prefs",
+      "sha256": "244acb1ba955fa3392a7eb1f51fb91ab454e16b90008eff4e74a7911268b175e",
+      "bytes": 594
+    },
+    {
+      "path": "OrionTraceChanger/Originales/MusicService-relational.xmi",
+      "sha256": "0f67b55d946e4f75c17bef8d41b74d0f7bde163adcb2c91310e16c504d6bcb3a",
+      "bytes": 5345
+    },
+    {
+      "path": "OrionTraceChanger/Originales/MusicService-uschema-generated.xmi",
+      "sha256": "63433b3b0f7b540eddbb1633b4e7fd46ed13eea3a0189e5c1603bab88c3a5c41",
+      "bytes": 5937
+    },
+    {
+      "path": "OrionTraceChanger/Originales/MusicServiceTrace.tra",
+      "sha256": "b0d0b316da22a5c9c7f43453146f455e69aa9e97919e493736fe5fb65daf28b3",
+      "bytes": 16815
+    },
+    {
+      "path": "OrionTraceChanger/Pruebas/MusicService-relational.xmi",
+      "sha256": "0f67b55d946e4f75c17bef8d41b74d0f7bde163adcb2c91310e16c504d6bcb3a",
+      "bytes": 5345
+    },
+    {
+      "path": "OrionTraceChanger/Pruebas/MusicService-uschema-generated.xmi",
+      "sha256": "8a74698deba513e2eb6c3ff4571f43a5efac028b6132fd9f479f46e19832afdb",
+      "bytes": 5766
+    },
+    {
+      "path": "OrionTraceChanger/Pruebas/MusicServiceTrace.tra",
+      "sha256": "df570f0f52b7e0dc730dec5f79ba7d4939050f3b0e3ad79ce5bb586b7be7cd7e",
+      "bytes": 16455
+    },
+    {
+      "path": "OrionTraceChanger/src/um/modelum/migration/Prueba.java",
+      "sha256": "55da309af3b5326256c60d96042fb9952511bb1a869e703277bc5d45adfbc533",
+      "bytes": 967
+    },
+    {
+      "path": "OrionTraceChanger/src/um/modelum/migration/TraceChanger.java",
+      "sha256": "e68f9c940e79787b2314f1557a5abbed8df971e2b8522628406f69ea352d9765",
+      "bytes": 8811
+    },
+    {
+      "path": "RoundTripV2/.gitignore",
+      "sha256": "a786a0f2afd879d54b81737bcb881cfc30584eee500d05ce23c1523310da337c",
+      "bytes": 19
+    },
+    {
+      "path": "RoundTripV2/.project",
+      "sha256": "138dc7ae23dc488fc9e8806cef1612fa52fef02b6f21f5b43b57539079bbe5c7",
+      "bytes": 1167
+    },
+    {
+      "path": "RoundTripV2/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
+      "bytes": 57
+    },
+    {
+      "path": "RoundTripV2/.settings/org.eclipse.jdt.core.prefs",
+      "sha256": "2ca66d136f7e78b56e73490969ad9f9bd1d004751e92f85afb5636995be9ac03",
+      "bytes": 360
+    },
+    {
+      "path": "RoundTripV2/META-INF/MANIFEST.MF",
+      "sha256": "405c80c82c39d441cc56c83385e8fd27524365d294a66aa248521de03a69b75b",
+      "bytes": 543
+    },
+    {
+      "path": "RoundTripV2/build.properties",
+      "sha256": "72abc6008ae655affe653e6ffe1c7d71e128ff4ebf810ee2baa657fff2d0ae8f",
+      "bytes": 225
+    },
+    {
+      "path": "RoundTripV2/models/document.ecore",
+      "sha256": "646a3f9cc7eab04372236d5d5eff5755db4b7dd361ac14d1889796aa0f634b2a",
+      "bytes": 3298
+    },
+    {
+      "path": "RoundTripV2/models/relational.ecore",
+      "sha256": "115cb6521d8af7db2a1038b76610c22ec7769a8a130dda121bd0bdf63ad70213",
+      "bytes": 4720
+    },
+    {
+      "path": "RoundTripV2/models/uschema.ecore",
+      "sha256": "ae69272bf4e3e199e24bbd1434eae8d9355143eeb4229916e0381b8990c4a156",
+      "bytes": 6821
+    },
+    {
+      "path": "RoundTripV2/plugin.properties",
+      "sha256": "025980e99dee7371e728c6f4877b67ec6737ec27c8d183bb1c78625cb2bdaa1a",
+      "bytes": 66
+    },
+    {
+      "path": "RoundTripV2/plugin.xml",
+      "sha256": "321ce04eb33d0863b7daed6d8854e429cbeed7fd1cfd39baac0e731ddd654e1c",
+      "bytes": 406
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/MusicService-document-generated.xmi",
+      "sha256": "b10df01589f090b64e67682c02688dc84fd7df4c87bac41086cd1cc04ca1d22f",
+      "bytes": 4087
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/MusicService-relational.xmi",
+      "sha256": "0f67b55d946e4f75c17bef8d41b74d0f7bde163adcb2c91310e16c504d6bcb3a",
+      "bytes": 5345
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/MusicService-uschema-generated.xmi",
+      "sha256": "63433b3b0f7b540eddbb1633b4e7fd46ed13eea3a0189e5c1603bab88c3a5c41",
+      "bytes": 5937
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/MusicServiceTrace.tra",
+      "sha256": "b0d0b316da22a5c9c7f43453146f455e69aa9e97919e493736fe5fb65daf28b3",
+      "bytes": 16815
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/Northwind-document-generated.xmi",
+      "sha256": "fe31c7595bdb8f39a6828807965bd0d5767be486c92befbfe09fdd7c6a9ad1ff",
+      "bytes": 10457
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/Northwind-relational.xmi",
+      "sha256": "df7b79b4cbcd9fbc055e4ef518fb735dc0f2923c850973179f0c48b0a5623034",
+      "bytes": 13674
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/Northwind-uschema-generated.xmi",
+      "sha256": "1cf1729b907184c5f459a6108f6a8862075fba61b1f0370b37a4d68e09a6df48",
+      "bytes": 17944
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/TPC-C-document-sinPK-generated.xmi",
+      "sha256": "5987dc9b068d965e5375219ad03c6158347434d93bfd7fc9bf18ad174ed75974",
+      "bytes": 8899
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/TPC-C-relational-sinPK.xmi",
+      "sha256": "4db377bbc4c25bef8806eb078c7b5a29f410861620cc65590ebb5c69e6fe0e9e",
+      "bytes": 12461
+    },
+    {
+      "path": "RoundTripV2/roundtrip/direct/TPC-C-uschema-sinPK-generated.xmi",
+      "sha256": "97e6067a4c51ab117459a133e90e168b00d179092c37a78d62a906bb92540930",
+      "bytes": 16654
+    },
+    {
+      "path": "RoundTripV2/roundtrip/reverse/MusicServiceDoc-relational-generated.xmi",
+      "sha256": "5bf70a4ee7d92b4912abfc795a1ed53bd614e7200676edf6602bbddc6bd35fbd",
+      "bytes": 4572
+    },
+    {
+      "path": "RoundTripV2/roundtrip/reverse/MusicServiceDoc-uschema-generated.xmi",
+      "sha256": "61a56610776921212c7931a0cbfb383f02e351d78606b67bc98cfb5f74e8daa2",
+      "bytes": 7503
+    },
+    {
+      "path": "RoundTripV2/roundtrip/reverse/NorthwindDoc-relational-generated.xmi",
+      "sha256": "5bd8a588ce16fd55b69c7a1922085b90463e7c265d0eee806ea2566cdaf0b12b",
+      "bytes": 11114
+    },
+    {
+      "path": "RoundTripV2/roundtrip/reverse/NorthwindDoc-uschema-generated.xmi",
+      "sha256": "17cf2e5f685c8c63ccf73f426ebd023cdaa7b967dafb3ad6291fe33322aff0e6",
+      "bytes": 19273
+    },
+    {
+      "path": "RoundTripV2/roundtrip/reverse/TPC-CDoc-relational-generated.xmi",
+      "sha256": "f63be8644aacdac42b5ef71ab04a4e110eb9314a932c7f9c70ee5937d9b5f2ec",
+      "bytes": 9027
+    },
+    {
+      "path": "RoundTripV2/roundtrip/reverse/TPC-CDoc-uschema-generated.xmi",
+      "sha256": "98858eb67b6387441d1fc085b3bd10fd7a29033eaa39f4811d5289eae528d75a",
+      "bytes": 15324
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/Document2Text.xtend",
+      "sha256": "1a4cd97336bd77a9f0ef557fd8e5bd08b61b0de0ba57d983a80322ef394559bb",
+      "bytes": 3623
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/Relational2USchema.xtend",
+      "sha256": "807a5ba2535761686bb30354a80d6159fff68e3b044a5c4b625a374ae7e2eb70",
+      "bytes": 16017
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/RelationalAPI.xtend",
+      "sha256": "d9d92b73420bb35316f77cc298880ceb65a08a886a5eed5055a5ee0a66207ddf",
+      "bytes": 9049
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/USchemaAPI.xtend",
+      "sha256": "dad381381503b8e7934940edaf01009cbc9966f21e9331eeb174a334a16a9519",
+      "bytes": 2632
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/Uschema2Document.xtend",
+      "sha256": "3da190e458856cef7af232f352f984f5a81f18f82ed0e4ec08fb18514288bc00",
+      "bytes": 18064
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/main/Principal.java",
+      "sha256": "f0fbacfbf7d6464592eb71f175f1baa609d4d7f765954b474bdc6836818bd968",
+      "bytes": 8686
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/mapping/Document2Uschema.xtend",
+      "sha256": "de8c207132df0c5e4b5846640c63266e05f202e3463e32a23ca9263c81ff30c0",
+      "bytes": 10116
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/mapping/USchema2Relational.xtend",
+      "sha256": "02a89a2652c2454715a70f3c248cb1f4c9c04a5fac2e41bb31b460dd65169987",
+      "bytes": 16805
+    },
+    {
+      "path": "RoundTripV2/src/um/modelum/migration/mapping/Uschema2Document.xtend",
+      "sha256": "287c89ec9a6dd848c7fb85fd841cf4cfe526e85efac2640a0bb05dbd037f4b34",
+      "bytes": 17640
+    },
+    {
+      "path": "RoundTripV2/xtend-gen/um/modelum/migration/.gitignore",
+      "sha256": "ea6a67b78fa6dc9fa0ed8a7aa97c734afccf47f1c3c2744a6b4ed6fc5939a8ab",
+      "bytes": 260
+    },
+    {
+      "path": "RoundTripV2/xtend-gen/um/modelum/migration/main/.gitignore",
+      "sha256": "729b0fd49d93ab115312ad62ca7e22c9a820822bb2c264f132bc6e25beb7c63a",
+      "bytes": 38
+    },
+    {
+      "path": "RoundTripV2/xtend-gen/um/modelum/migration/mapping/.gitignore",
+      "sha256": "54d2bdd96ae7bc82ba4b296aea01fd18d128debf7ac0d894ccb143b0dbbad17d",
+      "bytes": 168
+    },
+    {
+      "path": "TestSpeed/.classpath",
+      "sha256": "3ddc1b680bdcd2349db7810ca14cb5a28edba3b1741fb4766d9927a4cca2533e",
+      "bytes": 1075
+    },
+    {
+      "path": "TestSpeed/.project",
+      "sha256": "739d4de2b16a4472796fc1a9bd94e5549ba72a2bf13a67480a9998726ebd8fe7",
+      "bytes": 385
+    },
+    {
+      "path": "TestSpeed/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
+      "bytes": 57
+    },
+    {
+      "path": "TestSpeed/.settings/org.eclipse.jdt.core.prefs",
+      "sha256": "244acb1ba955fa3392a7eb1f51fb91ab454e16b90008eff4e74a7911268b175e",
+      "bytes": 594
+    },
+    {
+      "path": "TestSpeed/src/Speed.java",
+      "sha256": "816ee27d0f53f0c45610d93959d0821c11438468f03e33f132a0d30a77710426",
+      "bytes": 11214
+    },
+    {
+      "path": "Trace/.classpath",
+      "sha256": "792ee379ebba42789584733c768dde5f28be3f6194561ad9983ff6bb9fd4f92c",
+      "bytes": 857
+    },
+    {
+      "path": "Trace/.project",
+      "sha256": "d175b98b758aa377323ae634938ebfa0edbccb86eb0eece9766ac08832a1553d",
+      "bytes": 569
+    },
+    {
+      "path": "Trace/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
+      "bytes": 57
+    },
+    {
+      "path": "Trace/.settings/org.eclipse.jdt.core.prefs",
+      "sha256": "244acb1ba955fa3392a7eb1f51fb91ab454e16b90008eff4e74a7911268b175e",
+      "bytes": 594
+    },
+    {
+      "path": "Trace/src/um/modelum/migration/Trace.xtend",
+      "sha256": "62d03600011420b7ce39ee35287010ca1d378ad1a35ae05c7c3c5c2d82e60c75",
+      "bytes": 22997
+    },
+    {
+      "path": "Trace/xtend-gen/um/modelum/migration/.gitignore",
+      "sha256": "28326a89521fdb02ca9c0ef7a633fd9e192a80e235a9e23a4f07c84527902bdd",
+      "bytes": 34
+    },
+    {
+      "path": "um.modelum.documentMM/.classpath",
+      "sha256": "c03cef9ab55ed1585ad02289028f80c4c2aa1af23d7b56988753de122dd8c397",
+      "bytes": 375
+    },
+    {
+      "path": "um.modelum.documentMM/.project",
+      "sha256": "0bb938b03e3829cfd13d6bc6ab87b84e7e7a4f2993e34493a3a747c881eec902",
+      "bytes": 682
+    },
+    {
+      "path": "um.modelum.documentMM/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
+      "bytes": 57
+    },
+    {
+      "path": "um.modelum.documentMM/META-INF/MANIFEST.MF",
+      "sha256": "f63c25bf8ad12c216d9c6b65ad146559b03b87f4a129b01fa0a565c44bef017d",
+      "bytes": 540
+    },
+    {
+      "path": "um.modelum.documentMM/build.properties",
+      "sha256": "0e11c3e088d5fc491ecfb391a9398cf80c99a11b213f96256da6252a72a95712",
+      "bytes": 199
+    },
+    {
+      "path": "um.modelum.documentMM/metamodel/document.ecore",
+      "sha256": "646a3f9cc7eab04372236d5d5eff5755db4b7dd361ac14d1889796aa0f634b2a",
+      "bytes": 3298
+    },
+    {
+      "path": "um.modelum.documentMM/metamodel/document.genmodel",
+      "sha256": "fefa0bb51ecd603cc9eb0a673a7c68191bcc9b65772f04c195fba8f9cdca8f82",
+      "bytes": 3686
+    },
+    {
+      "path": "um.modelum.documentMM/plugin.properties",
+      "sha256": "025980e99dee7371e728c6f4877b67ec6737ec27c8d183bb1c78625cb2bdaa1a",
+      "bytes": 66
+    },
+    {
+      "path": "um.modelum.documentMM/plugin.xml",
+      "sha256": "6ce9cb5686e780615c12711277d2fcd91a10a9a3bcf0b7703baaede7331fd93b",
+      "bytes": 409
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/Array.java",
+      "sha256": "49f6d9206c5f40d1deb10c4b23eac29aef3f824feb759be188cbb17a540d016f",
+      "bytes": 1115
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/DataType.java",
+      "sha256": "8645cf2397fdfc1b2c416c87cd6cfb5fc84d7845977272321f00219dbe1de077",
+      "bytes": 5586
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/DocumentSchema.java",
+      "sha256": "b44aad787252a116e0a63354c1f3d7b1901cb9e9a2605d94ea7631e95a16e185",
+      "bytes": 2345
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/DocumentType.java",
+      "sha256": "39ca47f770f7bf26cdd5a6a34ae51b9133163a16504d6e67920c47da9d7eb03f",
+      "bytes": 1795
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/DocumentschemaFactory.java",
+      "sha256": "6dfeba2ab244a05f4031fab4c88f440e68d6d74eef28e002f9fa482d1f32c141",
+      "bytes": 2499
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/DocumentschemaPackage.java",
+      "sha256": "f6a16315cb7284330d6d9c624a45e39c1724c737b166943348873e13da11897a",
+      "bytes": 28250
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/Embedded.java",
+      "sha256": "12a82c04acc061379027a9d3e794f48e25867299d5d5ada6fb742a5590855f20",
+      "bytes": 1730
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/Field.java",
+      "sha256": "c01daa23ff774c22ea67c8a114d3ce80214ce852ef7c1101981e6c4e2ba165b2",
+      "bytes": 1813
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/PrimitiveType.java",
+      "sha256": "d8e142c1f9df90fe6ab10055efde20115973aa2a23a4ce56fe7bc748c1dba759",
+      "bytes": 1333
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/Property.java",
+      "sha256": "d70abe8044f6a524c9f7f086f6ca40508ead47d6da92d706d1946e9977faee16",
+      "bytes": 1173
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/Reference.java",
+      "sha256": "68b665c97a25d46140473bac29921dc9ebdd3a4cc907db4ddd748f4d11f2a1e3",
+      "bytes": 1879
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/Type.java",
+      "sha256": "e0e5d667020a2a492006b3b7f088de966b4bbd7ed38a50a6f493481fcbb723a6",
+      "bytes": 365
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/ArrayImpl.java",
+      "sha256": "1b6ffb7e5f02e0b274698e0b022c3430d83059c286e38353fcfe61aff8c22ebf",
+      "bytes": 3498
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/DocumentSchemaImpl.java",
+      "sha256": "849e16d06cef7fee01126d8f1f5dcb376b01f59626b83ad99bf2060e37415585",
+      "bytes": 6905
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/DocumentTypeImpl.java",
+      "sha256": "7cd773f48541232f45c236aa3a48e01619d9ae923336b03231fa5b04b05b398d",
+      "bytes": 5653
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/DocumentschemaFactoryImpl.java",
+      "sha256": "70be5aa3adfaa3be56a40451178d334f80d15d798961a3c9fb9c879a0f0f50bb",
+      "bytes": 5604
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/DocumentschemaPackageImpl.java",
+      "sha256": "ca506bbe0f76f47be8a5ce0673bc952128a6a29c2723be0a391077adf65dec17",
+      "bytes": 16963
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/EmbeddedImpl.java",
+      "sha256": "23f90f26155e9d2ac2b6353b155ed30a836c1e8a79e6e9aecccba8c7d7920cd3",
+      "bytes": 5524
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/FieldImpl.java",
+      "sha256": "9bdac4d433fb0de9e5edd18b6789e7e75cb0a4910599db07f5c57406e06d733b",
+      "bytes": 5172
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/PrimitiveTypeImpl.java",
+      "sha256": "11e2985a7d5283040ab2217a21fa8f4bac2a67e8b2493e0710684c3468872890",
+      "bytes": 3820
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/PropertyImpl.java",
+      "sha256": "62dca9e8012058a71d691711cd44f631a8708d03353630b6637c62c30fc2f639",
+      "bytes": 3642
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/ReferenceImpl.java",
+      "sha256": "590804d6e3b8e5b1df5b011f0b5578bfda5ce46b15b9308bf7349e4728543c68",
+      "bytes": 5256
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/impl/TypeImpl.java",
+      "sha256": "c7d38ca5bf8321500e3efaf5223a1fe43a34ffe7182d80455e5103a1a28da99a",
+      "bytes": 778
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/util/DocumentschemaAdapterFactory.java",
+      "sha256": "19f69ba00632bc9f1ce2ca60d92d27bde95eaad548208c7124ab8c9c433cb5fa",
+      "bytes": 8041
+    },
+    {
+      "path": "um.modelum.documentMM/src/documentschema/util/DocumentschemaSwitch.java",
+      "sha256": "518b23f3e72136a0696b0fcc7760a99e443daafd74ce3437274136a0c2315e1d",
+      "bytes": 9740
+    },
+    {
+      "path": "um.modelum.relationalMM/.classpath",
+      "sha256": "8dd388d5385f00423b7600bf596944cb635915f1318b375dc0d1657e9cd1297a",
+      "bytes": 471
+    },
+    {
+      "path": "um.modelum.relationalMM/.project",
+      "sha256": "cd602dad809a038324e9ffd5e1630ae2a6606a3d0de41c7738d1421b87325bca",
+      "bytes": 684
+    },
+    {
+      "path": "um.modelum.relationalMM/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
+      "bytes": 57
+    },
+    {
+      "path": "um.modelum.relationalMM/.settings/org.eclipse.jdt.core.prefs",
+      "sha256": "ff7b0de23cc719892ae139cbf8e6cbeb9ebe2b89de60657a34f5a93b0511aa81",
+      "bytes": 547
+    },
+    {
+      "path": "um.modelum.relationalMM/META-INF/MANIFEST.MF",
+      "sha256": "44341d65d27a360eda821e45a1dc2f2fddd8a1de9bbcc4a0eb1d500bb3925cef",
+      "bytes": 550
+    },
+    {
+      "path": "um.modelum.relationalMM/build.properties",
+      "sha256": "0e11c3e088d5fc491ecfb391a9398cf80c99a11b213f96256da6252a72a95712",
+      "bytes": 199
+    },
+    {
+      "path": "um.modelum.relationalMM/metamodel/relational.ecore",
+      "sha256": "115cb6521d8af7db2a1038b76610c22ec7769a8a130dda121bd0bdf63ad70213",
+      "bytes": 4720
+    },
+    {
+      "path": "um.modelum.relationalMM/metamodel/relational.genmodel",
+      "sha256": "050c6241ec32dd286bb9ac31d249abb65328a3656f09589bf1027bd705dbff3f",
+      "bytes": 4579
+    },
+    {
+      "path": "um.modelum.relationalMM/plugin.properties",
+      "sha256": "2b4d95dae31ee493c69a26f6964482c673de5760344e21be6d963dc303050ee8",
+      "bytes": 75
+    },
+    {
+      "path": "um.modelum.relationalMM/plugin.xml",
+      "sha256": "074796fda921687ec0860a7d303a23a9a86f3343877e255ca48139972d7989f1",
+      "bytes": 419
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/Column.java",
+      "sha256": "fe449340fa8579941d5f57ec4dac9c341511d19f960eea377ba41d58f03c0c16",
+      "bytes": 4572
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/FKey.java",
+      "sha256": "fe8013d8c8a2e70d8f86b58812711c5ea29c13f9c151672ef8a81ccad60fea62",
+      "bytes": 5562
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/Key.java",
+      "sha256": "bee2c4004d998b17b1efbc67255106cd18cec13787229053ac8097a8fe2cc1e4",
+      "bytes": 3479
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/NamedElement.java",
+      "sha256": "bbb77a0fc4041d2bb7b3d7ad949fb7532770d12195f33a97124841cdff421769",
+      "bytes": 1200
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/ReferentialAction.java",
+      "sha256": "27a6a2bfdd55dc65c28cb15cee738cf93ee12bda30d879eced58147abb2d00a9",
+      "bytes": 5853
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/RelationalSchema.java",
+      "sha256": "67715868b1b54e070237f34bfafeb1a7c9727a3bf0a22938979f5e876d6c7e7b",
+      "bytes": 2722
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/RelationalschemaFactory.java",
+      "sha256": "a27e02028ea3b40628b8507b9b92e00683f26a2b37ec4f5bb00c363cc0c4ce47",
+      "bytes": 2242
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/RelationalschemaPackage.java",
+      "sha256": "5abdb1bf8a5f2552d97e3d81243e9cab4750fda32ac72e999c19e92a7ae882c0",
+      "bytes": 31631
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/Table.java",
+      "sha256": "14ade8b9486f1ca7993c995835e878d7f0c78883b93e5b7d1bd08cd8305fe7e6",
+      "bytes": 3437
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/impl/ColumnImpl.java",
+      "sha256": "a136145132597eccdff9cfdfc392ac1626d0241bd677cbe688a204d84126e8cb",
+      "bytes": 11824
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/impl/FKeyImpl.java",
+      "sha256": "542ea62b4d560ffb63c9fa8ec0f5bb6feaf68f4f047b68dd9f507ed4e669f41e",
+      "bytes": 13670
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/impl/KeyImpl.java",
+      "sha256": "3c66d9c3fbe2155d45b9b5d76e014d94021d1b733949cd891b1b25791785c189",
+      "bytes": 9938
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/impl/NamedElementImpl.java",
+      "sha256": "2a8c291beeb0d993b13cbc2c99dd46476cfed1457f9ad23895ac5a0c4f774806",
+      "bytes": 3714
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/impl/RelationalSchemaImpl.java",
+      "sha256": "1f53a5b1c8af6ce4ff872ad80b8d41894a612b7d2c0548fa1c7ed8b72f55c707",
+      "bytes": 7867
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/impl/RelationalschemaFactoryImpl.java",
+      "sha256": "f985fd0c382954cf081454097cb6f9797513be84a52ce2a3dc9c6f9be3c0cf60",
+      "bytes": 5370
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/impl/RelationalschemaPackageImpl.java",
+      "sha256": "71996199a0675bed4d2b76319505ede0bb7cf327f92c44f1a8c4f853e56443fc",
+      "bytes": 19850
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/impl/TableImpl.java",
+      "sha256": "d21a6ce2278dafae5aedfef48d0630f91922bdeb427cbe713f0a321e4ad09a9c",
+      "bytes": 9586
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/util/RelationalschemaAdapterFactory.java",
+      "sha256": "6bff1b2e04f9ea82542447c4b69916b975c44be8cf57e4e4c93a341bb433941f",
+      "bytes": 6260
+    },
+    {
+      "path": "um.modelum.relationalMM/src/relationalschema/util/RelationalschemaSwitch.java",
+      "sha256": "c9a594fd4ea3383e3ae515c47404024ad43ae893bbc4eed4c4e2af629d4e69bf",
+      "bytes": 7323
+    },
+    {
+      "path": "um.modelum.uschemaMM/.classpath",
+      "sha256": "8dd388d5385f00423b7600bf596944cb635915f1318b375dc0d1657e9cd1297a",
+      "bytes": 471
+    },
+    {
+      "path": "um.modelum.uschemaMM/.project",
+      "sha256": "9e6f8ed20b21ff0885e7c495b17221b38d56854ca32c21dfbd64d6c8e15a8f16",
+      "bytes": 681
+    },
+    {
+      "path": "um.modelum.uschemaMM/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0",
+      "bytes": 57
+    },
+    {
+      "path": "um.modelum.uschemaMM/.settings/org.eclipse.jdt.core.prefs",
+      "sha256": "ff7b0de23cc719892ae139cbf8e6cbeb9ebe2b89de60657a34f5a93b0511aa81",
+      "bytes": 547
+    },
+    {
+      "path": "um.modelum.uschemaMM/META-INF/MANIFEST.MF",
+      "sha256": "c56b8519648d262637d431938b526d801dc694c6fe5fc63ca6c8a7a2c030ffa3",
+      "bytes": 517
+    },
+    {
+      "path": "um.modelum.uschemaMM/build.properties",
+      "sha256": "0e11c3e088d5fc491ecfb391a9398cf80c99a11b213f96256da6252a72a95712",
+      "bytes": 199
+    },
+    {
+      "path": "um.modelum.uschemaMM/metamodel/uschema.ecore",
+      "sha256": "ae69272bf4e3e199e24bbd1434eae8d9355143eeb4229916e0381b8990c4a156",
+      "bytes": 6821
+    },
+    {
+      "path": "um.modelum.uschemaMM/metamodel/uschema.genmodel",
+      "sha256": "19654c2108d158a432bd734324ebbf9d28ce655f3971cf1535a1f24c8aa08705",
+      "bytes": 6358
+    },
+    {
+      "path": "um.modelum.uschemaMM/plugin.properties",
+      "sha256": "5d2e6a3728a9dc26681d64fd51b48a528b9d4bba39c9ecdf43f70d9ddb1068dc",
+      "bytes": 72
+    },
+    {
+      "path": "um.modelum.uschemaMM/plugin.xml",
+      "sha256": "3527c056e21f93c828b22be5bada178607456f4b690f9f2971c1496c5ca469c3",
+      "bytes": 385
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/Aggregate.java",
+      "sha256": "ea41a6eed65d2122f2e385e36f1e38e19548ab08b5bce7e7870b184fb7db6c76",
+      "bytes": 2839
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/Attribute.java",
+      "sha256": "f0ce4cb0b54dc35f5ebc510740605dde48c744f09179a92fa19c7ff4f88cc06b",
+      "bytes": 2659
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/DataType.java",
+      "sha256": "868c7f7d8e100856e992f7c9cbcd78c98521b703930cd8a25927a54ca473d5ad",
+      "bytes": 361
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/EntityType.java",
+      "sha256": "5f80ca78b5d6b99ee74dd3ba185856c0982265d2e142b6fed89e03eb7e33c07c",
+      "bytes": 1134
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/Feature.java",
+      "sha256": "25d477823b24befcfe1aa9a73268447ae4b60d984656a5039c289b46af345c31",
+      "bytes": 2016
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/Key.java",
+      "sha256": "b71c6927880c0e3c190dcd86a5b35513b5319db5ffb4c206e61749b37ef62de1",
+      "bytes": 1755
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/LogicalFeature.java",
+      "sha256": "d8dfce950f6a7312ef2a367599deda3df8ae558f0ceec73cb8ca98dad21d0747",
+      "bytes": 346
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/Null.java",
+      "sha256": "3cf38120c06d713f0ae67f920b5504d60904a869d588261360151c2fc72fbb71",
+      "bytes": 290
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/PList.java",
+      "sha256": "5bdc01f94f34fd0f0c42b720f1b70d638304ea6b8d7ddd8b79a045f8516acc5d",
+      "bytes": 1211
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/PMap.java",
+      "sha256": "368a75fdba7c173f9af4ce7da4b29d9a13669427de711acc3cc848b1add8bd9e",
+      "bytes": 1983
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/PSet.java",
+      "sha256": "0fa70c398edff3549f92eb74e3710bca8648044803fbc8f3f2bbf10ef3d1b4fc",
+      "bytes": 1204
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/PTuple.java",
+      "sha256": "db1b5a4a1f48f71dc5d5c54fbd5edb83a2a692c7c97ae12bc7950dda1ea84b6f",
+      "bytes": 931
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/PrimitiveType.java",
+      "sha256": "3306db6abd065cf375962ecb28be5a8e8a68210986f7ce27028b16407fefd704",
+      "bytes": 1106
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/Reference.java",
+      "sha256": "27db09457513765d633b01d7daba868b58d17c486f313f0452487b248581c93c",
+      "bytes": 5019
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/RelationshipType.java",
+      "sha256": "a91176785392ffa94a28d9e83f6c447256211ac058c3430e64d0ee6e9ae76209",
+      "bytes": 1147
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/SchemaType.java",
+      "sha256": "58e3bd6385faaa6113e75c62e6c735c4bea2772f4bc1941bf4c3bfd78f4b1f7c",
+      "bytes": 3231
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/StructuralFeature.java",
+      "sha256": "bb5f1d937039a2084f8fa22264b791eeeb882b80e7d9ed186bf64f36fe785408",
+      "bytes": 1244
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/USchema.java",
+      "sha256": "8c350c313be05f044c3a49232dc95a38daf0f688df3bfc4ac238a32223d8559d",
+      "bytes": 2192
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/UschemaFactory.java",
+      "sha256": "db2c51197945865a27f262aea3b94cd8814ef800026107ba4e00512f14081693",
+      "bytes": 3731
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/UschemaPackage.java",
+      "sha256": "5f64467036d1ecff70ad6edd79feea5b0744e1f8c266af801f90becf38cf5fbd",
+      "bytes": 58655
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/AggregateImpl.java",
+      "sha256": "3191ce6bcbd77f981b8f335b2975db890aeb858f0a17517a419b8059aaca9e02",
+      "bytes": 9193
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/AttributeImpl.java",
+      "sha256": "aa799684fbbdaa059acc678256ce7d321011d313b1d5cf83e543bb65090dfdf9",
+      "bytes": 8924
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/DataTypeImpl.java",
+      "sha256": "eebfdcc9ddc3ee2e6e6055b39941bca8971ca49c7bf6232dbb1726c7a770b2b5",
+      "bytes": 773
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/EntityTypeImpl.java",
+      "sha256": "45c8d008572acba5cd552a6d133ecf47bde54ead96f65e12dbd2015f4a395959",
+      "bytes": 3475
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/FeatureImpl.java",
+      "sha256": "0af6049f712ef8c486bc500f2e819bd89f2f04efe6f170f6186e6f673bb118e0",
+      "bytes": 6864
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/KeyImpl.java",
+      "sha256": "94b052685ba31ec2da7242a59181efd2b6f9232444b8d6a63cba55672e45760b",
+      "bytes": 5744
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/LogicalFeatureImpl.java",
+      "sha256": "0af4486cb6e9cda9288962a3f6f55f3b56ffde93cffc3c9d6d2bfa913c785ea7",
+      "bytes": 741
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/NullImpl.java",
+      "sha256": "a7d415a9d1029a7e2f2598892834f288e4b343085256a9819cde34fdc422f786",
+      "bytes": 661
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/PListImpl.java",
+      "sha256": "1cc4597d505e3e04495167f6d8e84b8673ae75713c571b19c939e895a1daa73a",
+      "bytes": 4488
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/PMapImpl.java",
+      "sha256": "c78722fb66ac82c26092b5fa0cb7fdb47021dd7c80ea12466974b7af9922dfa5",
+      "bytes": 6596
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/PSetImpl.java",
+      "sha256": "b6c7cbeb389b9b876e0d586a636e6ada904e816dc9c25f1d8458e16aa7e91d1c",
+      "bytes": 4471
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/PTupleImpl.java",
+      "sha256": "cda36f73da9fbdfbba4e8842840b4ff2bf2dea041993c25328e6a7105b29d604",
+      "bytes": 3448
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/PrimitiveTypeImpl.java",
+      "sha256": "080543840cba66d56d8ea5723661124453e2bbf9e5a4c469a69177c4aa1c3bf9",
+      "bytes": 3557
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/ReferenceImpl.java",
+      "sha256": "91e0c64af8567465966ad8a53623edb332481516535262c1730695fc041df68b",
+      "bytes": 14547
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/RelationshipTypeImpl.java",
+      "sha256": "48bb23bb44f5e77c5be329cf7acec8f535f4b670046ec6ae426aefb5b9f292db",
+      "bytes": 4185
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/SchemaTypeImpl.java",
+      "sha256": "5d50541c68406ef3c80fc5a4e75dacb4503c4a0d449aaac07e718ff91bda219a",
+      "bytes": 10195
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/StructuralFeatureImpl.java",
+      "sha256": "441976939434a98f9b7bd106ff28957135e10298ea5708662f417b6679045726",
+      "bytes": 3708
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/USchemaImpl.java",
+      "sha256": "3faa923c4f5dcd9f279f700e15b584881c80006daef521121ab03ad4f7d525de",
+      "bytes": 6729
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/UschemaFactoryImpl.java",
+      "sha256": "5e1bdf915e5d79d2af2efe40ff832a17a48a5573da2165e4e39109d0226509c8",
+      "bytes": 5299
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/impl/UschemaPackageImpl.java",
+      "sha256": "e8ca6f9b96180daaeda69fbfc4c611a6aabe17ce57d31dc8573c077f3a11e68c",
+      "bytes": 30321
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/util/UschemaAdapterFactory.java",
+      "sha256": "d1d72a7c4609d9451caf2916b42e50b8e47026c59a094e5b1f487562d5a908dd",
+      "bytes": 13061
+    },
+    {
+      "path": "um.modelum.uschemaMM/src/uschema/util/UschemaSwitch.java",
+      "sha256": "30541a89b3a7981abd213cf76da7ccc116e36d47b28ba3f802aca53b48282afa",
+      "bytes": 17228
+    }
+  ],
+  "excluded": [
+    {
+      "path": "DataMigration/BAK/DocumentAPI.java",
+      "sha256": "af377a915022cea8366ea9aee4b131e4558f55eecb8f468a94d5d1785c32e2e3",
+      "bytes": 8078,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "DataMigration/BAK/Principal.java",
+      "sha256": "9abc54e1ba1e31708381b5a246db2c315a5b200621f224748d24b09b6e71d9ed",
+      "bytes": 5831,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "DataMigration/BAK/PrincipalLocal.java",
+      "sha256": "ff4af397411d63056a1b0e66700d32d32aac5aa67a2bc6a10d04dcf1b4dc4a2d",
+      "bytes": 10541,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "DataMigration/BAK/USchemaRelCursor.java",
+      "sha256": "37cdba662072fdc7a73dbbe5e07e075766c4ad9c1f76f10b61574831b262cf53",
+      "bytes": 22378,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/bson-5.1.2.jar",
+      "sha256": "c1c127a4f004a524de1b3d8179bb7a7036d980159fa56569be9067de958bc527",
+      "bytes": 508114,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/mongodb-driver-core-5.1.2.jar",
+      "sha256": "fc3bf956a92fd6915901205327179549d27c62601378bd01dd414bb817f59e24",
+      "bytes": 1704223,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/mongodb-driver-sync-5.1.2.jar",
+      "sha256": "cd839de669a68ca2379260fec4406597f12d0fd44e7cc00111eb68f3389d65ad",
+      "bytes": 153554,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/netty-buffer-4.1.87.Final.jar",
+      "sha256": "4e3abdf4ddb8810f5fb4a2b57c9144407873b359faa1894007673ed1465dd3e8",
+      "bytes": 305018,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/netty-handler-4.1.87.Final.jar",
+      "sha256": "31a20e1de13b06a677a4719fd5aa95635982114a32c1d034739a48cceada2383",
+      "bytes": 542535,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/netty-transport-4.1.87.Final.jar",
+      "sha256": "17ed465cf5b1579b72379e47be3ba7fccb09dda8d95d47c8d668118483b08f43",
+      "bytes": 488388,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/MongoDBdependencies/slf4j-api-1.7.6.jar",
+      "sha256": "059a84383fad78d85d9c3951bebafab7200c704c411a9d25c913340c3877604a",
+      "bytes": 28688,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/Trace.jar",
+      "sha256": "74e065e3e6c210feb49d79cf52573d5d2a2ef39d1dc177eaf44adc38a5a3c1fe",
+      "bytes": 5408076,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/TraceCanger.jar",
+      "sha256": "9e55bf6fe2df38ae7f0e1b255b381825ed42d30757b45ae04f16b5e0e7115eb6",
+      "bytes": 5544791,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/documentMM.jar",
+      "sha256": "3498777cda51b4830649e27167de26c84f5de3f1b451b0878f45693ce4dedc74",
+      "bytes": 34995,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/ojdbc8.jar",
+      "sha256": "7c3acc5cb693034dff0b18028c2e9189e89cad9a01d1872e7968bec36d2e84b1",
+      "bytes": 4397918,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/org.eclipse.emf.common_2.44.0.v20251025-0946.jar",
+      "sha256": "a35436f2811295603bbc56f752e967339f7ca842b45df910a79700453277b97a",
+      "bytes": 403741,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/org.eclipse.emf.ecore.xmi_2.39.0.v20250910-1205.jar",
+      "sha256": "c3d1e847f168e5a2602449b8afd67527a45959a94e259a1b1cbc705ad290e245",
+      "bytes": 255116,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar",
+      "sha256": "c2473ebf30c2e8daf446638913257b8c3f5219a35318f3679c234482dd23228b",
+      "bytes": 1402973,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/postgresql-42.7.10.jar",
+      "sha256": "cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387",
+      "bytes": 1137016,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/relationalMM.jar",
+      "sha256": "7f43ffcaf4125e1064c43ddab514568ad205ac5db6e68f6d488b5fa9aecc7dd0",
+      "bytes": 37297,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/lib/uschemaMM.jar",
+      "sha256": "d689469c19a218661da1565a214ece702cfc3c4099e22ad4e87dd45da8bd5216",
+      "bytes": 58431,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "DataMigration/src/oracleDriver/ojdbc11.jar",
+      "sha256": "2cc69b821da842c5f5be8877444631cf9fa89561f1f6f5ad7bf1293eb669fc27",
+      "bytes": 7199197,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "OrionTraceChanger/BAK/Prueba.java",
+      "sha256": "646864ca34af091e0762dce2e4c2f1604317bb8e3eca31153a489e253f01049e",
+      "bytes": 1045,
+      "reason": "backup directory excluded from active source selection"
+    },
+    {
+      "path": "OrionTraceChanger/lib/Trace.jar",
+      "sha256": "74e065e3e6c210feb49d79cf52573d5d2a2ef39d1dc177eaf44adc38a5a3c1fe",
+      "bytes": 5408076,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "OrionTraceChanger/lib/TraceSourceCode.zip",
+      "sha256": "b9d3efce4f116184fa6f5cb4192b452031041e2fafd1c5af52ea57215056d1c0",
+      "bytes": 10124,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "OrionTraceChanger/lib/documentMM.jar",
+      "sha256": "3498777cda51b4830649e27167de26c84f5de3f1b451b0878f45693ce4dedc74",
+      "bytes": 34995,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "OrionTraceChanger/lib/relationalMM.jar",
+      "sha256": "7f43ffcaf4125e1064c43ddab514568ad205ac5db6e68f6d488b5fa9aecc7dd0",
+      "bytes": 37297,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "OrionTraceChanger/lib/uschemaMM.jar",
+      "sha256": "d689469c19a218661da1565a214ece702cfc3c4099e22ad4e87dd45da8bd5216",
+      "bytes": 58431,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "RoundTripV2/lib/OLD-Trace.jar",
+      "sha256": "82b4596d12954ed36d15ab606c4a9f130907c864a021843f5d6572c073f51263",
+      "bytes": 5539,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "RoundTripV2/lib/Trace.jar",
+      "sha256": "74e065e3e6c210feb49d79cf52573d5d2a2ef39d1dc177eaf44adc38a5a3c1fe",
+      "bytes": 5408076,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "RoundTripV2/lib/documentMM.jar",
+      "sha256": "3498777cda51b4830649e27167de26c84f5de3f1b451b0878f45693ce4dedc74",
+      "bytes": 34995,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "RoundTripV2/lib/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar",
+      "sha256": "c2473ebf30c2e8daf446638913257b8c3f5219a35318f3679c234482dd23228b",
+      "bytes": 1402973,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "RoundTripV2/lib/relationalMM.jar",
+      "sha256": "7f43ffcaf4125e1064c43ddab514568ad205ac5db6e68f6d488b5fa9aecc7dd0",
+      "bytes": 37297,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "RoundTripV2/lib/uschemaMM.jar",
+      "sha256": "d689469c19a218661da1565a214ece702cfc3c4099e22ad4e87dd45da8bd5216",
+      "bytes": 58431,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "TestSpeed/MongoDBdependencies/bson-5.1.2.jar",
+      "sha256": "c1c127a4f004a524de1b3d8179bb7a7036d980159fa56569be9067de958bc527",
+      "bytes": 508114,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "TestSpeed/MongoDBdependencies/mongodb-driver-core-5.1.2.jar",
+      "sha256": "fc3bf956a92fd6915901205327179549d27c62601378bd01dd414bb817f59e24",
+      "bytes": 1704223,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "TestSpeed/MongoDBdependencies/mongodb-driver-sync-5.1.2.jar",
+      "sha256": "cd839de669a68ca2379260fec4406597f12d0fd44e7cc00111eb68f3389d65ad",
+      "bytes": 153554,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "TestSpeed/MongoDBdependencies/netty-buffer-4.1.87.Final.jar",
+      "sha256": "4e3abdf4ddb8810f5fb4a2b57c9144407873b359faa1894007673ed1465dd3e8",
+      "bytes": 305018,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "TestSpeed/MongoDBdependencies/netty-handler-4.1.87.Final.jar",
+      "sha256": "31a20e1de13b06a677a4719fd5aa95635982114a32c1d034739a48cceada2383",
+      "bytes": 542535,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "TestSpeed/MongoDBdependencies/netty-transport-4.1.87.Final.jar",
+      "sha256": "17ed465cf5b1579b72379e47be3ba7fccb09dda8d95d47c8d668118483b08f43",
+      "bytes": 488388,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "TestSpeed/MongoDBdependencies/slf4j-api-1.7.6.jar",
+      "sha256": "059a84383fad78d85d9c3951bebafab7200c704c411a9d25c913340c3877604a",
+      "bytes": 28688,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "TestSpeed/PostgreSQLdependencies/postgresql-42.7.10.jar",
+      "sha256": "cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387",
+      "bytes": 1137016,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "Trace/lib/org.eclipse.emf.common_2.44.0.v20251025-0946.jar",
+      "sha256": "a35436f2811295603bbc56f752e967339f7ca842b45df910a79700453277b97a",
+      "bytes": 403741,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "Trace/lib/org.eclipse.emf.ecore.xmi_2.39.0.v20250910-1205.jar",
+      "sha256": "c3d1e847f168e5a2602449b8afd67527a45959a94e259a1b1cbc705ad290e245",
+      "bytes": 255116,
+      "reason": "binary or archive inventoried for later dependency selection"
+    },
+    {
+      "path": "Trace/lib/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar",
+      "sha256": "5b77f1caef14059d74c9a60bac8da7b77421ea1d6aa1bcb0e50d5a76907b2cfc",
+      "bytes": 91,
+      "reason": "binary or archive inventoried for later dependency selection"
+    }
+  ]
+}

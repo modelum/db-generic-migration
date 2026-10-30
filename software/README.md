@@ -1,10 +1,7 @@
-# software
+# Software
 
-Implementation components used by the paper. Component versions and build instructions will be documented as artifacts are verified.
+[Source projects](source-projects/) contains unchanged snapshots of the eight active development projects. [DEPENDENCIES.md](source-projects/DEPENDENCIES.md) documents project roles, dependency order and recovered build configuration. Source provenance and checksums are included.
 
-Status: metamodel candidates recovered; implementation selection and executable validation pending.
+[metamodels/](metamodels/) contains the selected OneDrive Ecore candidates. The original Ecore/runtime sources within source-projects are retained unchanged, and their alignment with the selected definitions remains pending. See [COMPATIBILITY.txt](metamodels/COMPATIBILITY.txt).
 
-
-## Metamodel recovery status
-
-[metamodels/](metamodels/) now contains recovered Ecore candidates and an earlier U-Schema variant. The current OneDrive candidate includes targetShareability; compatibility with recovered models and runtime libraries is still pending. Other implementation components have not yet been copied.
+The folders data-migrator, schema-transformations, trace-updater and flat-copy provide entry points to the corresponding sources. This is not yet a compiled or validated executable distribution.

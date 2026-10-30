@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relationalschema:RelationalSchema
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:relationalschema="http://www.example.org/relationalschema"
+    name="MusicArt">
+  <tables name="Usuario">
+    <columns
+        name="id_usuario"
+        datatype="INT"/>
+    <columns
+        name="nombre"
+        datatype="VARCHAR"
+        size="255"/>
+    <columns
+        name="email"
+        datatype="VARCHAR"
+        size="255"/>
+    <columns
+        name="pass"
+        datatype="VARCHAR"
+        size="255"/>
+    <keys columns="//@tables.0/@columns.0"
+        constraintname="pk_id_usuario"/>
+    <keys columns="//@tables.0/@columns.2"
+        constraintname="uk_email"
+        isPK="false"/>
+  </tables>
+  <tables name="Lista">
+    <columns
+        name="id_lista"
+        datatype="INT"/>
+    <columns
+        name="nombre"
+        datatype="VARCHAR"
+        size="255"/>
+    <columns
+        name="descripcion"
+        datatype="VARCHAR"
+        size="1024"
+        nullable="true"/>
+    <columns
+        name="usuario"
+        datatype="INT"/>
+    <keys columns="//@tables.1/@columns.0"
+        constraintname="pk_id_lista"/>
+    <fks columns="//@tables.1/@columns.3"
+        refsTo="//@tables.0/@keys.0"
+        constraintname="fk_usuario"/>
+  </tables>
+  <tables name="Cancion">
+    <columns
+        name="id_cancion"
+        datatype="INT"/>
+    <columns
+        name="titulo"
+        datatype="VARCHAR"
+        size="255"/>
+    <columns
+        name="duracion"
+        datatype="INT"/>
+    <columns
+        name="album"
+        datatype="VARCHAR"
+        size="255"
+        nullable="true"/>
+    <columns
+        name="discografica"
+        datatype="INT"
+        nullable="true"/>
+    <keys columns="//@tables.2/@columns.0"
+        constraintname="pk_id_cancion"/>
+    <fks columns="//@tables.2/@columns.3 //@tables.2/@columns.4"
+        refsTo="//@tables.3/@keys.0"
+        constraintname="fk_album"/>
+  </tables>
+  <tables name="Album">
+    <columns
+        name="titulo"
+        datatype="VARCHAR"
+        size="255"/>
+    <columns
+        name="discografica"
+        datatype="INT"/>
+    <columns
+        name="año"
+        datatype="INT"/>
+    <keys columns="//@tables.3/@columns.0 //@tables.3/@columns.1"
+        constraintname="pk_album"/>
+    <fks columns="//@tables.2/@columns.4"
+        refsTo="//@tables.4/@keys.0"
+        constraintname="fk_discografica"/>
+  </tables>
+  <tables name="Discografica">
+    <columns
+        name="id_dis"
+        datatype="INT"/>
+    <columns
+        name="nombre"
+        datatype="VARCHAR"
+        size="255"/>
+    <keys columns="//@tables.4/@columns.0"
+        constraintname="pk_id_dis"/>
+  </tables>
+  <tables name="Cancion_añadida_a_Lista">
+    <columns
+        name="cancion"
+        datatype="INT"/>
+    <columns
+        name="lista"
+        datatype="INT"/>
+    <columns
+        name="fecha"
+        datatype="DATE"/>
+    <keys columns="//@tables.5/@columns.0 //@tables.5/@columns.1"
+        constraintname="pk_cancion_añadida"/>
+    <fks columns="//@tables.5/@columns.0"
+        refsTo="//@tables.2/@keys.0"
+        constraintname="fk_cancion"/>
+    <fks columns="//@tables.5/@columns.1"
+        refsTo="//@tables.1/@keys.0"
+        constraintname="fk_lista"/>
+  </tables>
+</relationalschema:RelationalSchema>

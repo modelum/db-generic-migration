@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relationalschema:RelationalSchema
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:relationalschema="http://www.example.org/relationalschema"
+    name="MetaShop"
+    version="1">
+  <tables name="AppUser">
+    <columns
+        name="id"
+        datatype="int"/>
+    <columns
+        name="card_number"
+        datatype="varchar"
+        size="5"/>
+    <columns
+        name="name"
+        datatype="varchar"
+        size="20"/>
+    <columns
+        name="email"
+        datatype="varchar"
+        size="25"/>
+    <columns
+        name="password"
+        datatype="varchar"
+        size="10"/>
+    <columns
+        name="address"
+        datatype="varchar"
+        size="25"/>
+    <columns
+        name="country"
+        datatype="varchar"
+        size="15"/>
+    <columns
+        name="registrationDate"
+        datatype="date"/>
+    <columns
+        name="recommendedBy"
+        datatype="int"/>
+    <columns
+        name="storeValuation"
+        datatype="int"/>
+    <columns
+        name="premium"
+        datatype="int"/>
+    <columns
+        name="date_premium"
+        datatype="date"/>
+    <columns
+        name="premium_fee"
+        datatype="int"/>
+    <keys columns="//@tables.0/@columns.0"
+        constraintname="user_key"/>
+    <keys columns="//@tables.0/@columns.1"
+        constraintname="card_number_key"
+        isPK="false"/>
+    <fks columns="//@tables.0/@columns.8"
+        refsTo="//@tables.0/@keys.0"
+        constraintname="recommendedBy_fk"/>
+  </tables>
+  <tables name="PaymentMethod">
+    <columns
+        name="user_id"
+        datatype="int"/>
+    <columns
+        name="id"
+        datatype="int"/>
+    <columns
+        name="methodName"
+        datatype="varchar"
+        size="15"/>
+    <columns
+        name="methodInfo"
+        datatype="varchar"
+        size="30"/>
+    <keys columns="//@tables.1/@columns.0 //@tables.1/@columns.1"
+        constraintname="paymentMethod_key"/>
+    <fks columns="//@tables.1/@columns.0"
+        refsTo="//@tables.0/@keys.0"
+        constraintname="user_fk"/>
+  </tables>
+  <tables name="Product">
+    <columns
+        name="id"
+        datatype="int"/>
+    <columns
+        name="name"
+        datatype="varchar"
+        size="25"/>
+    <columns
+        name="price"
+        datatype="int"/>
+    <columns
+        name="description"
+        datatype="varchar"
+        size="40"/>
+    <columns
+        name="imageURL"
+        datatype="varchar"
+        size="30"/>
+    <columns
+        name="manufacturer"
+        datatype="varchar"
+        size="20"/>
+    <columns
+        name="stock"
+        datatype="int"/>
+    <columns
+        name="category"
+        datatype="int"/>
+    <keys columns="//@tables.2/@columns.0"
+        constraintname="product_key"/>
+    <fks columns="//@tables.2/@columns.7"
+        refsTo="//@tables.3/@keys.0"
+        constraintname="category_fk"/>
+  </tables>
+  <tables name="Category">
+    <columns
+        name="id"
+        datatype="int"/>
+    <columns
+        name="description"
+        datatype="varchar"
+        size="25"/>
+    <keys columns="//@tables.3/@columns.0"
+        constraintname="category_key"/>
+  </tables>
+  <tables name="RelatedProducts">
+    <columns
+        name="product_id"
+        datatype="int"/>
+    <columns
+        name="product_related_id"
+        datatype="int"/>
+    <columns
+        name="affinity"
+        datatype="int"/>
+    <keys columns="//@tables.4/@columns.0 //@tables.4/@columns.1"
+        constraintname="related_key"/>
+    <fks columns="//@tables.4/@columns.0"
+        refsTo="//@tables.2/@keys.0"
+        constraintname="product_id_fk"/>
+    <fks columns="//@tables.4/@columns.1"
+        refsTo="//@tables.2/@keys.0"
+        constraintname="product_related_id_fk"/>
+  </tables>
+  <tables name="UserOrder">
+    <columns
+        name="user_id"
+        datatype="int"/>
+    <columns
+        name="id"
+        datatype="int"/>
+    <columns
+        name="orderDate"
+        datatype="date"/>
+    <columns
+        name="totalPrice"
+        datatype="int"/>
+    <keys columns="//@tables.5/@columns.0 //@tables.5/@columns.1"
+        constraintname="order_key"/>
+    <fks columns="//@tables.5/@columns.0"
+        refsTo="//@tables.0/@keys.0"
+        constraintname="refUser_fk"/>
+  </tables>
+  <tables name="Item">
+    <columns
+        name="user_id"
+        datatype="int"/>
+    <columns
+        name="order_id"
+        datatype="int"/>
+    <columns
+        name="id"
+        datatype="int"/>
+    <columns
+        name="product_id"
+        datatype="int"/>
+    <columns
+        name="amount"
+        datatype="int"/>
+    <columns
+        name="subtotal"
+        datatype="int"/>
+    <keys columns="//@tables.6/@columns.0 //@tables.6/@columns.1 //@tables.6/@columns.2"
+        constraintname="item_key"/>
+    <fks columns="//@tables.6/@columns.0 //@tables.6/@columns.1"
+        refsTo="//@tables.5/@keys.0"
+        constraintname="order_fk"/>
+    <fks columns="//@tables.6/@columns.3"
+        refsTo="//@tables.2/@keys.0"
+        constraintname="includeProduct_fk"/>
+  </tables>
+  <tables name="Discount">
+    <columns
+        name="id"
+        datatype="int"/>
+    <columns
+        name="user_id"
+        datatype="int"/>
+    <columns
+        name="order_id"
+        datatype="int"/>
+    <columns
+        name="description"
+        datatype="varchar"
+        size="25"/>
+    <columns
+        name="discountRatio"
+        datatype="int"/>
+    <keys columns="//@tables.7/@columns.0"
+        constraintname="discount_key"/>
+    <fks columns="//@tables.7/@columns.1 //@tables.7/@columns.2"
+        refsTo="//@tables.5/@keys.0"
+        constraintname="orderForDiscount_fk"/>
+  </tables>
+</relationalschema:RelationalSchema>

@@ -7,3 +7,6 @@
 *.md text eol=lf
 *.json text eol=lf
 *.sha256 text eol=lf
+
+# Preserve unchanged upstream project snapshots, including original line endings.
+software/source-projects/** -text -whitespace

@@ -1,0 +1,383 @@
+Entity: AppUser
+
+address: First street,2
+card_number: 0001
+country: Spain
+date_premium: 
+email: paco@metashop.com
+id: 1
+name: Paco
+password: 0785467834
+premium: 0
+premium_fee: 0
+registrationdate: 2015-12-17 00:00:00.0
+storevaluation: 3
+
+address: Second street,3
+card_number: 0002
+country: Spain
+date_premium: 2019-12-11 00:00:00.0
+email: marta@metashop.com
+id: 2
+name: Marta
+password: 6723091647
+premium: 1
+premium_fee: 10
+registrationdate: 2019-11-27 00:00:00.0
+storevaluation: 5
+
+address: Third street,4
+card_number: 0003
+country: France
+date_premium: 2020-12-01 00:00:00.0
+email: juan@metashop.com
+id: 3
+name: Juan
+password: 3409812357
+premium: 1
+premium_fee: 10
+registrationdate: 2020-01-01 00:00:00.0
+storevaluation: 4
+
+address: Four street,5
+card_number: 0004
+country: Italy
+date_premium: 2019-07-14 00:00:00.0
+email: elisa@metashop.com
+id: 4
+name: Elisa
+password: 6198362010
+premium: 1
+premium_fee: 10
+registrationdate: 2018-05-13 00:00:00.0
+storevaluation: 2
+
+address: Five street,6
+card_number: 0005
+country: Italy
+date_premium: 
+email: sigmundo@metashop.com
+id: 5
+name: Sigmundo
+password: 3870361111
+premium: 0
+premium_fee: 0
+registrationdate: 2020-05-03 00:00:00.0
+storevaluation: 5
+---------------------------------------------------------------------------------------
+Entity: Category
+
+description: Computers and components
+id: 1
+
+description: Toys
+id: 2
+
+description: Office supplies
+id: 3
+---------------------------------------------------------------------------------------
+Entity: Discount
+
+description: more than 1000€
+discountratio: 10
+id: 1
+
+description: retail
+discountratio: 10
+id: 2
+
+description: 2 x 1
+discountratio: 50
+id: 3
+---------------------------------------------------------------------------------------
+Entity: Item
+
+amount: 1
+id: 1
+order_id: 1
+subtotal: 1500
+user_id: 1
+
+amount: 2
+id: 2
+order_id: 1
+subtotal: 20
+user_id: 1
+
+amount: 1
+id: 3
+order_id: 1
+subtotal: 18
+user_id: 1
+
+amount: 1
+id: 1
+order_id: 2
+subtotal: 8
+user_id: 1
+
+amount: 2
+id: 2
+order_id: 2
+subtotal: 18
+user_id: 1
+
+amount: 1
+id: 1
+order_id: 1
+subtotal: 230
+user_id: 4
+
+amount: 2
+id: 1
+order_id: 2
+subtotal: 90
+user_id: 4
+---------------------------------------------------------------------------------------
+Entity: PaymentMethod
+
+id: 1
+methodinfo: 1234-1234-1234
+methodname: VISA
+user_id: 1
+
+id: 2
+methodinfo: paco@metashop.com
+methodname: Paypal
+user_id: 1
+
+id: 3
+methodinfo: IBANXX 34 7678 78654 9999
+methodname: Transfer
+user_id: 1
+
+id: 1
+methodinfo: 2345-2345-2345
+methodname: MASTERCARD
+user_id: 2
+
+id: 1
+methodinfo: elisa@metashop.com
+methodname: Paypal
+user_id: 4
+
+id: 2
+methodinfo: 3456-3456-3456
+methodname: MASTERCARD
+user_id: 4
+
+id: 1
+methodinfo: 4567-4567-4567
+methodname: VISA
+user_id: 5
+---------------------------------------------------------------------------------------
+Entity: Product
+
+description: Gaming Laptop
+id: 1
+imageurl: /images/leopard.jpg
+manufacturer: MSI
+name: MSI Leopard
+price: 1200
+stock: 20
+
+description: singing sunny cactus
+id: 10
+imageurl: /images/cactus.jpg
+manufacturer: BabyToys
+name: Dancing cactus
+price: 45
+stock: 25
+
+description: for kids ages 6+
+id: 11
+imageurl: /images/remotecar.jpg
+manufacturer: BabyToys
+name: Remote control car
+price: 120
+stock: 15
+
+description: Letter tray organizer with file holder
+id: 12
+imageurl: /images/organizer.jpg
+manufacturer: OverallOf
+name: Desk organizers
+price: 30
+stock: 10
+
+description: colorful super sticking 6 packs
+id: 13
+imageurl: /images/stickyn.jpg
+manufacturer: OverallOf
+name: Sticky notes
+price: 8
+stock: 120
+
+description: color black
+id: 14
+imageurl: /images/drawerorg.jpg
+manufacturer: SoupOffice
+name: Desk drawer organizer
+price: 10
+stock: 32
+
+description: smooth writing pens
+id: 15
+imageurl: /images/gpens.jpg
+manufacturer: Inkint
+name: Gel pens
+price: 9
+stock: 100
+
+description: meeting minutes planner notebook
+id: 16
+imageurl: /images/noteb.jpg
+manufacturer: Inkint
+name: Meeting notebook
+price: 10
+stock: 75
+
+description: Extreme Gaming Laptop
+id: 2
+imageurl: /images/asus.jpg
+manufacturer: ASUS
+name: ASUS Rog
+price: 1500
+stock: 5
+
+description: wireless mouse
+id: 3
+imageurl: /images/mousew.jpg
+manufacturer: LogiMouse
+name: White mouse
+price: 10
+stock: 8
+
+description: wireless mouse
+id: 4
+imageurl: /images/mouseb.jpg
+manufacturer: LogiMouse
+name: Black mouse
+price: 10
+stock: 3
+
+description: portable keyboard
+id: 5
+imageurl: /images/keyb.jpg
+manufacturer: LogiBoard
+name: Keyboard
+price: 18
+stock: 11
+
+description: very old computer
+id: 6
+imageurl: /images/oldcomp.jpg
+manufacturer: ElderC
+name: Old desktop computer
+price: 230
+stock: 1
+
+description: very soft
+id: 7
+imageurl: /images/tedyb.jpg
+manufacturer: SoftBear
+name: Teddy bear
+price: 34
+stock: 35
+
+description: small plastic ball
+id: 8
+imageurl: /images/redb.jpg
+manufacturer: PlasticCorp
+name: Red ball
+price: 12
+stock: 102
+
+description: small plastic ball
+id: 9
+imageurl: /images/greenb.jpg
+manufacturer: PlasticCorp
+name: Green ball
+price: 11
+stock: 312
+---------------------------------------------------------------------------------------
+Entity: RelatedProducts
+
+affinity: 5
+product_id: 1
+product_related_id: 2
+
+affinity: 4
+product_id: 1
+product_related_id: 6
+
+affinity: 4
+product_id: 12
+product_related_id: 14
+
+affinity: 2
+product_id: 13
+product_related_id: 16
+
+affinity: 4
+product_id: 14
+product_related_id: 12
+
+affinity: 2
+product_id: 16
+product_related_id: 13
+
+affinity: 5
+product_id: 2
+product_related_id: 1
+
+affinity: 4
+product_id: 2
+product_related_id: 6
+
+affinity: 5
+product_id: 3
+product_related_id: 4
+
+affinity: 5
+product_id: 4
+product_related_id: 3
+
+affinity: 4
+product_id: 6
+product_related_id: 1
+
+affinity: 4
+product_id: 6
+product_related_id: 2
+
+affinity: 5
+product_id: 8
+product_related_id: 9
+
+affinity: 5
+product_id: 9
+product_related_id: 8
+---------------------------------------------------------------------------------------
+Entity: UserOrder
+
+id: 1
+orderdate: 2016-02-18 00:00:00.0
+totalprice: 1384
+user_id: 1
+
+id: 2
+orderdate: 2018-05-13 00:00:00.0
+totalprice: 26
+user_id: 1
+
+id: 1
+orderdate: 2019-02-23 00:00:00.0
+totalprice: 207
+user_id: 4
+
+id: 2
+orderdate: 2019-03-12 00:00:00.0
+totalprice: 45
+user_id: 4
+---------------------------------------------------------------------------------------

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="MongoDBdependencies/bson-5.1.2.jar"/>
+	<classpathentry kind="lib" path="MongoDBdependencies/mongodb-driver-core-5.1.2.jar"/>
+	<classpathentry kind="lib" path="MongoDBdependencies/mongodb-driver-sync-5.1.2.jar"/>
+	<classpathentry kind="lib" path="MongoDBdependencies/netty-buffer-4.1.87.Final.jar"/>
+	<classpathentry kind="lib" path="MongoDBdependencies/netty-handler-4.1.87.Final.jar"/>
+	<classpathentry kind="lib" path="MongoDBdependencies/netty-transport-4.1.87.Final.jar"/>
+	<classpathentry kind="lib" path="MongoDBdependencies/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="PostgreSQLdependencies/postgresql-42.7.10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

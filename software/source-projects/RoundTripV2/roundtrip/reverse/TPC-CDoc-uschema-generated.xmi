@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uschema:USchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uschema="http://www.modelum.es/uschema" name="TPC-C">
+  <entities name="warehouse" root="true">
+    <features xsi:type="uschema:Key" name="w_id" attributes="//@entities.0/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="w_id" key="//@entities.0/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="w_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="w_street_1">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="w_street_2">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="w_city">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="w_state">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="w_zip">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="w_tax">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="w_ytd">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+  </entities>
+  <entities name="district" root="true">
+    <features xsi:type="uschema:Attribute" name="d_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_street_1">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_street_2">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_city">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_state">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_zip">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_tax">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_ytd">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="d_next_o_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Key" name="district_id" attributes="//@entities.1/@features.11"/>
+    <features xsi:type="uschema:Attribute" name="district_id" key="//@entities.1/@features.10">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="d_fk_w" refsTo="//@entities.0" attributes="//@entities.1/@features.13" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="d_fk_w" references="//@entities.1/@features.12">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+  </entities>
+  <entities name="customer" root="true">
+    <features xsi:type="uschema:Attribute" name="c_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_first">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_middle">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_last">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_street_1">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_street_2">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_city">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_state">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_zip">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_phone">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_since">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_credit">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_credit_lim">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_discount">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_balance">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_ytd_payment">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_payment_cnt">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_delivery_cnt">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="c_data">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Key" name="customer_id" attributes="//@entities.2/@features.20"/>
+    <features xsi:type="uschema:Attribute" name="customer_id" key="//@entities.2/@features.19">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="c_fk_d" refsTo="//@entities.1" attributes="//@entities.2/@features.22" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="c_fk_d" references="//@entities.2/@features.21">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="orders" refsTo="//@entities.5" attributes="//@entities.2/@features.24" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="orders" references="//@entities.2/@features.23">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="history" root="true">
+    <features xsi:type="uschema:Attribute" name="h_date">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="h_amount">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="h_data">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="h_fk_c" refsTo="//@entities.2" attributes="//@entities.3/@features.4" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="h_fk_c" references="//@entities.3/@features.3">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="h_fk_d" refsTo="//@entities.1" attributes="//@entities.3/@features.6" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="h_fk_d" references="//@entities.3/@features.5">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="item" root="true">
+    <features xsi:type="uschema:Key" name="i_id" attributes="//@entities.4/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="i_id" key="//@entities.4/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="i_im_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="i_name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="i_price">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="i_data">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="orders" root="true">
+    <features xsi:type="uschema:Attribute" name="o_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="o_entry_d">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="o_carrier_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="o_ol_cnt">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="o_all_local">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="o_w_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="o_d_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Key" name="orders_id" attributes="//@entities.5/@features.8"/>
+    <features xsi:type="uschema:Attribute" name="orders_id" key="//@entities.5/@features.7">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Aggregate" name="order_line" specifiedBy="//@entities.7" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Aggregate" name="new_order" specifiedBy="//@entities.8" upperBound="1" lowerBound="1"/>
+  </entities>
+  <entities name="stock" root="true">
+    <features xsi:type="uschema:Attribute" name="s_quantity">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_01">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_02">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_03">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_04">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_05">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_06">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_07">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_08">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_09">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_dist_10">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_ytd">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_order_cnt">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_remote_cnt">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="s_data">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Key" name="stock" attributes="//@entities.6/@features.16"/>
+    <features xsi:type="uschema:Attribute" name="stock" key="//@entities.6/@features.15">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="s_fk_w" refsTo="//@entities.0" attributes="//@entities.6/@features.18" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="s_fk_w" references="//@entities.6/@features.17">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="s_fk_i" refsTo="//@entities.4" attributes="//@entities.6/@features.20" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="s_fk_i" references="//@entities.6/@features.19">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="order_line" aggregate="//@entities.5/@features.9">
+    <features xsi:type="uschema:Key" name="ol_number" attributes="//@entities.7/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="ol_number" key="//@entities.7/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ol_i_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ol_supply_w_id">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ol_delivery_d">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ol_quantity">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ol_amount">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="ol_dist_info">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="new_order" aggregate="//@entities.5/@features.10"/>
+</uschema:USchema>
