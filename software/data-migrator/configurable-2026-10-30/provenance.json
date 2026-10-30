@@ -1,0 +1,19 @@
+{
+  "received_date": "2026-10-30",
+  "received_filename": "migrator.jar.zip",
+  "published_filename": "migrator.jar",
+  "sha256": "a24e24b2036dde1fe8e8b8c970a75566c22a708574a5900407cf8c3aaf0b96c0",
+  "size_bytes": 20923166,
+  "format_note": "The downloaded .jar.zip file is itself the JAR, not an outer ZIP containing a JAR. Bytes preserved unchanged.",
+  "main_class": "um.modelum.migration.Principal",
+  "classfile_major_version": 65,
+  "java_requirement": "Java 21 or later, inferred from entry-point class version; runtime not tested",
+  "source_commit": null,
+  "status": "New configurable executable; not identified as the executable used for the historical performance measurements.",
+  "checks": [
+    "ZIP entry CRC integrity",
+    "entry-point bytecode inspection of nine-argument usage and PostgreSQL parameter forwarding",
+    "MusicService-relational automatic adaptation branch inspected"
+  ],
+  "execution_performed": false
+}
