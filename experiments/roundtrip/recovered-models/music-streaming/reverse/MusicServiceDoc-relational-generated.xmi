@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<relationalschema:RelationalSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:relationalschema="http://www.example.org/relationalschema" name="MusicService">
+  <tables name="app_user">
+    <columns name="user_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="is_premium" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="register_date" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.0/@columns.0" constraintname="app_user_pk"/>
+  </tables>
+  <tables name="song">
+    <columns name="song_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="title" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="duration" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="artist" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="plays_count" datatype="NUMERIC" size="38" nullable="true"/>
+    <keys columns="//@tables.1/@columns.0" constraintname="song_pk"/>
+  </tables>
+  <tables name="musical_style">
+    <columns name="style_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="name" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.2/@columns.0" constraintname="musical_style_pk"/>
+  </tables>
+  <tables name="song_style">
+    <columns name="song_style" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="song_style_fk_song_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="song_style_fk_style_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.3/@columns.0" constraintname="song_style_pk"/>
+    <fks columns="//@tables.3/@columns.1" refsTo="//@tables.1/@keys.0" constraintname="song_fk"/>
+    <fks columns="//@tables.3/@columns.2" refsTo="//@tables.2/@keys.0" constraintname="musical_style_fk"/>
+  </tables>
+  <tables name="listening">
+    <columns name="plays_count" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="status" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="listening" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="listening_fk_user_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="listening_fk_song_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.4/@columns.2" constraintname="listening_pk"/>
+    <fks columns="//@tables.4/@columns.3" refsTo="//@tables.0/@keys.0" constraintname="app_user_fk"/>
+    <fks columns="//@tables.4/@columns.4" refsTo="//@tables.1/@keys.0" constraintname="song_fk"/>
+  </tables>
+  <tables name="playlist">
+    <columns name="playlist_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="creation_date" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="playlist_user_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.5/@columns.0 //@tables.5/@columns.3" constraintname="playlist_pk"/>
+    <fks columns="//@tables.5/@columns.3" refsTo="//@tables.0/@keys.0" constraintname="app_user_fk"/>
+  </tables>
+  <tables name="playlist_song">
+    <columns name="position_idx" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="playlist_song_playlist_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="playlist_song_playlist_user_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="playlist_song_fk_song_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.6/@columns.0 //@tables.6/@columns.1 //@tables.6/@columns.2" constraintname="playlist_song_pk"/>
+    <fks columns="//@tables.6/@columns.1 //@tables.6/@columns.2" refsTo="//@tables.5/@keys.0" constraintname="playlist_fk"/>
+    <fks columns="//@tables.6/@columns.3" refsTo="//@tables.1/@keys.0" constraintname="song_fk"/>
+  </tables>
+  <tables name="most_recent_song">
+    <columns name="position_idx" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="most_recent_song_user_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="most_recent_song_fk_song_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.7/@columns.0 //@tables.7/@columns.1" constraintname="most_recent_song_pk"/>
+    <fks columns="//@tables.7/@columns.1" refsTo="//@tables.0/@keys.0" constraintname="app_user_fk"/>
+    <fks columns="//@tables.7/@columns.2" refsTo="//@tables.1/@keys.0" constraintname="song_fk"/>
+  </tables>
+</relationalschema:RelationalSchema>

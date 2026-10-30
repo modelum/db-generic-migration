@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<documentschema:DocumentSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:documentschema="http://www.example.org/documentschema" name="MusicService">
+  <documents name="app_user">
+    <properties xsi:type="documentschema:Field" name="user_id" isKey="true" type="//@types.0"/>
+    <properties xsi:type="documentschema:Field" name="name" type="//@types.0"/>
+    <properties xsi:type="documentschema:Field" name="is_premium" type="//@types.2"/>
+    <properties xsi:type="documentschema:Field" name="register_date" type="//@types.0"/>
+    <properties xsi:type="documentschema:Embedded" name="playlist" isMany="true">
+      <aggregates xsi:type="documentschema:Field" name="playlist_id" isKey="true" type="//@types.0"/>
+      <aggregates xsi:type="documentschema:Field" name="name" type="//@types.0"/>
+      <aggregates xsi:type="documentschema:Field" name="creation_date" type="//@types.0"/>
+      <aggregates xsi:type="documentschema:Embedded" name="playlist_song" isMany="true">
+        <aggregates xsi:type="documentschema:Field" name="position_idx" isKey="true" type="//@types.1"/>
+        <aggregates xsi:type="documentschema:Reference" name="playlist_song_fk_song" target="//@documents.1" type="//@types.0"/>
+      </aggregates>
+    </properties>
+    <properties xsi:type="documentschema:Embedded" name="most_recent_song" isMany="true">
+      <aggregates xsi:type="documentschema:Field" name="position_idx" isKey="true" type="//@types.1"/>
+      <aggregates xsi:type="documentschema:Reference" name="most_recent_song_fk_song" target="//@documents.1" type="//@types.0"/>
+    </properties>
+  </documents>
+  <documents name="song">
+    <properties xsi:type="documentschema:Field" name="song_id" isKey="true" type="//@types.0"/>
+    <properties xsi:type="documentschema:Field" name="title" type="//@types.0"/>
+    <properties xsi:type="documentschema:Field" name="duration" type="//@types.2"/>
+    <properties xsi:type="documentschema:Field" name="artist" type="//@types.0"/>
+    <properties xsi:type="documentschema:Field" name="plays_count" type="//@types.1"/>
+  </documents>
+  <documents name="musical_style">
+    <properties xsi:type="documentschema:Field" name="style_id" isKey="true" type="//@types.0"/>
+    <properties xsi:type="documentschema:Field" name="name" type="//@types.0"/>
+  </documents>
+  <documents name="song_style">
+    <properties xsi:type="documentschema:Field" name="song_style" isKey="true" type="//@types.1"/>
+    <properties xsi:type="documentschema:Reference" name="song_style_fk_song" target="//@documents.1" type="//@types.0"/>
+    <properties xsi:type="documentschema:Reference" name="song_style_fk_style" target="//@documents.2" type="//@types.0"/>
+  </documents>
+  <documents name="listening">
+    <properties xsi:type="documentschema:Field" name="plays_count" type="//@types.1"/>
+    <properties xsi:type="documentschema:Field" name="status" type="//@types.0"/>
+    <properties xsi:type="documentschema:Field" name="listening" isKey="true" type="//@types.1"/>
+    <properties xsi:type="documentschema:Reference" name="listening_fk_user" target="//@documents.0" type="//@types.0"/>
+    <properties xsi:type="documentschema:Reference" name="listening_fk_song" target="//@documents.1" type="//@types.0"/>
+  </documents>
+  <types xsi:type="documentschema:PrimitiveType" datatype="STRING"/>
+  <types xsi:type="documentschema:PrimitiveType" datatype="INTEGER"/>
+  <types xsi:type="documentschema:PrimitiveType" datatype="DOUBLE"/>
+  <types xsi:type="documentschema:PrimitiveType"/>
+  <types xsi:type="documentschema:Array" type="//@types.0"/>
+  <types xsi:type="documentschema:Array" type="//@types.1"/>
+  <types xsi:type="documentschema:Array" type="//@types.2"/>
+  <types xsi:type="documentschema:Array" type="//@types.3"/>
+</documentschema:DocumentSchema>

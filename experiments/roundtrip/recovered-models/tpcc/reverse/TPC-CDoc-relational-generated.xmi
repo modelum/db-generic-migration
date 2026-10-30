@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ASCII"?>
+<relationalschema:RelationalSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:relationalschema="http://www.example.org/relationalschema" name="TPC-C">
+  <tables name="warehouse">
+    <columns name="w_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="w_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="w_street_1" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="w_street_2" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="w_city" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="w_state" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="w_zip" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="w_tax" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="w_ytd" datatype="NUMERIC" size="38" nullable="true"/>
+    <keys columns="//@tables.0/@columns.0" constraintname="warehouse_pk"/>
+  </tables>
+  <tables name="district">
+    <columns name="d_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="d_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="d_street_1" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="d_street_2" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="d_city" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="d_state" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="d_zip" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="d_tax" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="d_ytd" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="d_next_o_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="district_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="d_fk_w_fk" datatype="NUMERIC" size="38" nullable="true"/>
+    <keys columns="//@tables.1/@columns.10" constraintname="district_pk"/>
+    <fks columns="//@tables.1/@columns.11" refsTo="//@tables.0/@keys.0" constraintname="warehouse_fk"/>
+  </tables>
+  <tables name="customer">
+    <columns name="c_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="c_first" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_middle" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_last" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_street_1" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_street_2" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_city" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_state" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_zip" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_phone" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_since" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_credit" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_credit_lim" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="c_discount" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="c_balance" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="c_ytd_payment" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="c_payment_cnt" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="c_delivery_cnt" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="c_data" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="customer_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="c_fk_d_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.2/@columns.19" constraintname="customer_pk"/>
+    <fks columns="//@tables.2/@columns.20" refsTo="//@tables.1/@keys.0" constraintname="district_fk"/>
+  </tables>
+  <tables name="history">
+    <columns name="h_date" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="h_amount" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="h_data" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="h_fk_c_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="h_fk_d_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <fks columns="//@tables.3/@columns.3" refsTo="//@tables.2/@keys.0" constraintname="customer_fk"/>
+    <fks columns="//@tables.3/@columns.4" refsTo="//@tables.1/@keys.0" constraintname="district_fk"/>
+  </tables>
+  <tables name="item">
+    <columns name="i_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="i_im_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="i_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="i_price" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="i_data" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.4/@columns.0" constraintname="item_pk"/>
+  </tables>
+  <tables name="orders">
+    <columns name="o_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="o_entry_d" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="o_carrier_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="o_ol_cnt" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="o_all_local" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="o_w_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="o_d_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="orders_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="customer_id_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.5/@columns.7" constraintname="orders_pk"/>
+    <fks columns="//@tables.5/@columns.8" refsTo="//@tables.2/@keys.0" constraintname="customer_fk"/>
+  </tables>
+  <tables name="stock">
+    <columns name="s_quantity" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="s_dist_01" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_02" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_03" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_04" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_05" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_06" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_07" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_08" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_09" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_dist_10" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_ytd" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="s_order_cnt" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="s_remote_cnt" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="s_data" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="stock" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="s_fk_w_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="s_fk_i_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.6/@columns.15" constraintname="stock_pk"/>
+    <fks columns="//@tables.6/@columns.16" refsTo="//@tables.0/@keys.0" constraintname="warehouse_fk"/>
+    <fks columns="//@tables.6/@columns.17" refsTo="//@tables.4/@keys.0" constraintname="item_fk"/>
+  </tables>
+  <tables name="order_line">
+    <columns name="ol_number" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="ol_i_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="ol_supply_w_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="ol_delivery_d" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="ol_quantity" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="ol_amount" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="ol_dist_info" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="order_line_orders_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.7/@columns.0 //@tables.7/@columns.7" constraintname="order_line_pk"/>
+    <fks columns="//@tables.7/@columns.7" refsTo="//@tables.5/@keys.0" constraintname="orders_fk"/>
+  </tables>
+  <tables name="new_order">
+    <columns name="new_order_orders_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.8/@columns.0" constraintname="new_order_pk"/>
+    <fks columns="//@tables.8/@columns.0" refsTo="//@tables.5/@keys.0" constraintname="orders_fk"/>
+  </tables>
+</relationalschema:RelationalSchema>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ASCII"?>
+<relationalschema:RelationalSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:relationalschema="http://www.example.org/relationalschema" name="Northwind">
+  <tables name="categories">
+    <columns name="category_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="category_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="description" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="picture" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.0/@columns.0" constraintname="categories_pk"/>
+  </tables>
+  <tables name="customer_demographics">
+    <columns name="customer_type_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="customer_desc" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.1/@columns.0" constraintname="customer_demographics_pk"/>
+  </tables>
+  <tables name="customers">
+    <columns name="customer_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="company_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="contact_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="contact_title" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="address" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="city" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="region" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="postal_code" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="country" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="phone" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="fax" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.2/@columns.0" constraintname="customers_pk"/>
+  </tables>
+  <tables name="employees">
+    <columns name="employee_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="last_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="first_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="title" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="title_of_courtesy" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="birth_date" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="hire_date" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="address" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="city" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="region" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="postal_code" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="country" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="home_phone" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="extension" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="photo" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="notes" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="photo_path" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="employee_id_fk" datatype="NUMERIC" size="38" nullable="true"/>
+    <keys columns="//@tables.3/@columns.0" constraintname="employees_pk"/>
+    <fks columns="//@tables.3/@columns.17" refsTo="//@tables.3/@keys.0" constraintname="employees_fk"/>
+  </tables>
+  <tables name="suppliers">
+    <columns name="supplier_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="company_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="contact_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="contact_title" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="address" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="city" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="region" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="postal_code" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="country" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="phone" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="fax" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="homepage" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.4/@columns.0" constraintname="suppliers_pk"/>
+  </tables>
+  <tables name="products">
+    <columns name="product_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="product_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="quantity_per_unit" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="unit_price" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="units_in_stock" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="units_on_order" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="reorder_level" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="discontinued" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="category_id_fk" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="supplier_id_fk" datatype="NUMERIC" size="38" nullable="true"/>
+    <keys columns="//@tables.5/@columns.0" constraintname="products_pk"/>
+    <fks columns="//@tables.5/@columns.8" refsTo="//@tables.0/@keys.0" constraintname="categories_fk"/>
+    <fks columns="//@tables.5/@columns.9" refsTo="//@tables.4/@keys.0" constraintname="suppliers_fk"/>
+  </tables>
+  <tables name="region">
+    <columns name="region_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="region_description" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.6/@columns.0" constraintname="region_pk"/>
+  </tables>
+  <tables name="shippers">
+    <columns name="shipper_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="company_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="phone" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.7/@columns.0" constraintname="shippers_pk"/>
+  </tables>
+  <tables name="orders">
+    <columns name="order_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="order_date" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="required_date" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="shipped_date" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="freight" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="ship_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="ship_address" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="ship_city" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="ship_region" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="ship_postal_code" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="ship_country" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="customer_id_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="employee_id_fk" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="shipper_id_fk" datatype="NUMERIC" size="38" nullable="true"/>
+    <keys columns="//@tables.8/@columns.0" constraintname="orders_pk"/>
+    <fks columns="//@tables.8/@columns.11" refsTo="//@tables.2/@keys.0" constraintname="customers_fk"/>
+    <fks columns="//@tables.8/@columns.12" refsTo="//@tables.3/@keys.0" constraintname="employees_fk"/>
+    <fks columns="//@tables.8/@columns.13" refsTo="//@tables.7/@keys.0" constraintname="shippers_fk"/>
+  </tables>
+  <tables name="territories">
+    <columns name="territory_id" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="territory_description" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="region_id_fk" datatype="NUMERIC" size="38" nullable="true"/>
+    <keys columns="//@tables.9/@columns.0" constraintname="territories_pk"/>
+    <fks columns="//@tables.9/@columns.2" refsTo="//@tables.6/@keys.0" constraintname="region_fk"/>
+  </tables>
+  <tables name="us_states">
+    <columns name="state_id" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="state_name" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="state_abbr" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="state_region" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.10/@columns.0" constraintname="us_states_pk"/>
+  </tables>
+  <tables name="customer_customer_demo">
+    <columns name="customer_customer_demo" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="customer_customer_demo_fk_customer_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="customer_customer_demo_fk_customer_demographics_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.11/@columns.0" constraintname="customer_customer_demo_pk"/>
+    <fks columns="//@tables.11/@columns.1" refsTo="//@tables.2/@keys.0" constraintname="customers_fk"/>
+    <fks columns="//@tables.11/@columns.2" refsTo="//@tables.1/@keys.0" constraintname="customer_demographics_fk"/>
+  </tables>
+  <tables name="employee_territories">
+    <columns name="employee_territories" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="employee_territories_fk_employees_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="employee_territories_fk_territories_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.12/@columns.0" constraintname="employee_territories_pk"/>
+    <fks columns="//@tables.12/@columns.1" refsTo="//@tables.3/@keys.0" constraintname="employees_fk"/>
+    <fks columns="//@tables.12/@columns.2" refsTo="//@tables.9/@keys.0" constraintname="territories_fk"/>
+  </tables>
+  <tables name="order_details">
+    <columns name="unit_price" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="quantity" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="discount" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="order_details" datatype="NUMERIC" size="38" nullable="true"/>
+    <columns name="order_details_fk_orders_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <columns name="order_details_fk_products_fk" datatype="VARCHAR" size="255" nullable="true"/>
+    <keys columns="//@tables.13/@columns.3" constraintname="order_details_pk"/>
+    <fks columns="//@tables.13/@columns.4" refsTo="//@tables.8/@keys.0" constraintname="orders_fk"/>
+    <fks columns="//@tables.13/@columns.5" refsTo="//@tables.5/@keys.0" constraintname="products_fk"/>
+  </tables>
+</relationalschema:RelationalSchema>

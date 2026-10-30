@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uschema:USchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uschema="http://www.modelum.es/uschema" name="MusicService">
+  <entities name="app_user" root="true">
+    <features xsi:type="uschema:Key" name="user_id" attributes="//@entities.0/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="user_id" key="//@entities.0/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="is_premium">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="register_date">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Aggregate" name="playlist" specifiedBy="//@entities.5" upperBound="-1" lowerBound="1"/>
+    <features xsi:type="uschema:Aggregate" name="most_recent_song" specifiedBy="//@entities.7" upperBound="-1" lowerBound="1"/>
+  </entities>
+  <entities name="song" root="true">
+    <features xsi:type="uschema:Key" name="song_id" attributes="//@entities.1/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="song_id" key="//@entities.1/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="title">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="duration">
+      <type xsi:type="uschema:PrimitiveType" name="DOUBLE"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="artist">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="plays_count">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+  </entities>
+  <entities name="musical_style" root="true">
+    <features xsi:type="uschema:Key" name="style_id" attributes="//@entities.2/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="style_id" key="//@entities.2/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="song_style" root="true">
+    <features xsi:type="uschema:Key" name="song_style" attributes="//@entities.3/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="song_style" key="//@entities.3/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="song_style_fk_song" refsTo="//@entities.1" attributes="//@entities.3/@features.3" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="song_style_fk_song" references="//@entities.3/@features.2">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="song_style_fk_style" refsTo="//@entities.2" attributes="//@entities.3/@features.5" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="song_style_fk_style" references="//@entities.3/@features.4">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="listening" root="true">
+    <features xsi:type="uschema:Attribute" name="plays_count">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="status">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Key" name="listening" attributes="//@entities.4/@features.3"/>
+    <features xsi:type="uschema:Attribute" name="listening" key="//@entities.4/@features.2">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="listening_fk_user" refsTo="//@entities.0" attributes="//@entities.4/@features.5" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="listening_fk_user" references="//@entities.4/@features.4">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="listening_fk_song" refsTo="//@entities.1" attributes="//@entities.4/@features.7" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="listening_fk_song" references="//@entities.4/@features.6">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="playlist" aggregate="//@entities.0/@features.5">
+    <features xsi:type="uschema:Key" name="playlist_id" attributes="//@entities.5/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="playlist_id" key="//@entities.5/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="name">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Attribute" name="creation_date">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+    <features xsi:type="uschema:Aggregate" name="playlist_song" specifiedBy="//@entities.6" upperBound="-1" lowerBound="1"/>
+  </entities>
+  <entities name="playlist_song" aggregate="//@entities.5/@features.4">
+    <features xsi:type="uschema:Key" name="position_idx" attributes="//@entities.6/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="position_idx" key="//@entities.6/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="playlist_song_fk_song" refsTo="//@entities.1" attributes="//@entities.6/@features.3" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="playlist_song_fk_song" references="//@entities.6/@features.2">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+  <entities name="most_recent_song" aggregate="//@entities.0/@features.6">
+    <features xsi:type="uschema:Key" name="position_idx" attributes="//@entities.7/@features.1"/>
+    <features xsi:type="uschema:Attribute" name="position_idx" key="//@entities.7/@features.0">
+      <type xsi:type="uschema:PrimitiveType" name="INTEGER"/>
+    </features>
+    <features xsi:type="uschema:Reference" name="most_recent_song_fk_song" refsTo="//@entities.1" attributes="//@entities.7/@features.3" upperBound="1" lowerBound="1"/>
+    <features xsi:type="uschema:Attribute" name="most_recent_song_fk_song" references="//@entities.7/@features.2">
+      <type xsi:type="uschema:PrimitiveType" name="STRING"/>
+    </features>
+  </entities>
+</uschema:USchema>
