@@ -1,20 +1,31 @@
 # Trace-aware schema adaptation
 
-## Reported evaluation
+## Manuscript clarification
 
-Section 6.3.4 of the author-supplied manuscript evaluates **TPC-C S**, exercising each supported operation separately: entity/feature renaming, attribute deletion and Aggregate-to-Reference conversion. It describes inspecting the adapted U-Schema and updated T1 trace, then rerunning U-Schema-to-Document without changing mapping rules.
+**The adaptation evaluation was performed on Music Service (Music Streaming), not TPC-C S.** The experimenter confirmed that entity/feature renaming, attribute deletion and Aggregate-to-Reference conversion were tested individually and in sequence. References to TPC-C in Section 6.3.4 and the adaptation-related external-validity discussion of the author-supplied manuscript are a case-study attribution error. This clarification applies to the manuscript snapshot identified in [results provenance](../../results/provenance.json); it does not assert the same wording in every public preprint revision.
 
-The recovered material below is a **Music Streaming implementation example**, not the recovered record of that TPC-C evaluation. No TPC-C adaptation before/after models, traces or generated Document outputs have yet been identified in the inspected material.
+## Recovered sequential execution artifacts
 
-## Available implementation example
+[recovered-music-sequence/](recovered-music-sequence/) preserves the relational input, adapted U-Schema, generated Document model, generated Mongoose schema and updated T1 trace recovered from `aws-instance.zip`. Original filenames and bytes are retained; [provenance.json](provenance.json) records archive membership and hashes, and [checksums.sha256](checksums.sha256) records file integrity.
 
-- [DataMigration Principal.java](../../software/source-projects/DataMigration/src/um/modelum/migration/Principal.java) generates U-Schema and T1 from the relational input. When the first argument is exactly `MusicService-relational`, it saves/reloads `MusicService.trace`, calls the updater, saves/reloads the changed artifacts and continues to Document generation and data migration.
-- [TraceChanger.java](../../software/source-projects/OrionTraceChanger/src/um/modelum/migration/TraceChanger.java) implements `disaggregate`, `rename`, `removeAttribute`, model saving and trace saving. [Trace](../../software/source-projects/Trace/) provides trace persistence.
-- [Prueba.java](../../software/source-projects/OrionTraceChanger/src/um/modelum/migration/Prueba.java) is a standalone Music example with developer-specific absolute paths. It applies three operations in sequence: `disaggregate("app_user.playlist")`, `rename("app_user", "user_data")`, `removeAttribute("user_data.is_premium")`, then saves the model and trace.
-- [Originales](../../software/source-projects/OrionTraceChanger/Originales/) and [Pruebas](../../software/source-projects/OrionTraceChanger/Pruebas/) each contain a relational model, U-Schema model and `MusicServiceTrace.tra`. Their directory names alone do not establish a complete before/after experimental record.
+The implementation applies these operations in sequence:
 
-The updater saves over the model and trace paths supplied to it. Any future execution should use copies in a separate run directory to retain the original artifacts. DataMigration also writes models next to its JAR, while the literal relative trace filename is resolved from the process working directory. The existing localhost connections and build/metamodel requirements are described in [software source documentation](../../software/source-projects/README.md).
+1. `disaggregate("app_user.playlist")`: convert the playlist aggregate into a reference, making playlist independent.
+2. `rename("app_user", "user_data")`.
+3. `removeAttribute("user_data.is_premium")`.
 
-## Packaging checks and remaining evidence
+The recovered models and trace reflect the combined outcome: `user_data`, no `is_premium` feature on that entity, and an independent `playlist` Document collection. These are recovered artifacts, not newly generated results. Separate saved output sets for the individual-operation tests have not been identified; their execution is supported by the experimenter's confirmation.
 
-This documentation comes from static inspection of the preserved source and manuscript; no adaptation, compilation or database migration was executed. No executable TPC-C adaptation command or successful rerun is claimed. To recover the reported experiment, identify the exact affected TPC-C element for each operation and any retained initial/adapted U-Schema, initial/updated T1 and regenerated Document models. The operations in the Music example should not be substituted for those experiment records.
+## Implementation and executable identification
+
+- [DataMigration Principal.java](../../software/source-projects/DataMigration/src/um/modelum/migration/Principal.java) generates U-Schema/T1. For first argument `MusicService-relational`, it saves/reloads `MusicService.trace`, applies the sequence, saves/reloads the changed artifacts, and continues to Document generation and data migration.
+- [TraceChanger.java](../../software/source-projects/OrionTraceChanger/src/um/modelum/migration/TraceChanger.java) implements the operations and persistence; [Trace](../../software/source-projects/Trace/) supplies trace support.
+- [Prueba.java](../../software/source-projects/OrionTraceChanger/src/um/modelum/migration/Prueba.java) is a standalone Music sequence example with developer-specific paths. [Originales](../../software/source-projects/OrionTraceChanger/Originales/) and [Pruebas](../../software/source-projects/OrionTraceChanger/Pruebas/) preserve additional Music models/traces; directory names alone do not establish before/after status.
+
+The recovered archive contains three distinct JARs. Static inspection of the entry-point class finds the adaptation calls in `migratoru.jar`, but not in `migrator.jar` or `migrator5000.jar`. The archive's `migrator.jar` is byte-identical to the earlier recovered AWS copy. JAR hashes are inventoried in provenance; binaries are not added here and their correspondence to a particular source commit has not been established. No JAR was executed.
+
+## Execution context and checks
+
+The updater overwrites the model and trace paths supplied to it; future execution should use copies in a separate run directory. DataMigration writes models next to the JAR, while its literal relative trace filename resolves from the working directory. Existing connection assumptions and build/metamodel requirements remain as described in [software documentation](../../software/source-projects/README.md); this packaging changes no software behavior.
+
+Packaging checks cover XML parsing, byte integrity and inspection of adaptation markers in models, trace and entry-point classes. No compilation, adaptation, database migration or EMF comparison was performed. The archive's Northwind timing file and unrelated query output are not presented as adaptation results.

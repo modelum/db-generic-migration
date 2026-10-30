@@ -19,3 +19,5 @@ cases/music-streaming/data/*.py -text -whitespace
 
 # Preserve hashes of numeric result tables across checkouts.
 results/**/*.csv -text -whitespace
+
+experiments/trace-adaptation/recovered-music-sequence/** -text -whitespace
