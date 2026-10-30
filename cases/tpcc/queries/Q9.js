@@ -1,4 +1,4 @@
-db('TPC-C-S-sinPK').collection('stock').aggregate([
+db('TPC-C-S').collection('stock').aggregate([
   {
     $match: {
       s_quantity: { $lt: 15 }
