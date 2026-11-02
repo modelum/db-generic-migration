@@ -25,7 +25,7 @@ The evaluation used this generator with DATASET_CONFIG adjusted on AWS. The exac
 
 Python and psycopg2 are required; psycopg2-binary is one installation option. Exact dependency versions for the original execution have not been fixed in this package.
 
-Prepare a dedicated PostgreSQL database with the Music Streaming schema before running the generator. Review [source notes](../source/README.md): the preserved SQL contains setup statements that are not a ready-to-run PostgreSQL loading procedure.
+Prepare a dedicated PostgreSQL database with the Music Streaming schema before running the generator. Review [source notes](../../README.md#music-streaming): the preserved SQL contains setup statements that are not a ready-to-run PostgreSQL loading procedure.
 
 The script keeps DB_CONFIG from the original: localhost:5432, database musicdb, user music and password music. Change those connection settings in a separate working copy when preparing each named S/M/L database; the size argument selects dataset parameters, not a database name. The generator truncates its target tables before inserting, so do not point it at an existing database that must be preserved.
 
