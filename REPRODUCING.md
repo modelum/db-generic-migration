@@ -3,7 +3,7 @@
 ## Start here
 
 1. Prepare the source data using the instructions for [Music Streaming](cases/music-streaming/data/), [TPC-C](cases/tpcc/data/) or [Northwind](cases/northwind/data/).
-2. Use the supplied Java 21 [configurable migrator](software/database-migrator/migrator.jar) and follow the [migration guide](experiments/scaling/RUNNING.md). The developer has tested the supplied executable; the complete package has not been independently rerun from a clean checkout during preparation.
+2. Use the supplied Java 21 [configurable migrator](software/database-migrator/migrator.jar) and follow the [migration guide](software/database-migrator/RUNNING.md). The developer has tested the supplied executable; the complete package has not been independently rerun from a clean checkout during preparation.
 3. Select canonical migration or the predefined Music adaptation by the input basename, as explained below. Use a dedicated working directory and target database.
 4. Compare schema artifacts through [schema validation](experiments/schema-validation/) and [round-trip](experiments/roundtrip/). For data-level checks use [Q1-Q9](experiments/query-equivalence/).
 5. Consult [results](results/) for the paper's observations and retain any new outputs separately.

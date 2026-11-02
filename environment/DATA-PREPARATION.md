@@ -16,7 +16,7 @@ For Music Streaming, the generator's population batch of 5,000 is independent of
 
 ## Migration and queries
 
-Once the source database is prepared, follow the [migration execution guide](../experiments/scaling/RUNNING.md). Use a separate working directory and target database for each run, retaining the input models and outputs.
+Once the source database is prepared, follow the [migration execution guide](../software/database-migrator/RUNNING.md). Use a separate working directory and target database for each run, retaining the input models and outputs.
 
 Choose query parameters that refer to the actual source instance and its migrated counterpart. UUIDs, customer selections and dates from an earlier instance may not select the same records in regenerated data, so resulting cardinalities may differ. Use the same logical parameters on both sides of each SQL/MongoDB comparison.
 

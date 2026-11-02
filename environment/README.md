@@ -27,7 +27,7 @@ Execution times depend on the hardware and runtime environment. Reproduction sho
 
 Use Java 21 or later, PostgreSQL and MongoDB with the versions above, and a dedicated working directory and target database for each run. The package provides software and setup instructions rather than a container image or automated environment installer.
 
-- [Migration execution guide](../experiments/scaling/RUNNING.md): model selection, connection arguments, commands and outputs.
+- [Migration execution guide](../software/database-migrator/RUNNING.md): model selection, connection arguments, commands and outputs.
 - [Software dependencies](../software/source-projects/DEPENDENCIES.md): requirements for building the implementation projects.
 - [Metamodel versions](../software/metamodels/COMPATIBILITY.txt): evaluation definitions and later revisions.
 - [Data preparation](DATA-PREPARATION.md): preparation and row-count checks for all three cases.
