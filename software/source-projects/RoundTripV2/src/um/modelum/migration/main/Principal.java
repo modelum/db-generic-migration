@@ -34,6 +34,7 @@ public class Principal {
 		//m2mRel.filter_do_not_aggregate("playlist_song.playlist_song_fk_playlist");
 		m2mRel2Uschema.transformar(relationalModel, directUschemaModel);
 		directTrace1 = m2mRel2Uschema.getTrace();
+/*
 //---prueba de persistencia de la traza
 directTrace1.printFullTrace();
 try {
@@ -54,7 +55,8 @@ directTrace1.printFullTrace();
 directTrace1.printFullReverseTrace();
 System.exit(0);
 //----fin prueba de persistencia de la traza
-
+*/
+		
 		System.out.println("-Relacional a USchema de Northwind");
 		Relational2USchema m2mRel2UschemaN = new Relational2USchema();
 		RelationalSchema relationalModelN = m2mRel2UschemaN.loadSourceModel(DIRECT_DIR+"Northwind-relational.xmi");

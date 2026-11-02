@@ -26,9 +26,9 @@ Official source and license information: [EMF](https://github.com/eclipse-emf/or
 
 This table identifies component families and does not replace their full license texts. Retain full applicable license/NOTICE files with a repackaged distribution and provide corresponding source where required. Do not assume one merged META-INF/LICENSE or NOTICE file covers every bundled library.
 
-## Current executable: Oracle removal pending
+## Oracle JDBC
 
-The executable under `software/data-migrator/configurable-2026-10-30/` still includes Oracle JDBC classes and an Oracle Free Distribution, Hosting, and Use Terms and Conditions notice. **That component is not covered by GPL-3.0 or the Eclipse exception.** A replacement JAR without Oracle is being prepared. Until it is replaced, the existing executable must not be described as a fully GPL-covered distribution. Neither this notice nor the new project license establishes compatibility of the existing Oracle-containing combined executable.
+The executable supplied on 2 November 2026 excludes Oracle JDBC. Its archive entries were checked for Oracle classes and ojdbc artifacts; DataMigration no longer references the Oracle JAR dependencies. The Eclipse additional permission does not extend to Oracle or other libraries outside its stated scope.
 
 ## Data and other materials
 

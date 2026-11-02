@@ -4,9 +4,10 @@
 
 Implementation projects originate from `modelum/db-generic-migration-dev`:
 
-- DataMigration: revision `81179f6325dbdaea6c31205405939366b71bb824`, with nine connection/model arguments.
-- RoundTripV2, Trace, OrionTraceChanger, TestSpeed and the three metamodel runtime projects: revision `3d422b9df84dd66332d7bb855c717b5c3ace279b`.
-- The configurable `migrator.jar` was supplied on 30 October 2026. It is a later parameterized executable, not an identification of the binary used for every historical timing. Its associated source update is the DataMigration revision above; independent source-to-binary rebuild equivalence has not been checked.
+- DataMigration: revision `de23b5beb14dafe85561d84aa9b86799893f0a0b`, with nine connection/model arguments and Oracle JDBC dependencies removed.
+- RoundTripV2 retains revision `3d422b9df84dd66332d7bb855c717b5c3ace279b` except `src/um/modelum/migration/main/Principal.java`, updated from revision `de23b5beb14dafe85561d84aa9b86799893f0a0b` to disable the trace-test early exit.
+- Trace, OrionTraceChanger, TestSpeed and the three metamodel runtime projects retain revision `3d422b9df84dd66332d7bb855c717b5c3ace279b`.
+- The configurable `migrator.jar` was updated on 2 November 2026 with the build excluding Oracle JDBC. It is a later parameterized executable, not an identification of the binary used for every historical timing. Its associated source update is the DataMigration revision above; independent source-to-binary rebuild equivalence has not been checked.
 
 Third-party libraries retain their own licenses. The repository's software license does not replace their terms.
 

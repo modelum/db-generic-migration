@@ -2,7 +2,7 @@
 
 Replication materials supporting the following paper:
 
-MarÃ­a-JosÃ© OrtÃ­n, JosÃ© R. Hoyos, and Jesus GarcÃ­a-Molina. **A Model-Driven Approach to Database Migration with a Unified Data Model**. arXiv:2604.22415, 2026.
+MarÃƒÂ­a-JosÃƒÂ© OrtÃƒÂ­n, JosÃƒÂ© R. Hoyos, and Jesus GarcÃƒÂ­a-Molina. **A Model-Driven Approach to Database Migration with a Unified Data Model**. arXiv:2604.22415, 2026.
 
 - [Read the preprint on arXiv](https://arxiv.org/abs/2604.22415)
 - [DOI: 10.48550/arXiv.2604.22415](https://doi.org/10.48550/arXiv.2604.22415)
@@ -39,7 +39,7 @@ Download the paper reference as [BibTeX](CITATION.bib).
 ```bibtex
 @misc{ortin2026migration,
   title         = {A Model-Driven Approach to Database Migration with a Unified Data Model},
-  author        = {OrtÃ­n, MarÃ­a-Jose and Hoyos, JosÃ© R. and GarcÃ­a-Molina, Jesus},
+  author        = {OrtÃƒÂ­n, MarÃƒÂ­a-Jose and Hoyos, JosÃƒÂ© R. and GarcÃƒÂ­a-Molina, Jesus},
   year          = {2026},
   eprint        = {2604.22415},
   archivePrefix = {arXiv},
@@ -55,4 +55,4 @@ Copyright (c) 2026 Universidad de Murcia.
 
 The project's own code is licensed under [GNU GPL version 3](LICENSE) (GPL-3.0-only), with a [limited additional permission for the identified Eclipse libraries](LICENSE-ECLIPSE-EXCEPTION). Third-party libraries and datasets retain their own terms; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
-The currently supplied executable still contains Oracle JDBC components and is awaiting replacement by a build without Oracle. The project license and Eclipse permission do not cover those components or establish compatibility of that executable.
+The supplied executable excludes Oracle JDBC. Its bundled third-party libraries retain their own licenses and notices.

@@ -1,6 +1,6 @@
 # Configurable data migrator
 
-This newly supplied executable accepts connection parameters. It is distinct from the recovered AWS executables used in earlier artifact collection; it is not identified as the binary used for the paper's historical timing measurements. The associated DataMigration source update is available at development commit `81179f6325dbdaea6c31205405939366b71bb824` and preserved under [source-projects/DataMigration](../../source-projects/DataMigration/). Source-to-binary identity has not been verified through a rebuild. [Sources and versions](../../../SOURCES.md) summarizes the supplied executable and associated source revision.
+This newly supplied executable accepts connection parameters. It is distinct from the recovered AWS executables used in earlier artifact collection; it is not identified as the binary used for the paper's historical timing measurements. The associated DataMigration source update is available at development commit `de23b5beb14dafe85561d84aa9b86799893f0a0b` and preserved under [source-projects/DataMigration](../../source-projects/DataMigration/). Source-to-binary identity has not been verified through a rebuild. [Sources and versions](../../../SOURCES.md) summarizes the supplied executable and associated source revision.
 
 ## Prerequisites and invocation
 
@@ -44,4 +44,4 @@ The JAR archive CRC check passed, the entry-point class version and argument han
 
 ## Distribution licenses
 
-Project code is GPL-3.0-only with the specified Eclipse linking permission. This binary still includes Oracle JDBC components; its replacement without Oracle is pending. Do not treat it as a fully GPL-covered executable. See the repository [third-party notices](../../../THIRD-PARTY-NOTICES.md); no library or binary bytes were changed when adding the project license.
+Project code is GPL-3.0-only with the specified Eclipse linking permission. The executable was updated on 2 November 2026 to exclude Oracle JDBC; the directory path is retained for existing links. Bundled libraries keep their own terms; see the repository [third-party notices](../../../THIRD-PARTY-NOTICES.md). This replacement has been inspected for archive integrity and absence of Oracle entries; no database migration was executed during this update.

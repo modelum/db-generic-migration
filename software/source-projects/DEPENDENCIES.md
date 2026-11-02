@@ -17,7 +17,7 @@ Generate the metamodel runtimes and Trace.jar before their consumers. The trace 
 
 ## Recovered configuration details
 
-- DataMigration references PostgreSQL JDBC 42.7.10 and MongoDB driver 5.1.2. The repository also inventories older Oracle dependencies; those are not required merely to reproduce the PostgreSQL case.
+- DataMigration references PostgreSQL JDBC 42.7.10 and MongoDB driver 5.1.2. Oracle JDBC dependencies have been removed from the updated DataMigration project and executable.
 - The recovered EMF references include common 2.44.0, ecore 2.41.0 and ecore.xmi 2.39.0. Some projects use Eclipse bundle dependencies, others library paths.
 - Trace and OrionTraceChanger have absolute paths to the original Eclipse installation. These need a portable dependency configuration.
 - The updated DataMigration classpath expects `lib/OrionTraceChanger.jar`, replacing the earlier `TraceCanger.jar` spelling. Dependency JARs remain excluded from the source snapshot.
@@ -28,7 +28,7 @@ Generate the metamodel runtimes and Trace.jar before their consumers. The trace 
 
 DataMigration accepts nine arguments: relational model basename, PostgreSQL host, port, user, password and database, then MongoDB host, port and database. It constructs a MongoDB connection without authentication arguments. See [configurable executable usage](../data-migrator/configurable-2026-10-30/README.md). TestSpeed retains localhost/default-port and PostgreSQL music/music assumptions and accepts source database, target database and table. These are deployment settings, not a statement about the model independence of the approach.
 
-DataMigration writes intermediate/target models and `Migration_times.txt`. Its MusicService entry path intentionally contains a preliminary, predefined intermediate adaptation example, selected by the exact model basename `MusicService-relational`; this is not a general adaptation-selection interface. RoundTripV2 contains a trace-persistence test that terminates the program early; the complete round-trip launcher must be reviewed before use. Outputs must be directed to a separate working location rather than overwriting preserved reference artifacts.
+DataMigration writes intermediate/target models and `Migration_times.txt`. Its MusicService entry path intentionally contains a preliminary, predefined intermediate adaptation example, selected by the exact model basename `MusicService-relational`; this is not a general adaptation-selection interface. The updated RoundTripV2 launcher comments out the trace-persistence test and its early exit, allowing the remaining forward/reverse chain to run. Outputs must be directed to a separate working location rather than overwriting preserved reference artifacts.
 
 ## Build preparation
 
