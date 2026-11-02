@@ -29,7 +29,7 @@ Use Java 21 or later, PostgreSQL and MongoDB with the versions above, and a dedi
 
 - [Migration execution guide](../software/database-migrator/RUNNING.md): model selection, connection arguments, commands and outputs.
 - [Software dependencies](../software/source-projects/DEPENDENCIES.md): requirements for building the implementation projects.
-- [Metamodel versions](../software/metamodels/COMPATIBILITY.txt): evaluation definitions and later revisions.
+- [Metamodel definitions](../software/metamodels/): schema definitions; use the runtime versions associated with the implementation.
 - [Data preparation](DATA-PREPARATION.md): preparation and row-count checks for all three cases.
 
 Music Streaming uses a parameterized Python generator. TPC-C uses HammerDB 5.0 TPROC-C with 1/10/100 warehouses and 1/4/6 build virtual users for S/M/L; the transactional workload is not executed. Northwind uses the fixed supplied dataset. Data-population batch sizes and build virtual users are separate from migration settings.

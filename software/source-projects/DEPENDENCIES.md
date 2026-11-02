@@ -32,4 +32,4 @@ DataMigration writes intermediate/target models and `Migration_times.txt`. Its M
 
 ## Build preparation
 
-Assemble the dependencies for the selected project/runtime versions and check the launchers before a new build. Later Ecore changes listed in COMPATIBILITY.txt belong to subsequent development and are not required to reproduce the earlier experiments. A build incorporating those changes must be identified separately from the evaluation implementation.
+Assemble the dependencies for the selected project/runtime versions and check the launchers before a new build. Later Ecore revisions belong to subsequent development and are not required to reproduce the earlier experiments. A build incorporating those changes must be identified separately from the evaluation implementation.

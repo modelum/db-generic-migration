@@ -19,7 +19,7 @@ TPC-C datasets were generated with HammerDB 5.0 TPROC-C. The relational model ad
 
 Northwind is the PostgreSQL sample cited by the paper at [pthom/northwind_psql](https://github.com/pthom/northwind_psql). The precise upstream revision of the supplied SQL has not been established. Original SQL is preserved alongside PostgreSQL 16 loading aids that remove only the obsolete default_with_oids setting; retain applicable third-party terms.
 
-The later Ecore definitions are distinct from the versions used in the evaluation; see [COMPATIBILITY.txt](software/metamodels/COMPATIBILITY.txt).
+The later [Ecore definitions](software/metamodels/) are distinct from the runtime versions used in the evaluation.
 
 ## Queries and results
 

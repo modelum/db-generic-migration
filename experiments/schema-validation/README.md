@@ -1,13 +1,25 @@
 # Schema validation
 
-Compare generated target schemas with the expected models for [Music Streaming](../../cases/music-streaming/expected/), [TPC-C](../../cases/tpcc/expected/) and [Northwind](../../cases/northwind/expected/). Music Streaming and Northwind also include expected U-Schema models. Inputs and generated outputs are organized in the corresponding case folders.
+## Objective
 
-The evaluation used Eclipse EMF Compare and visual inspection of differences. No saved EMF Compare report is supplied. The separately developed EMFComparator tool was not used.
+Check that the generated target schemas represent the structures expected from the mapping rules. The evaluation used Eclipse EMF Compare and visual inspection for Music Streaming, TPC-C and Northwind.
 
-Load matching model/runtime versions in Eclipse, compare the intended generated/expected pair, and inspect structural differences using the mapping specifications. Record the compared filenames, metamodel versions and matching configuration for a new comparison. The [round-trip guide](../roundtrip/) covers the separate comparison of reconstructed relational schemas with their original inputs.
+## Models
 
-The TPC-C [alternative model variant](recovered-tpcc-variant/) is kept separate from the case's selected generated models. Consult its notes before choosing a comparison pair. Later Ecore revisions are described in [metamodel version notes](../../software/metamodels/COMPATIBILITY.txt); they should not be imposed on the earlier experimental models without an explicit version change.
+| Case | Generated models | Expected models |
+| --- | --- | --- |
+| Music Streaming | [U-Schema and Document](../../cases/music-streaming/generated/) | [U-Schema and Document](../../cases/music-streaming/expected/) |
+| TPC-C | [U-Schema and Document](../../cases/tpcc/generated/) | [Document](../../cases/tpcc/expected/) |
+| Northwind | [U-Schema and Document](../../cases/northwind/generated/) | [U-Schema and Document](../../cases/northwind/expected/) |
 
-## TPC-C expected-model scope
+Relational inputs are in each case's `source/` folder. The expected models describe intermediate U-Schema or target Document schemas; they are not references for reconstructed relational schemas.
 
-The expected Document model and its notes omit the order_line-to-stock foreign key because the evaluated mapping does not support foreign keys targeting associative tables. The expected model also includes DECIMAL/temporal types and explicit false targetShareability values on the reversed warehouse.districts, district.customers and customer.orders references. Interpret those differences from generated implementation artifacts using [COMPATIBILITY.txt](../../software/metamodels/COMPATIBILITY.txt); do not edit the expected model solely to force agreement.
+## Comparison
+
+1. Load the generated and expected models using the corresponding metamodel runtime in Eclipse.
+2. Compare each pair of the same model type with EMF Compare.
+3. Inspect the differences against the mapping rules, including entities/documents, attributes, identifiers, references and embedded structures. Representation differences should be interpreted rather than treated as textual mismatches alone.
+
+For TPC-C, the evaluated mapping excludes the order_line-to-stock foreign key because it targets an associative table. The expected-model notes in its folder explain its scope and representation details.
+
+The separate [round-trip experiment](../roundtrip/) compares reconstructed relational schemas with their original relational inputs.
