@@ -18,4 +18,4 @@ The [stored output examples](../../results/query-equivalence/examples/) include 
 2. Compare corresponding output fields and values, accounting for equivalent numeric and date representations and differences in displayed column order.
 3. Compare the complete results, preserving duplicate rows. Row order need not match unless ordering itself is being checked. For Q3, compare the returned count value.
 
-Music Q1 uses embedded playlists. If data are regenerated, choose parameters present in that instance on both sides; original identifiers and exact cardinalities may differ. The [stored examples](../../results/query-equivalence/examples/) illustrate results and do not replace comparison of the complete outputs from a new run.
+The [stored examples](../../results/query-equivalence/examples/) illustrate results and do not replace comparison of the complete outputs from a new run.
