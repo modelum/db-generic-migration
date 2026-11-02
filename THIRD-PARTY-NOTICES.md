@@ -8,7 +8,7 @@ EMF, Xtext/Xtend and Eclipse Platform runtime components are used by the impleme
 
 - EMF dependencies in the source classpath: common 2.44.0, ecore 2.41.0 and ecore.xmi 2.39.0. Embedded Maven metadata can include SNAPSHOT qualifiers.
 - Xbase/Xtend runtime metadata in the supplied JAR: 2.41.0.
-- Eclipse Platform classes from org.eclipse.core, org.eclipse.equinox and org.eclipse.osgi are also present. A complete original-library/version inventory is needed when repackaging the executable.
+- Eclipse Platform components from org.eclipse.core, org.eclipse.equinox and org.eclipse.osgi are also included; their exact versions and source bundles are listed below.
 
 Official source and license information: [EMF](https://github.com/eclipse-emf/org.eclipse.emf), [Xtext/Xtend](https://github.com/eclipse-xtext/xtext), [Eclipse Platform](https://github.com/eclipse-platform), [EPL-2.0](https://www.eclipse.org/legal/epl-2.0/).
 
@@ -28,7 +28,31 @@ Applicable full texts and notices accompany this repository under [LICENSES](LIC
 
 The Apache text applies to the Apache-licensed components listed above, including MongoDB, Guava and OSGi. Version-specific MongoDB and Netty upstream notices are retained; upstream notice collections can describe additional components beyond the subset present in this executable. The EPL text is reproduced from the SPDX license-text collection. PostgreSQL/OnGres and OSGi notices are preserved from their original dependency/distribution resources.
 
-These notices do not replace obligations to supply or make available corresponding library sources where required. Preserve applicable notices when repackaging and use the source repositories and component versions identified above. An inventory of full version-matched Eclipse Platform source artifacts is not included; the exception over project code does not waive Eclipse source-availability requirements.
+## Eclipse source code
+
+[Download the Eclipse dependency sources](software/third-party-sources/eclipse-sources.zip). The archive contains fifteen unmodified official source bundles, their download index and the EPL-2.0 text. Their original copyright and license notices are retained.
+
+The corresponding official binary bundles were identified by byte-for-byte comparison of class files with the supplied migrator. The selected bundles account for all `org/eclipse/` classes in that executable. Each source bundle's `Eclipse-SourceBundle` manifest header was checked against the binary component ID and full version. This checks dependency correspondence; it is not an independent rebuild of the application.
+
+| Component | Version | Official source bundle |
+| --- | --- | --- |
+| `org.eclipse.core.contenttype` | `3.9.800.v20251105-1620` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.core.contenttype.source_3.9.800.v20251105-1620.jar) |
+| `org.eclipse.core.jobs` | `3.15.700.v20250725-1147` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.core.jobs.source_3.15.700.v20250725-1147.jar) |
+| `org.eclipse.core.runtime` | `3.34.100.v20251111-1421` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.core.runtime.source_3.34.100.v20251111-1421.jar) |
+| `org.eclipse.emf.common` | `2.44.0.v20251025-0946` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.emf.common.source_2.44.0.v20251025-0946.jar) |
+| `org.eclipse.emf.ecore` | `2.41.0.v20251025-0946` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.emf.ecore.source_2.41.0.v20251025-0946.jar) |
+| `org.eclipse.emf.ecore.xmi` | `2.39.0.v20250910-1205` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.emf.ecore.xmi.source_2.39.0.v20250910-1205.jar) |
+| `org.eclipse.equinox.app` | `1.7.500.v20250629-0337` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.equinox.app.source_1.7.500.v20250629-0337.jar) |
+| `org.eclipse.equinox.common` | `3.20.300.v20251111-0312` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.equinox.common.source_3.20.300.v20251111-0312.jar) |
+| `org.eclipse.equinox.preferences` | `3.12.100.v20251111-0704` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.equinox.preferences.source_3.12.100.v20251111-0704.jar) |
+| `org.eclipse.equinox.registry` | `3.12.600.v20250906-0651` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.equinox.registry.source_3.12.600.v20250906-0651.jar) |
+| `org.eclipse.osgi` | `3.24.0.v20251126-0427` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.osgi.source_3.24.0.v20251126-0427.jar) |
+| `org.eclipse.osgi.compatibility.state` | `1.3.0.v20251022-1724` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.osgi.compatibility.state.source_1.3.0.v20251022-1724.jar) |
+| `org.eclipse.xtend.lib` | `2.41.0.v20251124-0739` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.xtend.lib.source_2.41.0.v20251124-0739.jar) |
+| `org.eclipse.xtend.lib.macro` | `2.41.0.v20251124-0739` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.xtend.lib.macro.source_2.41.0.v20251124-0739.jar) |
+| `org.eclipse.xtext.xbase.lib` | `2.41.0.v20251124-0739` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.xtext.xbase.lib.source_2.41.0.v20251124-0739.jar) |
+
+The same source bundles are supplied in the local archive so obtaining the corresponding Eclipse sources does not depend solely on the external links. Preserve their notices and the applicable source availability when redistributing the libraries; the project linking permission does not waive the Eclipse license requirements.
 
 ## Data and other materials
 
