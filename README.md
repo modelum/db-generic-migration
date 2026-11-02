@@ -1,8 +1,6 @@
 # db-generic-migration
 
-Replication materials for *A Model-Driven Approach to Database Migration with a Unified Data Model*.
-
-## Paper
+Replication materials supporting the following paper:
 
 María J. Ortín, José R. Hoyos, and Jesus García-Molina. **A Model-Driven Approach to Database Migration with a Unified Data Model**. arXiv:2604.22415, 2026.
 
