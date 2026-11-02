@@ -26,3 +26,7 @@ Round-trip NA values represent categories reported as not applicable (the dash i
 For query results, approximate cardinalities remain explicitly approximate. The cardinality column refers to S for Music Streaming/TPC-C and the fixed Northwind instance; the equivalence indicator covers S and M for the scalable cases as described in the paper. The summary is not an assertion that the recovered candidate SQL/JavaScript files have been executed or validated against those results. Q3's value 1 denotes one aggregate output row, not necessarily one qualifying user.
 
 No additional adaptation results or unreported measurements are introduced. Any future reproduction outputs should be stored separately and identified as new runs.
+
+## Query evaluation records
+
+The original query evaluation checked corresponding SQL and MongoDB results during execution. Evaluation documents preserve result counts and illustrative output; larger outputs were not always copied in full. Those partial records should not be treated as complete replayable exports. The TPC-C comparison document records numerical agreement after resolution of the earlier Decimal128 issue. See the [query experiment](../experiments/query-equivalence/) for scope and the new-run comparison procedure. The Table 11 CSV remains a transcription of the paper, not a new computation from partial examples.
