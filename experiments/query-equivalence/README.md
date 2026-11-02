@@ -14,6 +14,8 @@ The [stored output examples](../../results/query-equivalence/examples/) include 
 
 ## Reproduction
 
-[COMPARISON.md](COMPARISON.md) gives a procedure for a new run: matching parameters, projected fields, duplicate multiplicities and numeric/date interpretation. It is distinct from the original evaluation records. Query revisions are recorded in Git history; publication results are in [results/query-equivalence](../../results/query-equivalence/).
+1. Run each SQL query against the source database and its MongoDB counterpart against the migrated database, using the same logical filter parameters.
+2. Compare corresponding output fields and values, accounting for equivalent numeric and date representations and differences in displayed column order.
+3. Compare the complete results, preserving duplicate rows. Row order need not match unless ordering itself is being checked. For Q3, compare the returned count value.
 
-No additional query run was performed while preparing this package, and the illustrative records do not replace a complete export when performing a new automated comparison.
+Music Q1 uses embedded playlists. If data are regenerated, choose parameters present in that instance on both sides; original identifiers and exact cardinalities may differ. The [stored examples](../../results/query-equivalence/examples/) illustrate results and do not replace comparison of the complete outputs from a new run.

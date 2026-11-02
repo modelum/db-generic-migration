@@ -10,7 +10,7 @@ SQL/MongoDB query pairs corresponding to the access patterns in Table 11.
 
 ## Use
 
-Use the actual source database and its migrated counterpart, with matching filter parameters and schema representation. The JavaScript uses `db(...).collection(...)` client notation. [Comparison instructions](../../../experiments/query-equivalence/COMPARISON.md) describe field correspondence, duplicates, dates and numeric values for a new reproduction.
+Use the actual source database and its migrated counterpart, with matching filter parameters and schema representation. The JavaScript uses `db(...).collection(...)` client notation. [Comparison instructions](../../../experiments/query-equivalence/README.md#reproduction) summarize how to compare corresponding fields and values.
 
 Database names in the scripts must correspond to the intended instance.
 
