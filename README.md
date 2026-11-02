@@ -39,7 +39,7 @@ Download the paper reference as [BibTeX](CITATION.bib).
 ```bibtex
 @misc{ortin2026migration,
   title         = {A Model-Driven Approach to Database Migration with a Unified Data Model},
-  author        = {OrtÃƒÂ­n, MarÃƒÂ­a-Jose and Hoyos, JosÃƒÂ© R. and GarcÃƒÂ­a-Molina, Jesus},
+  author        = {Orti­n, Maria-Jose and Hoyos, Jose R. and Garci­a-Molina, Jesus},
   year          = {2026},
   eprint        = {2604.22415},
   archivePrefix = {arXiv},
