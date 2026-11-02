@@ -21,7 +21,7 @@
 
 ## Versions and interpretation
 
-Use the runtime/metamodel versions associated with the evaluation implementation. The later Ecore revisions described in [metamodel notes](software/metamodels/) are subsequent development, not a prerequisite for reproducing the reported executions. The configurable JAR adds connection parameters; its presence does not retrospectively identify the executable used for every historical timing.
+Use the runtime/metamodel versions associated with the evaluation implementation. The later Ecore revisions described in [metamodel notes](software/metamodels/COMPATIBILITY.txt) are subsequent development, not a prerequisite for reproducing the reported executions. The configurable JAR adds connection parameters; its presence does not retrospectively identify the executable used for every historical timing.
 
 Canonical Music uses embedded playlists. A working copy renamed to `MusicService-canonical.xmi`, invoked with basename `MusicService-canonical`, avoids the predefined adaptation trigger. Basename `MusicService-relational` activates the sequential adaptation scenario. Original package models remain unchanged.
 

@@ -27,3 +27,20 @@ required properties can differ between variants of the same namespace URI.
 Connection configuration is independent of metamodel versioning. The supplied
 configurable DataMigration accepts connection parameters; TestSpeed retains
 its original local connection assumptions.
+
+Definition details and historical variants
+-----------------------------------------
+
+The later Document definition includes DECIMAL and temporal datatype literals,
+required Embedded.isMany and PrimitiveType.datatype, and a required Array.name.
+Reference.targetShareability is Boolean, required, with default true.
+Datatype default literals differ between versions, so omitted XMI values may
+be interpreted differently when loaded with another definition.
+
+The later U-Schema definition also sets Aggregate.specifiedBy unique=false
+and changes the package name/prefix to USchema while retaining its namespace
+URI. Register only one variant of the same namespace URI at a time.
+
+historical/development-snapshot contains earlier development definitions.
+historical/uschema-without-aggregate-backlink.ecore is an additional earlier
+U-Schema variant. Their origins are recorded in accompanying metadata.

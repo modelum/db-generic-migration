@@ -22,7 +22,7 @@ Use the [PostgreSQL 16 data-loading procedure](northwind/data/), which handles t
 
 The generated Document schema has seven independent types. `order_line` and `new_order` are embedded in `orders`; `district`, `customer` and `history` remain independent.
 
-The expected Document model and its derivation notes exclude order_line-to-stock because the evaluated mapping does not support foreign keys targeting associative tables. The expected model contains DECIMAL/temporal types and explicit false targetShareability values on reversed warehouse.districts, district.customers and customer.orders references. Those features differ from generated implementation artifacts; use the [metamodel version notes](../software/metamodels/) when interpreting differences, rather than editing the expected model to force agreement.
+The expected Document model and its derivation notes exclude order_line-to-stock because the evaluated mapping does not support foreign keys targeting associative tables. The expected model contains DECIMAL/temporal types and explicit false targetShareability values on reversed warehouse.districts, district.customers and customer.orders references. Those features differ from generated implementation artifacts; use the [metamodel version notes](../software/metamodels/COMPATIBILITY.txt) when interpreting differences, rather than editing the expected model to force agreement.
 
 ## Schema comparisons and versions
 

@@ -22,4 +22,4 @@ The active relational adapter is DataMigration/src/um/modelum/migration/adapter.
 
 ## Metamodel versions
 
-The Ecores and runtime sources within these projects are retained with their project versions. The definitions under [metamodels](../metamodels/) include changes identified after the TPC-C experiments; adopting them is a subsequent implementation task, not a prerequisite to interpreting or reproducing the reported executions. See [version notes](../metamodels/COMPATIBILITY.txt).
+The Ecores and runtime sources within these projects are retained with their project versions. The definitions under [metamodels](../metamodels/COMPATIBILITY.txt) include changes identified after the TPC-C experiments; adopting them is a subsequent implementation task, not a prerequisite to interpreting or reproducing the reported executions. See [version notes](../metamodels/COMPATIBILITY.txt).

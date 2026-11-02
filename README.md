@@ -18,7 +18,7 @@ The package includes the three case studies, recovered expected and generated mo
 ## Contents
 
 - [cases](cases/): source schemas, data preparation and model artifacts for the three cases.
-- [software](software/): metamodels, implementation source snapshots and dependency documentation.
+- [software](REPRODUCING.md): metamodels, implementation source snapshots and dependency documentation.
 - [environment](environment/): execution environment documentation.
 - [experiments](experiments/): schema validation, round-trip reconstruction, trace-aware adaptation, scaling, flat-copy baseline and query equivalence.
 - [results](results/): published results transcribed as CSV, plus a recovered baseline timing breakdown with provenance.
