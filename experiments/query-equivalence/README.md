@@ -10,6 +10,8 @@ Column display order and date/numeric formatting are interpreted through the cor
 
 The final TPC-C comparison document records matching SQL/MongoDB results with numeric values for Q7-Q9. The comparison records for Q7 and Q8 contain ten results per side; Q9 reports 5,486 per side with example rows. These records concern the documented instance, not an independently regenerated dataset.
 
+The [stored output examples](../../results/query-equivalence/examples/) include Q2/Q3 and Q5-Q9; their scope and original display formats are described in [results](../../results/README.md#query-output-examples).
+
 ## Reproduction
 
 [COMPARISON.md](COMPARISON.md) gives a procedure for a new run: matching parameters, projected fields, duplicate multiplicities and numeric/date interpretation. It is distinct from the original evaluation records. Query revisions are recorded in Git history; publication results are in [results/query-equivalence](../../results/query-equivalence/).

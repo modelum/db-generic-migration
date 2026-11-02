@@ -30,3 +30,19 @@ No additional adaptation results or unreported measurements are introduced. Any 
 ## Query evaluation records
 
 The original query evaluation checked corresponding SQL and MongoDB results during execution. Evaluation documents preserve result counts and illustrative output; larger outputs were not always copied in full. Those partial records should not be treated as complete replayable exports. The TPC-C comparison document records agreement between the SQL and MongoDB results. See the [query experiment](../experiments/query-equivalence/) for scope and the new-run comparison procedure. The Table 11 CSV remains a transcription of the paper, not a new computation from partial examples.
+
+## Query output examples
+
+[query-equivalence/examples](query-equivalence/examples/) contains literal output excerpts from the evaluation records, with one text file per query and database side. Files retain display column order, whitespace, numeric formatting and date strings; they are not normalized exports. Ellipses in larger outputs remain as recorded. A zero-valued digit or an array is not silently converted into another representation.
+
+| Queries | Stored examples per side | Source |
+| --- | --- | --- |
+| Q2 | Three style rows | Music Streaming SQL/MongoDB evaluation scripts |
+| Q3 | Scalar count: 4 | Music Streaming SQL/MongoDB evaluation scripts |
+| Q5 | Three order-detail rows | Northwind SQL/MongoDB evaluation scripts |
+| Q6 | One manager row | Northwind SQL/MongoDB evaluation scripts |
+| Q7 | Ten district rows | TPC-C comparison document |
+| Q8 | Ten payment-history rows | TPC-C comparison document |
+| Q9 | Twelve example rows; document reports 5,486 | TPC-C comparison document |
+
+Q1 and Q4 do not have a paired example set in this folder. The examples do not cover every dataset size or prove full-result equality by themselves. They illustrate the evaluation results alongside the paper's Table 11 summary. Query timing annotations and additional exploratory queries are omitted. For a new comparison use [COMPARISON.md](../experiments/query-equivalence/COMPARISON.md), including the output-field correspondence and explicit treatment of dates and numeric values.

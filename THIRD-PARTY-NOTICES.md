@@ -24,7 +24,11 @@ Official source and license information: [EMF](https://github.com/eclipse-emf/or
 | OSGi annotation/service metadata components | Embedded Maven license declarations specify Apache-2.0; retain supplied notices |
 | OnGres SCRAM/stringprep components | BSD-2-Clause notices are included under META-INF/licenses in the executable |
 
-This table identifies component families and does not replace their full license texts. Retain full applicable license/NOTICE files with a repackaged distribution and provide corresponding source where required. Do not assume one merged META-INF/LICENSE or NOTICE file covers every bundled library.
+Applicable full texts and notices accompany this repository under [LICENSES](LICENSES/): [Apache-2.0](LICENSES/Apache-2.0.txt), [EPL-2.0](LICENSES/EPL-2.0.txt), [SLF4J MIT](LICENSES/SLF4J-1.7.6-MIT.txt), [PostgreSQL JDBC](LICENSES/PostgreSQL-JDBC-LICENSE.txt), [OnGres](LICENSES/OnGres-LICENSES.txt), [Netty notices](LICENSES/Netty-4.1.87-NOTICE.txt), [MongoDB notices](LICENSES/MongoDB-5.1.2-NOTICES.txt) and [OSGi notices](LICENSES/OSGi-NOTICE.txt).
+
+The Apache text applies to the Apache-licensed components listed above, including MongoDB, Guava and OSGi. Version-specific MongoDB and Netty upstream notices are retained; upstream notice collections can describe additional components beyond the subset present in this executable. The EPL text is reproduced from the SPDX license-text collection. PostgreSQL/OnGres and OSGi notices are preserved from their original dependency/distribution resources.
+
+These notices do not replace obligations to supply or make available corresponding library sources where required. Preserve applicable notices when repackaging and use the source repositories and component versions identified above. An inventory of full version-matched Eclipse Platform source artifacts is not included; the exception over project code does not waive Eclipse source-availability requirements.
 
 ## Data and other materials
 
