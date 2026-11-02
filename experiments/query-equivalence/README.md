@@ -8,7 +8,7 @@ SQL/JavaScript evaluation scripts and comparison documents record query text, re
 
 Column display order and date/numeric formatting are interpreted through the corresponding projected fields and data types. They do not by themselves establish a difference in the underlying results. The current Music Q1 addresses the canonical embedded-playlist structure; the independent-playlist variant belongs to the adaptation scenario.
 
-The historical TPC-C Decimal128 issue was resolved before the equivalence check. The final TPC-C comparison document records matching SQL/MongoDB results with numeric values for Q7-Q9. An earlier warning in a working query script does not describe the final evaluated state. The comparison records for Q7 and Q8 contain ten results per side; Q9 reports 5,486 per side with example rows. These records concern the documented instance, not an independently regenerated dataset.
+The final TPC-C comparison document records matching SQL/MongoDB results with numeric values for Q7-Q9. The comparison records for Q7 and Q8 contain ten results per side; Q9 reports 5,486 per side with example rows. These records concern the documented instance, not an independently regenerated dataset.
 
 ## Reproduction
 
