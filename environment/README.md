@@ -21,7 +21,7 @@ The evaluation used the following environment (Section 6.1 of the paper).
 
 Each migration started with an empty target database. Elapsed times cover source-data access, instance transformation, reference and aggregate resolution, and document writes. Schema transformation and program initialization are excluded. Timings were measured within the migrator using system-clock timestamps.
 
-Measurements characterize this environment; a new machine need not reproduce the same elapsed times. The paper does not specify an exact AWS instance type, CPU core count, operating-system image or Docker image digest.
+Execution times depend on the hardware and runtime environment. Reproduction should therefore focus on the correctness of the migration results and the observed scaling behavior rather than on matching the reported times exactly.
 
 ## Preparing a reproduction
 
