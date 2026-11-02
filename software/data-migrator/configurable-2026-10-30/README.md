@@ -41,3 +41,7 @@ The updated source names its timing report `Migration_times.txt`. The program wr
 ## Verification boundary
 
 The JAR archive CRC check passed, the entry-point class version and argument handling were inspected, and its Music adaptation condition was checked statically. No database connection, data migration or help invocation was executed. Runtime/dependency compatibility, metamodel alignment, exact source correspondence and canonical-case execution remain to be verified. The new connection interface does not by itself establish that the previously documented metamodel differences have been resolved.
+
+## Distribution licenses
+
+Project code is GPL-3.0-only with the specified Eclipse linking permission. This binary still includes Oracle JDBC components; its replacement without Oracle is pending. Do not treat it as a fully GPL-covered executable. See the repository [third-party notices](../../../THIRD-PARTY-NOTICES.md); no library or binary bytes were changed when adding the project license.

@@ -49,4 +49,10 @@ Download the paper reference as [BibTeX](CITATION.bib).
 }
 ```
 
-A reuse license has not yet been specified. The paper reference above identifies the publication supported by these materials.
+## License
+
+Copyright (c) 2026 Universidad de Murcia.
+
+The project's own code is licensed under [GNU GPL version 3](LICENSE) (GPL-3.0-only), with a [limited additional permission for the identified Eclipse libraries](LICENSE-ECLIPSE-EXCEPTION). Third-party libraries and datasets retain their own terms; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
+The currently supplied executable still contains Oracle JDBC components and is awaiting replacement by a build without Oracle. The project license and Eclipse permission do not cover those components or establish compatibility of that executable.

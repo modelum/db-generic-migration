@@ -1,0 +1,28 @@
+Additional permission under GNU GPL version 3 section 7
+
+If you modify this Program, or any covered work, by linking or combining it
+with the Eclipse libraries identified below (or modified versions of those
+libraries), containing parts covered by the terms of the Eclipse Public
+License version 1.0 or version 2.0, the licensors of this Program grant you
+additional permission to convey the resulting work.
+
+Identified Eclipse libraries:
+- Eclipse Modeling Framework (EMF): org.eclipse.emf.common,
+  org.eclipse.emf.ecore and org.eclipse.emf.ecore.xmi.
+- Eclipse Xtext/Xtend runtime libraries: org.eclipse.xtext.xbase.lib,
+  org.eclipse.xtend.lib and org.eclipse.xtend.lib.macro.
+- Eclipse Platform runtime libraries used by those components, from the
+  org.eclipse.core, org.eclipse.equinox and org.eclipse.osgi components.
+
+This permission applies only to the project-owned code licensed under
+GPL-3.0-only by Universidad de Murcia. It does not relicense the Eclipse
+libraries, waive their license obligations, or grant permissions for other
+third-party code. In particular it does not cover Oracle JDBC libraries.
+
+The GNU GPL version 3 continues to apply to the project-owned code except
+for this limited permission to combine and convey it with the identified
+Eclipse libraries. Existing license and copyright notices remain applicable.
+
+This permission is based on the linking-exception template published by the
+Free Software Foundation:
+https://www.gnu.org/licenses/gpl-faq.html#GPLIncompatibleLibs
