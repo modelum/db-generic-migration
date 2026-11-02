@@ -10,14 +10,14 @@ Create a separate working directory for each case/size and copy `migrator.jar` a
 
 Both Music scenarios start from the same [original relational model](../../cases/music-streaming/source/MusicService-relational.xmi). For canonical migration, copy it into the working directory and rename that copy to `MusicService-canonical.xmi`. For adaptation, keep the name `MusicService-relational.xmi`. The filename and first argument used for execution are shown separately below.
 
-| Scenario | Input model | 
-| --- | --- | 
-| Music with adaptation |[MusicService-relational.xmi](../../cases/tpcc/source/MusicService-relational.xmi) | 
-| Music without adaptation | Same Music model but the file must be renamed, e.g. MusicService-canonical.xmi | 
-| TPC-C | [TPC-C-relational-sinPK.xmi](../../cases/tpcc/source/TPC-C-relational-sinPK.xmi) | 
-| Northwind | [Northwind-relational.xmi](../../cases/northwind/source/Northwind-relational.xmi) | 
+| Scenario | Input model |
+| --- | --- |
+| Music with adaptation |[MusicService-relational.xmi](../../cases/music-streaming/source/MusicService-relational.xmi) |
+| Music without adaptation | Same Music model but the file must be renamed, e.g. MusicService-canonical.xmi |
+| TPC-C | [TPC-C-relational-sinPK.xmi](../../cases/tpcc/source/TPC-C-relational-sinPK.xmi) |
+| Northwind | [Northwind-relational.xmi](../../cases/northwind/source/Northwind-relational.xmi) |
 
-The code checks the exact basename `MusicService-relational` to activate adaptation; it does not use a separate mode argument. 
+The code checks the exact basename `MusicService-relational` to activate adaptation; it does not use a separate mode argument.
 
 ## Command
 
@@ -25,7 +25,23 @@ The code checks the exact basename `MusicService-relational` to activate adaptat
 java -jar migrator.jar MODEL_BASENAME PG_HOST PG_PORT PG_USER PG_PASSWORD PG_DATABASE MONGO_HOST MONGO_PORT MONGO_DATABASE
 ```
 
-Replace all placeholders with the actual connection settings. PostgreSQL credentials are arguments; MongoDB host/port/database are configurable but there are no MongoDB authentication arguments. Do not publish actual passwords in a run record.
+`MODEL_BASENAME` is the name of the relational XMI file **without the `.xmi` extension**. For example, use `MusicService-canonical` for `MusicService-canonical.xmi`. Place the file in the same directory as `migrator.jar`.
+
+The command takes nine arguments, in this order:
+
+| Parameter | Meaning |
+| --- | --- |
+| `MODEL_BASENAME` | Relational model filename without `.xmi` |
+| `PG_HOST` | PostgreSQL server hostname or IP address |
+| `PG_PORT` | PostgreSQL port, usually `5432` |
+| `PG_USER` | PostgreSQL username |
+| `PG_PASSWORD` | PostgreSQL password |
+| `PG_DATABASE` | Source PostgreSQL database name |
+| `MONGO_HOST` | MongoDB server hostname or IP address |
+| `MONGO_PORT` | MongoDB port, usually `27017` |
+| `MONGO_DATABASE` | Target MongoDB database name |
+
+Replace the placeholders with your model name and connection settings. This interface does not include MongoDB username/password arguments. Quote any argument containing spaces or shell-special characters as required by your shell.
 
 For example, with databases prepared separately and illustrative connection values:
 
