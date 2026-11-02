@@ -10,7 +10,7 @@ Create a separate working directory for each case/size and copy `migrator.jar` a
 
 Both Music scenarios start from the same [original relational model](../../cases/music-streaming/source/MusicService-relational.xmi). For canonical migration, copy it into the working directory and rename that copy to `MusicService-canonical.xmi`. For adaptation, keep the name `MusicService-relational.xmi`. The filename and first argument used for execution are shown separately below.
 
-| Scenario | Package input | Working-copy filename | First argument |
+| Scenario | Input model | Working-copy filename | First argument |
 | --- | --- | --- | --- |
 | Music without adaptation | Same original Music model; rename the working copy | `MusicService-canonical.xmi` | `MusicService-canonical` |
 | Music with adaptation | Same original Music model; keep the filename | `MusicService-relational.xmi` | `MusicService-relational` |
