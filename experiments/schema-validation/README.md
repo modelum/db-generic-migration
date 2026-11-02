@@ -7,3 +7,7 @@ The evaluation used Eclipse EMF Compare and visual inspection of differences. No
 Load matching model/runtime versions in Eclipse, compare the intended generated/expected pair, and inspect structural differences using the mapping specifications. Record the compared filenames, metamodel versions and matching configuration for a new comparison. The [round-trip guide](../roundtrip/) covers the separate comparison of reconstructed relational schemas with their original inputs.
 
 The TPC-C [alternative model variant](recovered-tpcc-variant/) is kept separate from the case's selected generated models. Consult its notes before choosing a comparison pair. Later Ecore revisions are described in [metamodel version notes](../../software/metamodels/COMPATIBILITY.txt); they should not be imposed on the earlier experimental models without an explicit version change.
+
+## TPC-C expected-model scope
+
+The expected Document model and its notes omit the order_line-to-stock foreign key because the evaluated mapping does not support foreign keys targeting associative tables. The expected model also includes DECIMAL/temporal types and explicit false targetShareability values on the reversed warehouse.districts, district.customers and customer.orders references. Interpret those differences from generated implementation artifacts using [COMPATIBILITY.txt](../../software/metamodels/COMPATIBILITY.txt); do not edit the expected model solely to force agreement.

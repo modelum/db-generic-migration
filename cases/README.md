@@ -1,31 +1,29 @@
-# Case-study model notes
+# Case studies
 
-Each case separates relational inputs (`source`), transformation outputs (`generated`), expected models (`expected`), data preparation (`data`) and queries (`queries`). The notes below explain distinctions needed to use these artifacts; preparation and query procedures remain in their respective folders.
+The evaluation uses three relational-to-document migration cases. Each case separates the relational schemas (`source`), generated U-Schema and Document models (`generated`), expected models (`expected`), data and preparation instructions (`data`), and SQL/MongoDB queries (`queries`).
 
 ## Music Streaming
 
-The relational input contains eight tables and matches the MusicService input in RoundTripV2. The original SQL includes `CREATE DATABASE musicdb-M` and `USE DATABASE musicdb-M`, which are not a ready-to-run PostgreSQL setup. Prepare the dedicated schema before using the [data generator](music-streaming/data/); do not execute the original SQL as a complete loading script. SQL/XMI datatype and constraint correspondence still requires review for a new loading procedure.
+Music Streaming is a synthetic music-service database designed to illustrate the transformation patterns in a controlled setting. It includes simple and composite keys, weak tables, associative tables, and identifying and non-identifying relationships.
 
-The canonical generated Document model embeds `playlist` and `most_recent_song` in `app_user`, with `playlist_song` inside `playlist`, and retains `is_premium`. The [adapted scenario](../experiments/trace-adaptation/) instead produces independent playlists and `user_data` without `is_premium`; it is kept separate.
+A parameterized Python generator produces three dataset sizes, S, M and L. See the [data preparation instructions](music-streaming/data/) for the generator and configuration.
 
-Expected Document and U-Schema models support forward-schema comparison. They are not reconstructed relational reference models.
-
-## Northwind
-
-The relational XMI has 14 tables, 92 columns, 14 keys and 13 foreign keys. Its generated Document schema has 14 independent document types with no embedded properties. Expected Document and U-Schema models are supplied.
-
-Use the [PostgreSQL 16 data-loading procedure](northwind/data/), which handles the obsolete `SET default_with_oids` setting while preserving the original DDL. The precise upstream revision of the supplied Northwind SQL has not been established.
+This case is used for schema validation, round-trip reconstruction, data-migration scaling and query-result equivalence (Q1-Q3). It also demonstrates [trace-aware schema adaptation](../experiments/trace-adaptation/), separately from the canonical migration scenario.
 
 ## TPC-C
 
-`TPC-C-relational-sinPK.xmi` has nine tables, 92 columns, eight keys and nine foreign keys. `history` has no key; the filename does not mean all tables lack primary keys. The SQL dump has eight primary keys and no declared foreign keys; it includes functions, indexes and ownership statements and identifies PostgreSQL/pg_dump 16.14. Logical foreign keys were added to the model after DDL extraction. See [HammerDB preparation](tpcc/data/) for dataset generation and model scope; these files are not a transactional workload result.
+TPC-C models warehouse order processing and provides an independently defined schema complementary to the synthetic Music Streaming case. It exercises additional structures, including tables without a primary key and foreign keys targeting weak tables.
 
-The generated Document schema has seven independent types. `order_line` and `new_order` are embedded in `orders`; `district`, `customer` and `history` remain independent.
+The S, M and L datasets were generated with HammerDB 5.0 TPROC-C using 1, 10 and 100 warehouses, respectively. See the [data preparation instructions](tpcc/data/). The transactional workload was not executed; the evaluation measures database migration rather than TPC-C transaction performance.
 
-The expected Document model and its derivation notes exclude order_line-to-stock because the evaluated mapping does not support foreign keys targeting associative tables. The expected model contains DECIMAL/temporal types and explicit false targetShareability values on reversed warehouse.districts, district.customers and customer.orders references. Those features differ from generated implementation artifacts; use the [metamodel version notes](../software/metamodels/COMPATIBILITY.txt) when interpreting differences, rather than editing the expected model to force agreement.
+This case is used for schema validation, round-trip reconstruction, data-migration scaling and query-result equivalence (Q7-Q9).
 
-## Schema comparisons and versions
+## Northwind
 
-Forward validation compares generated schemas with expected schemas. [Round-trip validation](../experiments/roundtrip/) instead compares each reconstructed relational schema with its original relational input. The evaluation used EMF Compare and visual inspection; no new comparison is claimed during package preparation.
+Northwind is a sample database for commercial order management. It complements the other cases with structures including self-references and associative relationships, as well as simple and composite keys.
 
-Original files remain unchanged. Their origins and versions are recorded in the common source/version notes, including [Sources and versions](../SOURCES.md). Later Ecore revisions must not be silently imposed on the earlier experimental models. See [schema-validation instructions](../experiments/schema-validation/) for comparison context.
+The evaluation uses a single fixed PostgreSQL dataset. The supplied data and [loading instructions](northwind/data/) support preparation of that instance.
+
+This case is used for schema validation, round-trip reconstruction and query-result equivalence (Q4-Q6). It is not part of the S/M/L scaling experiments.
+
+For the procedures and corresponding results, see the [experiment guides](../experiments/), [reported results](../results/) and [sources and versions](../SOURCES.md).
