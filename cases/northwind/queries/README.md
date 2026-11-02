@@ -14,4 +14,4 @@ Use the actual source database and its migrated counterpart, with matching filte
 
 Database names in the scripts must correspond to the intended instance.
 
-Query revisions and source-document references are recorded in `provenance.json` and Git history. The [reported results](../../../results/query-equivalence/) are distinct from any new-run query outputs. These scripts were not executed during package preparation.
+Query revisions are recorded in Git history; see the common source/version notes in `SOURCES.md` at the repository root. The [reported results](../../../results/query-equivalence/) are distinct from any new-run query outputs. These scripts were not executed during package preparation.

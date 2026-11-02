@@ -1,6 +1,6 @@
 # Recovered executable inventory
 
-This inventory identifies JARs in the recovered `aws-instance.zip`; the archive and individual JAR SHA-256 hashes are recorded in [adaptation provenance](../experiments/trace-adaptation/provenance.json). The binaries have not been added to the public package or executed during packaging.
+This inventory identifies JARs in the recovered `aws-instance.zip`; the current software versions are described in [Sources and versions](../SOURCES.md). The binaries have not been added to the public package or executed during packaging.
 
 | Archive member | Observation from static inspection | Scope |
 | --- | --- | --- |
@@ -10,8 +10,8 @@ This inventory identifies JARs in the recovered `aws-instance.zip`; the archive 
 
 Static class inspection identifies these differences; it does not establish successful execution, complete behavioral equivalence to the source snapshots, or which binary produced every reported performance measurement. No variant is designated a final supported distribution on the basis of its filename or download date.
 
-The preserved implementation sources are under [source-projects](source-projects/). Consult [DEPENDENCIES.md](source-projects/DEPENDENCIES.md) and [metamodel compatibility](metamodels/COMPATIBILITY.txt) before assembling an executable distribution. Existing binary dependencies are inventoried in source provenance rather than silently replaced or rebuilt. Selecting the binary/dependency combination for each experiment remains a release-preparation task.
+The preserved implementation sources are under [source-projects](source-projects/). Consult [DEPENDENCIES.md](source-projects/DEPENDENCIES.md) and [metamodel compatibility](metamodels/COMPATIBILITY.txt) before assembling an executable distribution. Selecting the binary/dependency combination for each experiment remains a release-preparation task.
 
 ## Newly supplied configurable executable
 
-The [2026-10-30 executable](data-migrator/configurable-2026-10-30/) is published separately with its SHA-256 and nine-argument usage. It was downloaded as migrator.jar.zip but is already a JAR; publication preserves the bytes under migrator.jar. It retains the automatic Music adaptation branch. It does not replace or retrospectively identify any historical measurement binary.
+The [2026-10-30 executable](data-migrator/configurable-2026-10-30/) is published separately with nine-argument usage. It was downloaded as migrator.jar.zip but is already a JAR; publication preserves the bytes under migrator.jar. It retains the automatic Music adaptation branch. It does not replace or retrospectively identify any historical measurement binary.

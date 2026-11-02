@@ -22,7 +22,7 @@ The files in [music-service-sequence/](music-service-sequence/) document the seq
 | [MusicService-relational-document.xmi](music-service-sequence/MusicService-relational-document.xmi) | Document schema generated from the adapted U-Schema |
 | [MusicService-relational-mongoose.js](music-service-sequence/MusicService-relational-mongoose.js) | Generated Mongoose schema |
 
-File identities and provenance are recorded in [provenance.json](provenance.json). The included output set represents the sequence; it is not a separate output set for each individual operation.
+Sources and versions are summarized in [Sources and versions](../../SOURCES.md). The included output set represents the sequence; it is not a separate output set for each individual operation.
 
 ## Execution
 
@@ -45,4 +45,4 @@ The artifacts included here have been checked for XML readability and copy integ
 
 ## Manuscript clarification
 
-The adaptation evaluation used **Music Service**, not TPC-C S. The TPC-C attribution in the adaptation-configuration paragraph of Section 6.1, Section 6.3.4 and the adaptation-related external-validity discussion is an error in the manuscript snapshot identified in [results provenance](../../results/provenance.json). The operations were tested individually and sequentially. This note identifies that snapshot and does not assume identical wording in every public preprint revision.
+The adaptation evaluation used **Music Service**, not TPC-C S. The TPC-C attribution in the adaptation-configuration paragraph of Section 6.1, Section 6.3.4 and the adaptation-related external-validity discussion is an error in the manuscript snapshot identified in [Sources and versions](../../SOURCES.md). The operations were tested individually and sequentially. This note identifies that snapshot and does not assume identical wording in every public preprint revision.

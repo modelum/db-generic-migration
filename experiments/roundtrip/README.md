@@ -4,7 +4,7 @@ The experiment applies Relational -> U-Schema -> Document -> U-Schema -> Relatio
 
 ## Models and results
 
-`recovered-models/<case>/forward/` supplies Music Streaming and Northwind input/intermediate/Document models. `reverse/` supplies reconstructed U-Schema and relational models for all three cases. The TPC-C forward models are under [source](../../cases/tpcc/source/) and [generated](../../cases/tpcc/generated/). The folder name is retained for existing links; file origins and versions are in `provenance.json`.
+`recovered-models/<case>/forward/` supplies Music Streaming and Northwind input/intermediate/Document models. `reverse/` supplies reconstructed U-Schema and relational models for all three cases. The TPC-C forward models are under [source](../../cases/tpcc/source/) and [generated](../../cases/tpcc/generated/). The folder name is retained for existing links; source versions are summarized in `SOURCES.md` at the repository root.
 
 The evaluation used Eclipse EMF Compare and visual inspection. Table 8 precision, recall and F1 values are supplied in [results/roundtrip](../../results/roundtrip/). No saved EMF Compare report is included. Forward expected-model validation is a separate experiment.
 

@@ -1,8 +1,8 @@
 # Implementation projects
 
-DataMigration uses development revision `81179f6325dbdaea6c31205405939366b71bb824`, with nine connection/model parameters. The other seven projects use revision `3d422b9df84dd66332d7bb855c717b5c3ace279b`. Per-project versions and file origins are listed in `provenance.json`.
+DataMigration uses development revision `81179f6325dbdaea6c31205405939366b71bb824`, with nine connection/model parameters. The other seven projects use revision `3d422b9df84dd66332d7bb855c717b5c3ace279b`. Per-project versions are listed in `SOURCES.md` at the repository root.
 
-See [DEPENDENCIES.md](DEPENDENCIES.md) for build requirements and [migration instructions](../data-migrator/configurable-2026-10-30/) for the supplied executable. Dependency JARs are inventoried in provenance; they are not all bundled with these source projects.
+See [DEPENDENCIES.md](DEPENDENCIES.md) for build requirements and [migration instructions](../data-migrator/configurable-2026-10-30/) for the supplied executable. Dependency JARs are not all bundled with these source projects; see DEPENDENCIES.md.
 
 ## Project roles
 

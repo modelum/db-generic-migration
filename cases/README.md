@@ -28,4 +28,4 @@ The expected Document model and its derivation notes exclude order_line-to-stock
 
 Forward validation compares generated schemas with expected schemas. [Round-trip validation](../experiments/roundtrip/) instead compares each reconstructed relational schema with its original relational input. The evaluation used EMF Compare and visual inspection; no new comparison is claimed during package preparation.
 
-Original files remain unchanged. Their origins and versions are recorded in accompanying provenance metadata, including [generated-provenance.json](generated-provenance.json). Later Ecore revisions must not be silently imposed on the earlier experimental models. See [schema-validation instructions](../experiments/schema-validation/) for comparison context.
+Original files remain unchanged. Their origins and versions are recorded in the common source/version notes, including [Sources and versions](../SOURCES.md). Later Ecore revisions must not be silently imposed on the earlier experimental models. See [schema-validation instructions](../experiments/schema-validation/) for comparison context.

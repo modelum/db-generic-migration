@@ -20,9 +20,9 @@ Generate the metamodel runtimes and Trace.jar before their consumers. The trace 
 - DataMigration references PostgreSQL JDBC 42.7.10 and MongoDB driver 5.1.2. The repository also inventories older Oracle dependencies; those are not required merely to reproduce the PostgreSQL case.
 - The recovered EMF references include common 2.44.0, ecore 2.41.0 and ecore.xmi 2.39.0. Some projects use Eclipse bundle dependencies, others library paths.
 - Trace and OrionTraceChanger have absolute paths to the original Eclipse installation. These need a portable dependency configuration.
-- The updated DataMigration classpath expects `lib/OrionTraceChanger.jar`, replacing the earlier `TraceCanger.jar` spelling. The dependency is inventoried in provenance; dependency JARs remain excluded from the source snapshot.
+- The updated DataMigration classpath expects `lib/OrionTraceChanger.jar`, replacing the earlier `TraceCanger.jar` spelling. Dependency JARs remain excluded from the source snapshot.
 - Java declarations are mixed: DataMigration has JavaSE-21 in .classpath but JavaSE-17 in its manifest; the metamodel projects also mix 17 and 21. Select and test a consistent toolchain before documenting a supported build.
-- JAR and ZIP files were not copied. Their original repository paths, sizes and hashes remain in provenance.json. Missing classpath files in this snapshot are expected until dependencies are assembled.
+- JAR and ZIP files were not copied. Missing classpath files in this snapshot are expected until dependencies are assembled.
 
 ## Execution configuration
 

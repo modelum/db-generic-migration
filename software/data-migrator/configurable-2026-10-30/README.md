@@ -1,6 +1,6 @@
 # Configurable data migrator
 
-This newly supplied executable accepts connection parameters. It is distinct from the recovered AWS executables used in earlier artifact collection; it is not identified as the binary used for the paper's historical timing measurements. The associated DataMigration source update is available at development commit `81179f6325dbdaea6c31205405939366b71bb824` and preserved under [source-projects/DataMigration](../../source-projects/DataMigration/). Source-to-binary identity has not been verified through a rebuild. [provenance.json](provenance.json) identifies the unchanged binary by SHA-256.
+This newly supplied executable accepts connection parameters. It is distinct from the recovered AWS executables used in earlier artifact collection; it is not identified as the binary used for the paper's historical timing measurements. The associated DataMigration source update is available at development commit `81179f6325dbdaea6c31205405939366b71bb824` and preserved under [source-projects/DataMigration](../../source-projects/DataMigration/). Source-to-binary identity has not been verified through a rebuild. [Sources and versions](../../../SOURCES.md) summarizes the supplied executable and associated source revision.
 
 ## Prerequisites and invocation
 

@@ -43,6 +43,6 @@ Queries with selected customers, dates and numeric projections must therefore be
 - hammerdb-config-paper.json: documented S/M/L generation settings.
 - paper-row-counts.json: observed counts in the final paper, Table 7; totals are 598,950, 5,087,358 and 49,997,496.
 - count-source-rows.sql: a read-only count query prepared for this package; not an original experimental log.
-- provenance.json: sources, derivation status and integrity.
+- Source and version information: see `SOURCES.md` at the repository root.
 
 These files document preparation; they are not completion evidence for schema validation, round-trip metrics or migration performance.
