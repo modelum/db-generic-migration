@@ -28,6 +28,10 @@ The package includes the three case studies, recovered expected and generated mo
 
 Artifact notes distinguish recovered candidates from validated references and original files from derived loading aids. Expected models are kept separate from generated outputs; new execution outputs should remain separate from published reference results.
 
+## Funding
+
+This work was supported by project PID2020-117391GB-I00 (ASE4AIIDB), funded by MICIU/AEI/10.13039/501100011033 (Spain), and co-funded by ERDF/EU.
+
 ## Citation
 
 Download the paper reference as [BibTeX](CITATION.bib).
