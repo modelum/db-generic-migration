@@ -26,7 +26,7 @@ Generate the metamodel runtimes and Trace.jar before their consumers. The trace 
 
 ## Execution configuration
 
-DataMigration accepts nine arguments: relational model basename, PostgreSQL host, port, user, password and database, then MongoDB host, port and database. It constructs a MongoDB connection without authentication arguments. See [configurable executable usage](../data-migrator/configurable-2026-10-30/README.md). TestSpeed retains localhost/default-port and PostgreSQL music/music assumptions and accepts source database, target database and table. These are deployment settings, not a statement about the model independence of the approach.
+DataMigration accepts nine arguments: relational model basename, PostgreSQL host, port, user, password and database, then MongoDB host, port and database. It constructs a MongoDB connection without authentication arguments. See [configurable executable usage](../../experiments/scaling/RUNNING.md). TestSpeed retains localhost/default-port and PostgreSQL music/music assumptions and accepts source database, target database and table. These are deployment settings, not a statement about the model independence of the approach.
 
 DataMigration writes intermediate/target models and `Migration_times.txt`. Its MusicService entry path intentionally contains a preliminary, predefined intermediate adaptation example, selected by the exact model basename `MusicService-relational`; this is not a general adaptation-selection interface. The updated RoundTripV2 launcher comments out the trace-persistence test and its early exit, allowing the remaining forward/reverse chain to run. Outputs must be directed to a separate working location rather than overwriting preserved reference artifacts.
 

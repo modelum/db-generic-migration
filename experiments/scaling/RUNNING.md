@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Use Java 21 or later and the [configurable migrator](../../software/data-migrator/configurable-2026-10-30/). Prepare PostgreSQL and MongoDB using the [environment](../../environment/) and [data instructions](../../environment/DATA-PREPARATION.md). The developer reports testing this executable; no additional database run was performed while preparing this guide.
+Use Java 21 or later and the [configurable migrator](../../software/database-migrator/migrator.jar). Prepare PostgreSQL and MongoDB using the [environment](../../environment/) and [data instructions](../../environment/DATA-PREPARATION.md). The developer reports testing this executable; no additional database run was performed while preparing this guide.
 
 Create a separate working directory for each case/size and copy `migrator.jar` and the selected relational XMI into it. Run the command from that directory. Model paths are resolved beside the JAR and the trace/timing report uses the working directory. Use a dedicated empty target for a new experiment and preserve each run's outputs before reusing a directory. The migrator is not a source-database loader.
 

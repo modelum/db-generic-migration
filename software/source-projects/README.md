@@ -2,7 +2,7 @@
 
 DataMigration uses revision `de23b5beb14dafe85561d84aa9b86799893f0a0b`, with nine connection/model parameters and no Oracle JDBC dependencies. RoundTripV2 retains its prior project version with only `um.modelum.migration.main.Principal.java` updated from the same revision to disable the trace-persistence test and its early exit. The other projects remain unchanged. See the repository [source/version notes](../../SOURCES.md).
 
-See [DEPENDENCIES.md](DEPENDENCIES.md) for build requirements and [migration instructions](../data-migrator/configurable-2026-10-30/) for the supplied executable. Dependency JARs are not all bundled with these source projects; see DEPENDENCIES.md.
+See [DEPENDENCIES.md](DEPENDENCIES.md) for build requirements and [migration instructions](../../experiments/scaling/RUNNING.md) for the supplied executable. Dependency JARs are not all bundled with these source projects; see DEPENDENCIES.md.
 
 ## Project roles
 

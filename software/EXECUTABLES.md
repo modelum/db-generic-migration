@@ -14,6 +14,6 @@ The preserved implementation sources are under [source-projects](source-projects
 
 ## Newly supplied configurable executable
 
-The [2026-10-30 executable](data-migrator/configurable-2026-10-30/) is published separately with nine-argument usage. It was downloaded as migrator.jar.zip but is already a JAR; publication preserves the bytes under migrator.jar. It retains the automatic Music adaptation branch. It does not replace or retrospectively identify any historical measurement binary.
+The [configurable migrator](database-migrator/migrator.jar) is published separately with nine-argument usage. It was downloaded as migrator.jar.zip but is already a JAR; publication preserves the bytes under migrator.jar. It retains the automatic Music adaptation branch. It does not replace or retrospectively identify any historical measurement binary.
 
-The executable at the existing configurable distribution path was replaced on 2 November 2026 by the supplied build excluding Oracle JDBC. The original AWS variants remain historical references; this replacement does not identify the binary used for the paper timings.
+The executable was updated on 2 November 2026 by the supplied build excluding Oracle JDBC. The original AWS variants remain historical references; this replacement does not identify the binary used for the paper timings.
