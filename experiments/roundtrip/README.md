@@ -16,11 +16,11 @@ The following pairs are supplied for inspection:
 
 | Case | Original relational model | Reconstructed relational model |
 | --- | --- | --- |
-| Music Streaming | [MusicService-relational.xmi](recovered-models/music-streaming/forward/MusicService-relational.xmi) | [MusicServiceDoc-relational-generated.xmi](recovered-models/music-streaming/reverse/MusicServiceDoc-relational-generated.xmi) |
-| TPC-C | [TPC-C-relational-sinPK.xmi](../../cases/tpcc/source/TPC-C-relational-sinPK.xmi) | [TPC-CDoc-relational-generated.xmi](recovered-models/tpcc/reverse/TPC-CDoc-relational-generated.xmi) |
-| Northwind | [Northwind-relational.xmi](recovered-models/northwind/forward/Northwind-relational.xmi) | [NorthwindDoc-relational-generated.xmi](recovered-models/northwind/reverse/NorthwindDoc-relational-generated.xmi) |
+| Music Streaming | [MusicService-relational.xmi](models/music-streaming/forward/MusicService-relational.xmi) | [MusicServiceDoc-relational-generated.xmi](models/music-streaming/reverse/MusicServiceDoc-relational-generated.xmi) |
+| TPC-C | [TPC-C-relational-sinPK.xmi](models/tpcc/forward/TPC-C-relational-sinPK.xmi) | [TPC-CDoc-relational-generated.xmi](models/tpcc/reverse/TPC-CDoc-relational-generated.xmi) |
+| Northwind | [Northwind-relational.xmi](models/northwind/forward/Northwind-relational.xmi) | [NorthwindDoc-relational-generated.xmi](models/northwind/reverse/NorthwindDoc-relational-generated.xmi) |
 
-Intermediate U-Schema and Document models are included with the [experiment models](recovered-models/); the TPC-C forward models are in its [generated folder](../../cases/tpcc/generated/). Precision, recall and F1 values reported in Table 8 are available in [preservation-metrics.csv](../../results/roundtrip/preservation-metrics.csv).
+For each case, [models](models/) contains `forward/` (original relational model and generated U-Schema/Document models) and `reverse/` (reconstructed U-Schema and relational models). The TPC-C forward files are identical to the corresponding case artifacts. Precision, recall and F1 values reported in Table 8 are available in [preservation-metrics.csv](../../results/roundtrip/preservation-metrics.csv).
 
 ## Execution
 
