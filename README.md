@@ -2,7 +2,7 @@
 
 Replication materials supporting the following paper:
 
-MarÃƒÂ­a-JosÃƒÂ© OrtÃƒÂ­n, JosÃƒÂ© R. Hoyos, and Jesus GarcÃƒÂ­a-Molina. **A Model-Driven Approach to Database Migration with a Unified Data Model**. arXiv:2604.22415, 2026.
+Mari­a-Jose Orti­n, Jose R. Hoyos, and Jesus Garcia-Molina. **A Model-Driven Approach to Database Migration with a Unified Data Model**. arXiv:2604.22415, 2026.
 
 - [Read the preprint on arXiv](https://arxiv.org/abs/2604.22415)
 - [DOI: 10.48550/arXiv.2604.22415](https://doi.org/10.48550/arXiv.2604.22415)
