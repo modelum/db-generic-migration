@@ -13,7 +13,7 @@ Both Music scenarios start from the same [original relational model](../../cases
 | Scenario | Input model | 
 | --- | --- | 
 | Music with adaptation |[MusicService-relational.xmi](../../cases/tpcc/source/MusicService-relational.xmi) | 
-| Music without adaptation | Same Music model but the file must be renamed; | 
+| Music without adaptation | Same Music model but the file must be renamed, e.g. MusicService-canonical.xmi | 
 | TPC-C | [TPC-C-relational-sinPK.xmi](../../cases/tpcc/source/TPC-C-relational-sinPK.xmi) | 
 | Northwind | [Northwind-relational.xmi](../../cases/northwind/source/Northwind-relational.xmi) | 
 
