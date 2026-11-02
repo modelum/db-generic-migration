@@ -1,47 +1,7 @@
-# Configurable data migrator
+# Data migrator
 
-This newly supplied executable accepts connection parameters. It is distinct from the recovered AWS executables used in earlier artifact collection; it is not identified as the binary used for the paper's historical timing measurements. The associated DataMigration source update is available at development commit `de23b5beb14dafe85561d84aa9b86799893f0a0b` and preserved under [source-projects/DataMigration](../../source-projects/DataMigration/). Source-to-binary identity has not been verified through a rebuild. [Sources and versions](../../../SOURCES.md) summarizes the supplied executable and associated source revision.
+`migrator.jar` migrates data from PostgreSQL to MongoDB using the relational XMI model and the intermediate U-Schema and Document transformations. It requires Java 21 or later.
 
-## Prerequisites and invocation
+See the [execution guide](../../../experiments/scaling/RUNNING.md) for prerequisites, model selection, connection parameters, examples and output files.
 
-Use Java 21 or later (entry-point class-file version 65), accessible PostgreSQL and MongoDB servers, a prepared relational source database and the matching relational XMI model. The executable has been tested by its developer. It has not been independently rerun during package preparation.
-
-Place a **copy** of the input XMI next to the JAR in a separate working directory. Run from that directory so the model outputs and relative trace location remain together. The first argument is the model filename without `.xmi`.
-
-```sh
-java -jar migrator.jar MODEL_BASENAME PG_HOST PG_PORT PG_USER PG_PASSWORD PG_DATABASE MONGO_HOST MONGO_PORT MONGO_DATABASE
-```
-
-| Argument | Meaning |
-| --- | --- |
-| 1 | Relational XMI basename, without extension |
-| 2 | PostgreSQL host/IP |
-| 3 | PostgreSQL port |
-| 4 | PostgreSQL user |
-| 5 | PostgreSQL password |
-| 6 | PostgreSQL source database |
-| 7 | MongoDB host/IP |
-| 8 | MongoDB port |
-| 9 | MongoDB target database |
-
-Example supplied with the executable:
-
-```sh
-java -jar migrator.jar MusicService-relational localhost 5432 user user_pwd sourceDatabase localhost 27017 targetDatabase
-```
-
-Replace example connection values with the intended configuration. Use a dedicated target for a new reproduction and preserve reference artifacts separately. This interface supplies PostgreSQL credentials but no MongoDB username/password arguments.
-
-## Music Service behavior
-
-**The example above activates schema adaptation.** When argument 1 is exactly `MusicService-relational`, the entry point applies the Music adaptation sequence: disaggregate playlist, rename app_user to user_data and remove is_premium. It saves/reloads `MusicService.trace` and continues migration from the adapted model. It therefore does not represent the canonical embedded-playlist Q1 scenario. The prototype intentionally integrates this predefined adaptation as a preliminary demonstration, selected by the exact, case-sensitive model basename rather than a general adaptation configuration interface. Connection parameters do not change that selection mechanism. There is no separate adaptation-enable/disable argument in this interface. This example selects the adapted scenario. For canonical Music, rename a working copy of the XMI to `MusicService-canonical.xmi` and use `MusicService-canonical` as argument 1, leaving the model contents unchanged. See the [migration guide](../../../experiments/scaling/RUNNING.md).
-
-The updated source names its timing report `Migration_times.txt`. The program writes intermediate U-Schema, Document and Mongoose artifacts using the model basename next to the JAR. Keep copies of the original input and any traces; adaptation saves over its intermediate model/trace paths. See [adaptation](../../../experiments/trace-adaptation/) for recovered outputs and experiment scope.
-
-## Verification boundary
-
-The JAR archive CRC check passed, the entry-point class version and argument handling were inspected, and its Music adaptation condition was checked statically. No database connection, data migration or help invocation was executed. Runtime/dependency compatibility, metamodel alignment, exact source correspondence and canonical-case execution remain to be verified. The new connection interface does not by itself establish that the previously documented metamodel differences have been resolved.
-
-## Distribution licenses
-
-Project code is GPL-3.0-only with the specified Eclipse linking permission. The executable was updated on 2 November 2026 to exclude Oracle JDBC; the directory path is retained for existing links. Bundled libraries keep their own terms; see the repository [third-party notices](../../../THIRD-PARTY-NOTICES.md). This replacement has been inspected for archive integrity and absence of Oracle entries; no database migration was executed during this update.
+The project code is licensed under GPL-3.0 with the Eclipse linking permission. Bundled libraries retain their own licenses; see [third-party notices](../../../THIRD-PARTY-NOTICES.md).
