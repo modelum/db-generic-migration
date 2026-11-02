@@ -2,7 +2,7 @@
 
 SQL/MongoDB query pairs corresponding to the access patterns in Table 11.
 
-| ID | Recovered purpose | Files |
+| ID | Purpose | Files |
 | --- | --- | --- |
 | Q7 | Customer balances and order-line counts by district | [Q7.sql](Q7.sql), [Q7.js](Q7.js) |
 | Q8 | Payment-history entries for selected customers in a district and warehouse | [Q8.sql](Q8.sql), [Q8.js](Q8.js) |
@@ -14,4 +14,4 @@ Use the actual source database and its migrated counterpart, with matching filte
 
 Database names in the scripts must correspond to the intended instance.
 
-Query revisions are recorded in Git history; see the common source/version notes in `SOURCES.md` at the repository root. The [reported results](../../../results/query-equivalence/) are distinct from any new-run query outputs. These scripts were not executed during package preparation.
+The [query results](../../../results/query-equivalence/) include the Table 11 summary and output examples for Q7-Q9.
