@@ -26,10 +26,6 @@ Official source and license information: [EMF](https://github.com/eclipse-emf/or
 
 This table identifies component families and does not replace their full license texts. Retain full applicable license/NOTICE files with a repackaged distribution and provide corresponding source where required. Do not assume one merged META-INF/LICENSE or NOTICE file covers every bundled library.
 
-## Oracle JDBC
-
-The executable supplied on 2 November 2026 excludes Oracle JDBC. Its archive entries were checked for Oracle classes and ojdbc artifacts; DataMigration no longer references the Oracle JAR dependencies. The Eclipse additional permission does not extend to Oracle or other libraries outside its stated scope.
-
 ## Data and other materials
 
 Northwind and any other third-party materials retain their applicable upstream terms; see [SOURCES.md](SOURCES.md) for their origins. Do not infer a new dataset license from the software license. Project funding acknowledgment and paper citation remain in the main README.
