@@ -13,8 +13,6 @@ The arXiv link provides the public preprint. The artifact collection is being or
 
 This repository provides the implementation sources, models, data preparation materials, queries, and reported results supporting the paper. Artifact availability and reproduction instructions are documented in the corresponding folders.
 
-The package includes the three case studies, recovered expected and generated models, round-trip artifacts, Music Streaming adaptation, and Q1-Q9 query pairs. Original artifacts, repository revisions, derived preparation aids, and paper-transcribed results are identified through their the common source/version notes.
-
 ## Contents
 
 [Sources and versions](SOURCES.md) summarizes implementation revisions and data origins.
