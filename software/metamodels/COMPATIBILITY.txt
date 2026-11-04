@@ -1,46 +1,6 @@
-Metamodel version scope
-=======================
+Metamodel versions
+==================
 
-The Ecores in this directory contain revisions identified after the TPC-C
-experiments. The evaluation used the implementation/runtime definitions
-associated with those executions. Applying the later definitions is not a
-prerequisite for reproducing or interpreting the reported experiments.
+The metamodels in this directory correspond to the implementation used by the supplied migrator.
 
-Later implementation work
--------------------------
-
-1. Document: add Reference.targetShareability support to the generated runtime
-   and forward/reverse mappings; review datatype and required-feature changes.
-2. Relational: allow Table.keys to be empty, including tables without a PK.
-3. U-Schema: allow SchemaType.aggregate to be absent for root entities.
-
-Adopting these definitions requires corresponding implementation/runtime
-updates and model validation. That work has not been applied to the preserved
-experiment artifacts. Do not replace Ecores alone or regenerate reference
-outputs as though they were the original evaluation results.
-
-Use matching Ecores and runtime libraries from the selected implementation.
-Project snapshots retain their associated definitions. The historical folder
-provides earlier Ecore variants and their provenance. Datatype defaults and
-required properties can differ between variants of the same namespace URI.
-
-Connection configuration is independent of metamodel versioning. The supplied
-configurable DataMigration accepts connection parameters; TestSpeed retains
-its original local connection assumptions.
-
-Definition details and historical variants
------------------------------------------
-
-The later Document definition includes DECIMAL and temporal datatype literals,
-required Embedded.isMany and PrimitiveType.datatype, and a required Array.name.
-Reference.targetShareability is Boolean, required, with default true.
-Datatype default literals differ between versions, so omitted XMI values may
-be interpreted differently when loaded with another definition.
-
-The later U-Schema definition also sets Aggregate.specifiedBy unique=false
-and changes the package name/prefix to USchema while retaining its namespace
-URI. Register only one variant of the same namespace URI at a time.
-
-historical/development-snapshot contains earlier development definitions.
-historical/uschema-without-aggregate-backlink.ecore is an additional earlier
-U-Schema variant. Their origins are recorded in accompanying metadata.
+The final-version/ directory contains revised definitions incorporating changes identified after the evaluation experiments. These changes have not yet been incorporated into the implementation and do not affect the migrations performed or the results reported in the paper. Use the metamodels in the parent directory with the supplied software.

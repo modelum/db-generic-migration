@@ -12,7 +12,7 @@ Check that the generated target schemas represent the structures expected from t
 | TPC-C | [U-Schema and Document](../../cases/tpcc/generated/) | [Document](../../cases/tpcc/expected/) |
 | Northwind | [U-Schema and Document](../../cases/northwind/generated/) | [U-Schema and Document](../../cases/northwind/expected/) |
 
-Relational inputs are in each case's `source/` folder. The expected models describe intermediate U-Schema or target Document schemas; they are not references for reconstructed relational schemas.
+Relational inputs are in each case's `source/` folder. The expected models describe intermediate U-Schema or target Document schemas.
 
 ## Comparison
 
@@ -20,6 +20,6 @@ Relational inputs are in each case's `source/` folder. The expected models descr
 2. Compare each pair of the same model type with EMF Compare.
 3. Inspect the differences against the mapping rules, including entities/documents, attributes, identifiers, references and embedded structures. Representation differences should be interpreted rather than treated as textual mismatches alone.
 
-For TPC-C, the evaluated mapping excludes the order_line-to-stock foreign key because it targets an associative table. The expected-model notes in its folder explain its scope and representation details.
+For TPC-C, see the [source-model scope](../../cases/tpcc/data/README.md#source-model-scope) and the expected-model notes when interpreting differences.
 
 The separate [round-trip experiment](../roundtrip/) compares reconstructed relational schemas with their original relational inputs.

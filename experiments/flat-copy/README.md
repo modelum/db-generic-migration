@@ -4,9 +4,9 @@ The baseline copies each relational table into its own MongoDB collection, witho
 
 ## Implementation and invocation
 
-[TestSpeed](../../software/source-projects/TestSpeed/) implements a single-table copy. Its entry point is `Speed`; the source uses localhost, standard database ports, PostgreSQL music/music credentials and unauthenticated MongoDB. It accepts source database, target database and table name. These original connection settings are separate from the new configurable DataMigration interface.
+[TestSpeed](../../software/source-projects/TestSpeed/) implements a single-table copy. Its entry point is `Speed`; the source uses localhost, standard database ports, PostgreSQL music/music credentials and unauthenticated MongoDB. It accepts source database, target database and table name.
 
-After assembling the dependencies and exporting the TestSpeed project to a runnable `testSpeed.jar`, the source interface is:
+After assembling the dependencies and exporting the TestSpeed project to a runnable `testSpeed.jar`, run:
 
 ```sh
 java -jar testSpeed.jar SOURCE_DATABASE TARGET_DATABASE TABLE_NAME
@@ -23,4 +23,4 @@ Each invocation copies one complete table; no relationship-based ordering is req
 
 ## Results
 
-[results/flat-copy](../../results/flat-copy/) contains both reported baseline values and the Music L per-table count/timing breakdown, with source metadata. The original TPC-C console output is not included. This source-based procedure has not been newly executed during package preparation; it does not add timing observations to the paper's results.
+[results/flat-copy](../../results/flat-copy/) contains both reported baseline values and the Music L per-table count/timing breakdown, with source metadata. The original TPC-C console output is not included.

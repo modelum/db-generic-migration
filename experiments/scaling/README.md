@@ -22,7 +22,7 @@ Prepare Music Streaming using its [generator and configuration](../../cases/musi
 1. Prepare the S, M and L source databases for each case and record their actual row counts.
 2. Use the [experimental environment and measurement protocol](../../environment/) and follow the [migrator execution guide](../../software/database-migrator/RUNNING.md). For Music Streaming, select canonical migration **without adaptation**.
 3. Run one complete migration for each of the six configurations, with an empty dedicated MongoDB target. Use batches of 1,000 and keep indexes enabled, as in the paper.
-4. Retain the migration report (`Migration_times.txt`), source row counts and source/target database sizes for each configuration. Preserve each report before starting the next run.
+4. Retain the automatically generated migration report (`Migration_times.txt`), source row counts and source/target database sizes for each configuration. Preserve each report before starting the next run.
 5. Calculate throughput as the total number of source rows processed divided by the data-migration elapsed time in seconds. Use the measured time before rounding where available.
 
 The elapsed time covers source-data access, instance transformation, relationship resolution and document writes. It excludes schema transformations and program initialization; total Java process wall time is therefore not the same measurement. Embedded source rows count as processed rows even when they do not produce independent documents.

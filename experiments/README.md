@@ -2,11 +2,11 @@
 
 | Experiment | Artifacts and procedure |
 | --- | --- |
-| [Schema validation](schema-validation/) | Recovered generated/expected models; EMF Compare and visual inspection context |
+| [Schema validation](schema-validation/) | Generated and expected models; EMF Compare and visual inspection |
 | [Round-trip](roundtrip/) | Original/forward/reverse models, comparison pairs and inspection procedure; Table 8 metrics |
-| [Trace adaptation](trace-adaptation/) | Music Service adapted models and trace, operation sequence and manuscript clarification |
+| [Trace adaptation](trace-adaptation/) | Music Streaming adapted models, trace and operation sequence |
 | [Scaling](scaling/) | S/M/L data-preparation links, migration source and Tables 9/10 results |
-| [Flat-copy](flat-copy/) | Baseline source, reported L results and recovered Music timing breakdown |
-| [Query equivalence](query-equivalence/) | Q1-Q9 pairs, proposed new-run comparison procedure and Table 11 results |
+| [Flat-copy](flat-copy/) | Baseline implementation and reported L results |
+| [Query equivalence](query-equivalence/) | Q1-Q9 pairs, result comparison procedure and Table 11 results |
 
-See [REPRODUCING.md](../REPRODUCING.md) for availability and execution preparation. Procedures proposed for new runs are distinguished from recovered records of the original evaluation. No new experimental execution is claimed by this collection.
+See [REPRODUCING.md](../REPRODUCING.md) to choose an experiment and its execution instructions.

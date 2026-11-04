@@ -26,4 +26,4 @@ The evaluation uses a single fixed PostgreSQL dataset. The supplied data and [lo
 
 This case is used for schema validation, round-trip reconstruction and query-result equivalence (Q4-Q6). It is not part of the S/M/L scaling experiments.
 
-For the procedures and corresponding results, see the [experiment guides](../experiments/), [reported results](../results/) and [sources and versions](../SOURCES.md).
+For the procedures and corresponding results, see the [experiment guides](../experiments/) and [reported results](../results/).

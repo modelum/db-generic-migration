@@ -1,10 +1,10 @@
-query_id,case,purpose_reported,cardinality_reported,cardinality_instance,equivalence_indicator_reported,equivalence_instances_reported,evidence_type,paper_locator
-Q1,Music Streaming,Playlists of a user with their songs,~200,S,1,S;M,paper_transcription,Table 11
-Q2,Music Streaming,Styles associated with a given song,~3-5,S,1,S;M,paper_transcription,Table 11
-Q3,Music Streaming,Number of users with more than four songs listened to at least ten times each,1,S,1,S;M,paper_transcription,Table 11
-Q4,Northwind,Customers and order dates for orders delivered by a given shipper,~100-300,fixed,1,fixed,paper_transcription,Table 11
-Q5,Northwind,Customer products and categories for a given order,~5-10,fixed,1,fixed,paper_transcription,Table 11
-Q6,Northwind,Managers of employees involved in a given customer orders,~1-2,fixed,1,fixed,paper_transcription,Table 11
-Q7,TPC-C,Customer balances and order-line counts by district with warehouse information,10,S,1,S;M,paper_transcription,Table 11
-Q8,TPC-C,Payment-history entries for selected customers in a district and warehouse,10,S,1,S;M,paper_transcription,Table 11
-Q9,TPC-C,Items below a stock threshold including names and prices,5486,S,1,S;M,paper_transcription,Table 11
+query_id,case,purpose_reported,cardinality_reported,cardinality_instance,equivalence_indicator_reported,equivalence_instances_reported,paper_locator
+Q1,Music Streaming,Playlists of a user with their songs,~200,S,1,S;M,Table 11
+Q2,Music Streaming,Styles associated with a given song,~3-5,S,1,S;M,Table 11
+Q3,Music Streaming,Number of users with more than four songs listened to at least ten times each,1,S,1,S;M,Table 11
+Q4,Northwind,Customers and order dates for orders delivered by a given shipper,~100-300,fixed,1,fixed,Table 11
+Q5,Northwind,Customer products and categories for a given order,~5-10,fixed,1,fixed,Table 11
+Q6,Northwind,Managers of employees involved in a given customer orders,~1-2,fixed,1,fixed,Table 11
+Q7,TPC-C,Customer balances and order-line counts by district with warehouse information,10,S,1,S;M,Table 11
+Q8,TPC-C,Payment-history entries for selected customers in a district and warehouse,10,S,1,S;M,Table 11
+Q9,TPC-C,Items below a stock threshold including names and prices,5486,S,1,S;M,Table 11

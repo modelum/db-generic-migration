@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="USchema" nsURI="http://www.modelum.es/uschema" nsPrefix="USchema">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="uschema" nsURI="http://www.modelum.es/uschema" nsPrefix="uschema">
   <eClassifiers xsi:type="ecore:EClass" name="USchema">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="entities" upperBound="-1"
@@ -41,8 +41,8 @@
         eOpposite="#//RelationshipType/references"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Aggregate" eSuperTypes="#//StructuralFeature">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiedBy" unique="false"
-        lowerBound="1" eType="#//SchemaType" eOpposite="#//SchemaType/aggregate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiedBy" lowerBound="1"
+        eType="#//SchemaType" eOpposite="#//SchemaType/aggregate"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="upperBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="lowerBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
@@ -60,8 +60,8 @@
         eType="#//SchemaType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="features" upperBound="-1"
         eType="#//Feature" containment="true" eOpposite="#//Feature/owner"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="aggregate" eType="#//Aggregate"
-        eOpposite="#//Aggregate/specifiedBy"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aggregate" lowerBound="1"
+        eType="#//Aggregate" eOpposite="#//Aggregate/specifiedBy"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PMap" eSuperTypes="#//DataType">
     <eStructuralFeatures xsi:type="ecore:EReference" name="keyType" lowerBound="1"

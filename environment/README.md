@@ -32,6 +32,4 @@ Use Java 21 or later, PostgreSQL and MongoDB with the versions above, and a dedi
 - [Metamodel definitions](../software/metamodels/): schema definitions; use the runtime versions associated with the implementation.
 - [Data preparation](DATA-PREPARATION.md): preparation and row-count checks for all three cases.
 
-Music Streaming uses a parameterized Python generator. TPC-C uses HammerDB 5.0 TPROC-C with 1/10/100 warehouses and 1/4/6 build virtual users for S/M/L; the transactional workload is not executed. Northwind uses the fixed supplied dataset. Data-population batch sizes and build virtual users are separate from migration settings.
-
-For the predefined Music Service adaptation, follow the [adaptation instructions](../experiments/trace-adaptation/). For the baseline and query comparisons, use their respective [experiment guides](../experiments/).
+For the predefined Music Streaming adaptation, follow the [adaptation instructions](../experiments/trace-adaptation/). For the baseline and query comparisons, use their respective [experiment guides](../experiments/).

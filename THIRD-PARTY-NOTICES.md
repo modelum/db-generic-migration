@@ -56,4 +56,4 @@ The same source bundles are supplied in the local archive so obtaining the corre
 
 ## Data and other materials
 
-Northwind and any other third-party materials retain their applicable upstream terms; see [SOURCES.md](SOURCES.md) for their origins. Do not infer a new dataset license from the software license. Project funding acknowledgment and paper citation remain in the main README.
+Northwind and any other third-party materials retain their applicable upstream terms; see the [case studies](cases/) for the datasets. Do not infer a new dataset license from the software license. Project funding acknowledgment and paper citation remain in the main README.

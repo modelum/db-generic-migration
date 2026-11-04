@@ -15,16 +15,14 @@ This repository provides the implementation sources, models, data preparation ma
 
 ## Contents
 
-[Sources and versions](SOURCES.md) summarizes implementation revisions and data origins.
-
 - [cases](cases/): source schemas, data preparation and model artifacts for the three cases.
 - [software](REPRODUCING.md): metamodels, implementation source snapshots and dependency documentation.
 - [environment](environment/): execution environment documentation.
 - [experiments](experiments/): schema validation, round-trip reconstruction, trace-aware adaptation, scaling, flat-copy baseline and query equivalence.
-- [results](results/): published results transcribed as CSV, plus a recovered baseline timing breakdown with provenance.
+- [results](results/): results reported in the paper as CSV, query-output examples and the Music Streaming baseline timing breakdown.
 - [REPRODUCING.md](REPRODUCING.md): reproduction scope and current availability.
 
-Artifact notes distinguish recovered candidates from validated references and original files from derived loading aids. Expected models are kept separate from generated outputs; new execution outputs should remain separate from published reference results.
+Expected models are kept separate from generated outputs. Retain new execution outputs separately from the reported results.
 
 ## Funding
 
@@ -52,5 +50,3 @@ Download the paper reference as [BibTeX](CITATION.bib).
 Copyright (c) 2026 Universidad de Murcia.
 
 The project's own code is licensed under [GNU GPL version 3](LICENSE) (GPL-3.0-only), with a [limited additional permission for the identified Eclipse libraries](LICENSE-ECLIPSE-EXCEPTION). Third-party libraries and datasets retain their own terms; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
-
-The supplied executable excludes Oracle JDBC. Its bundled third-party libraries retain their own licenses and notices.

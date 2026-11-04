@@ -1,7 +1,5 @@
 # Implementation projects
 
-DataMigration uses revision `de23b5beb14dafe85561d84aa9b86799893f0a0b`, with nine connection/model parameters and no Oracle JDBC dependencies. RoundTripV2 retains its prior project version with only `um.modelum.migration.main.Principal.java` updated from the same revision to disable the trace-persistence test and its early exit. The other projects remain unchanged. See the repository [source/version notes](../../SOURCES.md).
-
 See [DEPENDENCIES.md](DEPENDENCIES.md) for build requirements and [migration instructions](../database-migrator/RUNNING.md) for the supplied executable. Dependency JARs are not all bundled with these source projects; see DEPENDENCIES.md.
 
 ## Project roles
@@ -22,4 +20,4 @@ The active relational adapter is DataMigration/src/um/modelum/migration/adapter.
 
 ## Metamodel versions
 
-The Ecores and runtime sources within these projects are retained with their project versions. The definitions under [metamodels](../metamodels/) include changes identified after the TPC-C experiments; adopting them is a subsequent implementation task, not a prerequisite to interpreting or reproducing the reported executions.
+The Ecores and runtime sources within these projects are retained with their project versions. The definitions in [metamodels](../metamodels/) match the implementation. Its `final-version/` subfolder contains later revisions that have not yet been incorporated into the code.
