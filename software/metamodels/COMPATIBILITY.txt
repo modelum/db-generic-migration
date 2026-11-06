@@ -3,4 +3,6 @@ Metamodel versions
 
 The metamodels in this directory correspond to the implementation used by the supplied migrator.
 
-The final-version/ directory contains revised definitions incorporating changes identified after the evaluation experiments. These changes have not yet been incorporated into the implementation and do not affect the migrations performed or the results reported in the paper. Use the metamodels in the parent directory with the supplied software.
+The final-version/ directory contains revised definitions incorporating changes identified after the evaluation experiments. 
+These changes have not yet been incorporated into the implementation and do not affect the migrations performed or the results reported in the paper. 
+Use the metamodels in the parent directory with the supplied software.
