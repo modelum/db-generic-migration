@@ -26,7 +26,7 @@ The supplied models and trace show the result of applying all three operations i
 
 ## Execution
 
-The [DatabaseMigration implementation](../../software/source-projects/DatabaseMigration/) integrates this predefined adaptation into the migration chain. It is activated by the exact, case-sensitive model basename `MusicService-relational`, without `.xmi`. This is a preliminary prototype for the demonstrated scenario; it does not expose a general interface for selecting arbitrary adaptations. Connection parameters are independent of the adaptation trigger.
+The [DatabaseMigration implementation](../../software/source-projects/DatabaseMigration/) integrates this predefined adaptation into the migration chain. It is activated by the exact, case-sensitive model basename `MusicService-relational-adaptation`, without `.xmi`. This is a preliminary prototype for the demonstrated scenario; it does not expose a general interface for selecting arbitrary adaptations. Connection parameters are independent of the adaptation trigger.
 
 See the [configurable migrator instructions](../../software/database-migrator/RUNNING.md) for prerequisites, the nine connection/model arguments and invocation. Use a separate working directory with copies of the input artifacts: the program writes intermediate models and updates the trace during execution. The documented Music Streaming invocation continues from the adapted schema to Document generation and data migration.
 

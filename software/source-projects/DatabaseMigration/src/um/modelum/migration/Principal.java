@@ -90,7 +90,7 @@ public class Principal {
 		trace1 = m2mRel.getTrace();
 
 //Update uschema model test - only on MusicService
-if (args[0].equals("MusicService-relational")) {
+if (args[0].equals("MusicService-relational-adaptation")) {
 	System.out.println("Updating MusicService uschema");
 	System.out.print("Saving trace...");
 	try { trace1.saveTrace("MusicService.trace", RELATIONAL_MODEL_XMI_PATH, USCHEMA_MODEL_XMI_PATH);
