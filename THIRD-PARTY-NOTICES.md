@@ -52,7 +52,7 @@ The corresponding official binary bundles were identified by byte-for-byte compa
 | `org.eclipse.xtend.lib.macro` | `2.41.0.v20251124-0739` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.xtend.lib.macro.source_2.41.0.v20251124-0739.jar) |
 | `org.eclipse.xtext.xbase.lib` | `2.41.0.v20251124-0739` | [Download](https://download.eclipse.org/releases/2025-12/202512101000/plugins/org.eclipse.xtext.xbase.lib.source_2.41.0.v20251124-0739.jar) |
 
-The same source bundles are supplied in the local archive so obtaining the corresponding Eclipse sources does not depend solely on the external links. Preserve their notices and the applicable source availability when redistributing the libraries; the project linking permission does not waive the Eclipse license requirements.
+The same source bundles are supplied in the local archive so obtaining the corresponding Eclipse sources does not depend solely on the external links. Preserve their notices and the applicable source availability when redistributing the libraries; the project linking permission does not waive the Eclipse license requirements. 
 
 ## Data and other materials
 
