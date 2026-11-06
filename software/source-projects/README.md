@@ -6,7 +6,7 @@ See [DEPENDENCIES.md](DEPENDENCIES.md) for build requirements and [migration ins
 
 | Project | Role |
 | --- | --- |
-| DataMigration | Data migration, forward schema transformations, and MusicService intermediate adaptation example |
+| DatabaseMigration | Data migration, forward schema transformations, and MusicService intermediate adaptation example |
 | RoundTripV2 | Forward/reverse schema chain for Music Streaming, Northwind and TPC-C |
 | Trace | Trace management and persistence; source for Trace.jar |
 | OrionTraceChanger | U-Schema and trace updates; source for the trace updater JAR |
@@ -15,7 +15,7 @@ See [DEPENDENCIES.md](DEPENDENCIES.md) for build requirements and [migration ins
 | um.modelum.relationalMM | Generated Relational metamodel runtime source |
 | um.modelum.uschemaMM | Generated U-Schema metamodel runtime source |
 
-The active relational adapter is DataMigration/src/um/modelum/migration/adapter. Other adapter projects from the development repository are outside this active selection.
+The active relational adapter is DatabaseMigration/src/um/modelum/migration/adapter. Other adapter projects from the development repository are outside this active selection.
 
 
 ## Metamodel versions
