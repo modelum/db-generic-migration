@@ -1,4 +1,4 @@
-case,instance,source_rows,source_size_mb_reported,target_size_mb_reported,elapsed_seconds,throughput_rows_per_second_reported,evidence_type,paper_locator
-TPC-C,S,598950,118,90.3,101,5930.20,paper_transcription,Table 10
-TPC-C,M,5087358,999,784.7,462,11011.60,paper_transcription,Table 10
-TPC-C,L,49997496,9762,7666.52,4047,12354.21,paper_transcription,Table 10
+case,instance,source_rows,source_size_mb_reported,target_size_mb_reported,elapsed_seconds,throughput_rows_per_second_reported,paper_locator
+TPC-C,S,598950,118,90.3,101,5930.20,Table 10
+TPC-C,M,5087358,999,784.7,462,11011.60,Table 10
+TPC-C,L,49997496,9762,7666.52,4047,12354.21,Table 10

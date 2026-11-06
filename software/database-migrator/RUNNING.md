@@ -8,12 +8,12 @@ Create a separate working directory for each case/size and copy `migrator.jar` a
 
 ## Model selection
 
-Both Music scenarios start from the same [original relational model](../../cases/music-streaming/source/MusicService-relational.xmi). For canonical migration, copy it into the working directory and rename that copy to `MusicService-canonical.xmi`. For adaptation, keep the name `MusicService-relational.xmi`. The filename and first argument used for execution are shown separately below.
+Both Music Streaming scenarios start from the same [original relational model](../../cases/music-streaming/source/MusicService-relational.xmi). For canonical migration, copy it into the working directory and rename that copy to `MusicService-canonical.xmi`. For adaptation, keep the name `MusicService-relational.xmi`. The filename and first argument used for execution are shown separately below.
 
 | Scenario | Input model |
 | --- | --- |
-| Music with adaptation |[MusicService-relational.xmi](../../cases/music-streaming/source/MusicService-relational.xmi) |
-| Music without adaptation | Same Music model but the file must be renamed, e.g. MusicService-canonical.xmi |
+| Music Streaming with adaptation |[MusicService-relational.xmi](../../cases/music-streaming/source/MusicService-relational.xmi) |
+| Music Streaming without adaptation | Same Music Streaming model but the file must be renamed, e.g. MusicService-canonical.xmi |
 | TPC-C | [TPC-C-relational-sinPK.xmi](../../cases/tpcc/source/TPC-C-relational-sinPK.xmi) |
 | Northwind | [Northwind-relational.xmi](../../cases/northwind/source/Northwind-relational.xmi) |
 

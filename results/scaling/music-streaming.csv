@@ -1,4 +1,4 @@
-case,instance,source_rows,source_size_mb_reported,target_size_mb_reported,elapsed_seconds,throughput_rows_per_second_reported,evidence_type,paper_locator
-Music Streaming,S,286071,95,16.17,63,4540.80,paper_transcription,Table 9
-Music Streaming,M,2860046,879,159.18,580,4931.11,paper_transcription,Table 9
-Music Streaming,L,28599970,8706,1546.24,5814,4919.15,paper_transcription,Table 9
+case,instance,source_rows,source_size_mb_reported,target_size_mb_reported,elapsed_seconds,throughput_rows_per_second_reported,paper_locator
+Music Streaming,S,286071,95,16.17,63,4540.80,Table 9
+Music Streaming,M,2860046,879,159.18,580,4931.11,Table 9
+Music Streaming,L,28599970,8706,1546.24,5814,4919.15,Table 9

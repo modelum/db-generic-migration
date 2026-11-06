@@ -1,6 +1,6 @@
 # Dependency map and build status
 
-The map combines maintainer information with the recovered Eclipse project configuration. It is not a tested build recipe. No Java compilation, library regeneration or database execution was performed while copying these projects.
+Use Eclipse with Java 21, EMF and Xtend. Assemble the libraries listed below before building the selected project.
 
 ## Intended project dependencies
 
@@ -15,14 +15,13 @@ The map combines maintainer information with the recovered Eclipse project confi
 
 Generate the metamodel runtimes and Trace.jar before their consumers. The trace updater is needed by DataMigration; RoundTripV2 does not require it. TestSpeed can be built independently of the metamodel chain.
 
-## Recovered configuration details
+## Dependency configuration
 
-- DataMigration references PostgreSQL JDBC 42.7.10 and MongoDB driver 5.1.2. Oracle JDBC dependencies have been removed from the updated DataMigration project and executable.
-- The recovered EMF references include common 2.44.0, ecore 2.41.0 and ecore.xmi 2.39.0. Some projects use Eclipse bundle dependencies, others library paths.
-- Trace and OrionTraceChanger have absolute paths to the original Eclipse installation. These need a portable dependency configuration.
-- The updated DataMigration classpath expects `lib/OrionTraceChanger.jar`, replacing the earlier `TraceCanger.jar` spelling. Dependency JARs remain excluded from the source snapshot.
-- Java declarations are mixed: DataMigration has JavaSE-21 in .classpath but JavaSE-17 in its manifest; the metamodel projects also mix 17 and 21. Select and test a consistent toolchain before documenting a supported build.
-- JAR and ZIP files were not copied. Missing classpath files in this snapshot are expected until dependencies are assembled.
+- DataMigration references PostgreSQL JDBC 42.7.10 and MongoDB Java driver 5.1.2.
+- EMF dependencies are common 2.44.0, ecore 2.41.0 and ecore.xmi 2.39.0. Configure the corresponding Eclipse bundles or library paths.
+- In Trace and OrionTraceChanger, replace the absolute `C:/eclipse2025-12/plugins/` paths in `.classpath` with the locations in your installation.
+- DataMigration expects the trace updater at `lib/OrionTraceChanger.jar`. Build the project libraries and place them at the paths specified by each `.classpath`; dependency JARs are not bundled with these source projects.
+- Use Java 21 for the build. Some project manifests and classpaths still declare Java 17; align their execution environment with the selected Java 21 installation when configuring Eclipse.
 
 ## Execution configuration
 
