@@ -26,7 +26,7 @@ Expected models are kept separate from generated outputs. Retain new execution o
 
 ## AI assistance
 
-AI assistance was used to organize this replication package, draft and revise its documentation, and prepare auxiliary data-loading and row-count checking scripts. The research software and experiments reported in the paper were developed and conducted by the authors.
+AI assistance was used to organize this replication package, draft and revise its documentation. The research software and experiments reported in the paper were developed and conducted by the authors.
 
 ## Funding
 
