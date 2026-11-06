@@ -24,6 +24,10 @@ This repository provides the implementation sources, models, data preparation ma
 
 Expected models are kept separate from generated outputs. Retain new execution outputs separately from the reported results.
 
+## AI assistance
+
+AI assistance was used to organize this replication package, draft and revise its documentation, and prepare auxiliary data-loading and row-count checking scripts. The research software and experiments reported in the paper were developed and conducted by the authors.
+
 ## Funding
 
 This work was supported by project PID2020-117391GB-I00 (ASE4AIIDB), funded by MICIU/AEI/10.13039/501100011033 (Spain), and co-funded by ERDF/EU.
