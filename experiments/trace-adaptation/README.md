@@ -16,11 +16,11 @@ The files in [music-service-sequence/](music-service-sequence/) document the seq
 
 | File | Role |
 | --- | --- |
-| [MusicService-relational.xmi](music-service-sequence/MusicService-relational.xmi) | Relational input schema |
-| [MusicService-relational-uschema.xmi](music-service-sequence/MusicService-relational-uschema.xmi) | Adapted intermediate U-Schema |
+| [MusicService-relational-adaptation.xmi](music-service-sequence/MusicService-relational-adaptation.xmi) | Relational input schema |
+| [MusicService-relational-adaptation-uschema.xmi](music-service-sequence/MusicService-relational-adaptation-uschema.xmi) | Adapted intermediate U-Schema |
 | [MusicService.trace](music-service-sequence/MusicService.trace) | Updated relational-to-U-Schema trace T1 |
-| [MusicService-relational-document.xmi](music-service-sequence/MusicService-relational-document.xmi) | Document schema generated from the adapted U-Schema |
-| [MusicService-relational-mongoose.js](music-service-sequence/MusicService-relational-mongoose.js) | Generated Mongoose schema |
+| [MusicService-relational-adaptation-document.xmi](music-service-sequence/MusicService-relational-adaptation-document.xmi) | Document schema generated from the adapted U-Schema |
+| [MusicService-relational-adaptation-mongoose.js](music-service-sequence/MusicService-relational-adaptation-mongoose.js) | Generated Mongoose schema |
 
 The supplied models and trace show the result of applying all three operations in sequence.
 
